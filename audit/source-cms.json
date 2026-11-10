@@ -1,0 +1,36 @@
+{
+  "schema": "site-reforge/source-cms@1",
+  "generated": "2026-11-09T23:45:05.671Z",
+  "detected": [
+    {
+      "id": "wordpress",
+      "label": "WordPress",
+      "matchedPatterns": 5,
+      "evidence": [
+        "/\\/wp-content\\//i",
+        "/\\/wp-includes\\//i",
+        "/\\/wp-json\\//i"
+      ],
+      "pages": 30
+    },
+    {
+      "id": "wpbakery",
+      "label": "WPBakery",
+      "matchedPatterns": 1,
+      "evidence": [
+        "/vc_row\\b/i"
+      ],
+      "pages": 30
+    },
+    {
+      "id": "webflow",
+      "label": "Webflow",
+      "matchedPatterns": 1,
+      "evidence": [
+        "/w-(?:container|row|col|nav|slider)\\b/i"
+      ],
+      "pages": 30
+    }
+  ],
+  "note": "Every id listed here MUST be absent from dist/ before packaging. sr-decontaminate.mjs enforces it."
+}

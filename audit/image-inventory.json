@@ -1,0 +1,276 @@
+{
+  "schema": "site-reforge/image-inventory@1",
+  "generated": "2026-11-09T23:46:16.038Z",
+  "origin": "https://www.thehigherco420.com",
+  "note": "decision stays UNSET until a human or STAGE 4 sets KEEP | REPLACE | OPTIONAL | REMOVE.",
+  "images": [
+    {
+      "src": "http://www.thehigherco420.com/wp-content/themes/Impreza/common/css/vendor/images/marker-icon.png",
+      "external": false,
+      "usedOn": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/about",
+        "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "https://www.thehigherco420.com/author/admin",
+        "https://www.thehigherco420.com/category/uncategorized",
+        "https://www.thehigherco420.com/connect",
+        "https://www.thehigherco420.com/contact",
+        "https://www.thehigherco420.com/delivery",
+        "https://www.thehigherco420.com/faqs",
+        "https://www.thehigherco420.com/gallery",
+        "https://www.thehigherco420.com/media",
+        "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "https://www.thehigherco420.com/retail-space",
+        "https://www.thehigherco420.com/sample-page-2",
+        "https://www.thehigherco420.com/services/beauty-treatments",
+        "https://www.thehigherco420.com/services/body-recovery",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/shop",
+        "https://www.thehigherco420.com/subscribe"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "ICON/UI",
+      "decision": "OPTIONAL",
+      "referencedAs": "BACKGROUND",
+      "localFile": "assets/source/1ac0049b-marker-icon.png",
+      "bytes": 1466,
+      "sha256": "574c3a5cca85f4114085b6841596d62f00d7c892c7b03f28cbfa301deb1dc437",
+      "format": "png",
+      "intrinsicWidth": 25,
+      "intrinsicHeight": 41,
+      "flags": [
+        "NO-ALT-ANYWHERE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/us-core/assets/images/placeholder.svg",
+      "external": false,
+      "usedOn": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/about",
+        "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "https://www.thehigherco420.com/author/admin",
+        "https://www.thehigherco420.com/category/uncategorized",
+        "https://www.thehigherco420.com/connect",
+        "https://www.thehigherco420.com/contact",
+        "https://www.thehigherco420.com/delivery",
+        "https://www.thehigherco420.com/faqs",
+        "https://www.thehigherco420.com/gallery",
+        "https://www.thehigherco420.com/media",
+        "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "https://www.thehigherco420.com/retail-space",
+        "https://www.thehigherco420.com/sample-page-2",
+        "https://www.thehigherco420.com/services/beauty-treatments",
+        "https://www.thehigherco420.com/services/body-recovery",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/shop",
+        "https://www.thehigherco420.com/subscribe"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [
+        "g-placeholder"
+      ],
+      "loading": "",
+      "role": "ICON/UI",
+      "decision": "OPTIONAL",
+      "localFile": "assets/source/4f70e19e-placeholder.svg",
+      "bytes": 477,
+      "sha256": "e136c3ed2b60a9e216e9210b301ec7e3a22d57c08220d761cdc9e7757a74caae",
+      "format": "svg",
+      "intrinsicWidth": 100,
+      "intrinsicHeight": 100,
+      "flags": [
+        "NO-ALT-ANYWHERE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/gridtile.png",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/7200b13f-gridtile.png",
+      "bytes": 70,
+      "sha256": "663ccd5f5b33695f6f6384996bbb9601b1a7060570b8dcb5882329fbc40d6a01",
+      "format": "png",
+      "intrinsicWidth": 2,
+      "intrinsicHeight": 2,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/gridtile_white.png",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/5d2e38e8-gridtile_white.png",
+      "bytes": 70,
+      "sha256": "ab8b528f64344e9e45af4eb7a89c9799e96e65feef2599e51ccda62f94655aed",
+      "format": "png",
+      "intrinsicWidth": 2,
+      "intrinsicHeight": 2,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/gridtile_3x3.png",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/d54a584c-gridtile_3x3.png",
+      "bytes": 70,
+      "sha256": "dbf0e6a761cf159977157dc42860a904a2d96e84780f2a370b4a693628a85334",
+      "format": "png",
+      "intrinsicWidth": 3,
+      "intrinsicHeight": 3,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/gridtile_3x3_white.png",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/c5d9644d-gridtile_3x3_white.png",
+      "bytes": 71,
+      "sha256": "71912c3ae2c32be8756c13063cd63b54152bb8cbf9ac58e2e006791e7a2edc23",
+      "format": "png",
+      "intrinsicWidth": 3,
+      "intrinsicHeight": 3,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/coloredbg.png",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/c026a995-coloredbg.png",
+      "bytes": 90,
+      "sha256": "a35f8bcd547ba482014e170e64c9ceb86269cbc46e1222ea46c750aa41cec584",
+      "format": "png",
+      "intrinsicWidth": 5,
+      "intrinsicHeight": 5,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    },
+    {
+      "src": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/assets/loader.gif",
+      "external": false,
+      "usedOn": [
+        "(css) https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "alts": [],
+      "declaredWidth": "",
+      "declaredHeight": "",
+      "classNames": [],
+      "loading": "",
+      "role": "BACKGROUND",
+      "decision": "REPLACE",
+      "fromCss": true,
+      "localFile": "assets/source/19bdd148-loader.gif",
+      "bytes": 2545,
+      "sha256": "9034d5d34015e4b05d2c1d1a8dc9f6ec9d59bd96d305eb9e24e24e65c591a645",
+      "format": "gif",
+      "intrinsicWidth": 24,
+      "intrinsicHeight": 24,
+      "flags": [
+        "LOW-RES-FOR-ROLE"
+      ]
+    }
+  ],
+  "downloaded": true,
+  "counts": {
+    "total": 8,
+    "downloaded": 8,
+    "failed": 0,
+    "duplicates": 0,
+    "byDecision": {
+      "OPTIONAL": 2,
+      "REPLACE": 6
+    },
+    "byFormat": {
+      "png": 6,
+      "svg": 1,
+      "gif": 1
+    },
+    "totalBytes": 4859
+  }
+}

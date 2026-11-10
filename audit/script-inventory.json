@@ -1,0 +1,31 @@
+{
+  "schema": "site-reforge/scripts@1",
+  "generated": "2026-11-09T23:46:13.026Z",
+  "note": "Same-origin <script src> only. A third-party script is an outbound dependency of the site, not an asset of it; vendoring one would change what the page does.",
+  "discovered": [
+    "https://www.thehigherco420.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/js/us.core.min.js?ver=8.24.2"
+  ],
+  "saved": [
+    {
+      "url": "https://www.thehigherco420.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4",
+      "savedAs": "87853eab-jquery.min.js",
+      "bytes": 89815
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/js/us.core.min.js?ver=8.24.2",
+      "savedAs": "6bb161a3-us.core.min.js",
+      "bytes": 218158
+    }
+  ],
+  "map": {
+    "https://www.thehigherco420.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4": "/scripts/87853eab-jquery.min.js",
+    "//www.thehigherco420.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4": "/scripts/87853eab-jquery.min.js",
+    "/wp-includes/js/jquery/jquery.min.js?ver=3.6.4": "/scripts/87853eab-jquery.min.js",
+    "/wp-includes/js/jquery/jquery.min.js": "/scripts/87853eab-jquery.min.js",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/js/us.core.min.js?ver=8.24.2": "/scripts/6bb161a3-us.core.min.js",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/js/us.core.min.js?ver=8.24.2": "/scripts/6bb161a3-us.core.min.js",
+    "/wp-content/themes/Impreza/js/us.core.min.js?ver=8.24.2": "/scripts/6bb161a3-us.core.min.js",
+    "/wp-content/themes/Impreza/js/us.core.min.js": "/scripts/6bb161a3-us.core.min.js"
+  }
+}

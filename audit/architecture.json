@@ -1,0 +1,68 @@
+{
+  "schema": "site-reforge/architecture@1",
+  "generated": "2026-11-09T23:45:05.661Z",
+  "origin": "https://www.thehigherco420.com",
+  "pageTypes": {
+    "home": 1,
+    "about": 1,
+    "page": 10,
+    "article": 2,
+    "contact": 1,
+    "faq": 1,
+    "portfolio": 1,
+    "service": 12,
+    "commerce": 1
+  },
+  "urlDepthHistogram": {
+    "0": 1,
+    "1": 15,
+    "2": 14
+  },
+  "primaryNav": [],
+  "globalFooterCandidates": [
+    {
+      "onPages": 30,
+      "sample": "About Instagram FaceBook Hours: Sunday: 11am – 6pm Monday – Thursday: 10am – 9pm Friday & Saturday: 10am -10pm"
+    }
+  ],
+  "formsByAction": [
+    {
+      "action": "https://www.thehigherco420.com/connect/ [post]",
+      "pages": [
+        "https://www.thehigherco420.com/connect"
+      ],
+      "fields": [
+        "us_form_1_text_1",
+        "us_form_1_email_1",
+        "us_form_1_textarea_1"
+      ]
+    },
+    {
+      "action": "/contact/#wpcf7-f5-p556-o1 [post]",
+      "pages": [
+        "https://www.thehigherco420.com/contact"
+      ],
+      "fields": []
+    },
+    {
+      "action": "/subscribe/#wpcf7-f497-p498-o1 [post]",
+      "pages": [
+        "https://www.thehigherco420.com/subscribe"
+      ],
+      "fields": []
+    }
+  ],
+  "orphanPages": [
+    "https://www.thehigherco420.com/about",
+    "https://www.thehigherco420.com/author/admin",
+    "https://www.thehigherco420.com/category/uncategorized",
+    "https://www.thehigherco420.com/connect",
+    "https://www.thehigherco420.com/contact",
+    "https://www.thehigherco420.com/faqs",
+    "https://www.thehigherco420.com/gallery",
+    "https://www.thehigherco420.com/media",
+    "https://www.thehigherco420.com/sample-page-2",
+    "https://www.thehigherco420.com/services/beauty-treatments",
+    "https://www.thehigherco420.com/subscribe"
+  ]
+}

@@ -1,0 +1,1503 @@
+{
+  "schema": "site-reforge/parity-report@1",
+  "generated": "2026-11-10T01:39:09.787Z",
+  "sourcePages": 30,
+  "rebuiltFiles": 51,
+  "mappedPages": 30,
+  "missingPages": [],
+  "extraFiles": [
+    "404.html",
+    "about/the-crew/index.html",
+    "journal/first-visit-guide/index.html",
+    "journal/index.html",
+    "journal/indica-sativa-hybrid/index.html",
+    "journal/new-york-cannabis-laws/index.html",
+    "journal/what-are-trichomes/index.html",
+    "legal/accessibility/index.html",
+    "legal/compliance/index.html",
+    "legal/index.html",
+    "legal/privacy/index.html",
+    "legal/terms/index.html",
+    "lifestyle/index.html",
+    "shop/accessories/index.html",
+    "shop/concentrates/index.html",
+    "shop/edibles/index.html",
+    "shop/flower/index.html",
+    "shop/pre-rolls/index.html",
+    "shop/vaporizers/index.html",
+    "the-flower-bar/index.html",
+    "visit/index.html"
+  ],
+  "recallFloor": 0.95,
+  "contentRunFloor": 12,
+  "meanRecall": 0.3409,
+  "counts": {
+    "minor": 59,
+    "blocker": 50,
+    "major": 34
+  },
+  "verdict": "DRIFT",
+  "rows": [
+    {
+      "url": "https://www.thehigherco420.com/",
+      "file": "index.html",
+      "pageType": "home",
+      "status": "DIFFERS",
+      "recall": 0.9677,
+      "missingWords": 9,
+      "longestMissingRun": 3,
+      "sourceWords": 271,
+      "rebuiltWords": 1034,
+      "sourceH1": [
+        "The Higher Co."
+      ],
+      "rebuiltH1": [
+        "The Higher Co."
+      ],
+      "sourceLinks": 1,
+      "rebuiltLinks": 110,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"The Higher Company\" -> \"The Higher Company | Licensed Cannabis Dispensary in Downtown Syracuse, NY\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "18 image(s) without alt",
+          "detail": "index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/about",
+      "file": "about/index.html",
+      "pageType": "about",
+      "status": "DIFFERS",
+      "recall": 0.9725,
+      "missingWords": 11,
+      "longestMissingRun": 2,
+      "sourceWords": 398,
+      "rebuiltWords": 725,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Our Story"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 82,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"About The Higher Company – The Higher Company\" -> \"Our Story: About The Higher Company, Syracuse\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "7 image(s) without alt",
+          "detail": "about/index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+      "file": "alpha-classics-artists-named-polar-music-prize-winners/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0088,
+      "missingWords": 453,
+      "longestMissingRun": 376,
+      "sourceWords": 451,
+      "rebuiltWords": 11,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Alpha Classics Artists Named Polar Music Prize Winners – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 0.9% (floor 95%)",
+          "detail": "missing words: ensemble intercontemporain world s leading contemporary music and its director matthias pintscher now i m experimenting a lot writing quite different tracks little by finding"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "376 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"share all this do it in such a way that the listeners awaken new feelings for doing crazy things an eclectic approach to music in addition outhere music operates a fully autonomous digital distributio\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+      "file": "arcana-wins-the-choral-award-at-the-2022-icmas/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0088,
+      "missingWords": 449,
+      "longestMissingRun": 277,
+      "sourceWords": 445,
+      "rebuiltWords": 11,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Arcana Wins The Choral Award At The 2022 Icmas – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 0.9% (floor 95%)",
+          "detail": "missing words: giulio prandi s recording of rossini petite messe solennelle triumphs at international classical music awards but when the quarantine began i finally abandoned university had"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "277 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"think about my desires i began to study sound production mixing and all sorts of other things related to music now i m experimenting a lot writing quite different tracks and little by little i m findi\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/author/admin",
+      "file": "author/admin/index.html",
+      "pageType": "article",
+      "status": "DIFFERS",
+      "recall": 0.0513,
+      "missingWords": 37,
+      "longestMissingRun": 18,
+      "sourceWords": 38,
+      "rebuiltWords": 12,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"admin – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 5.1% (floor 95%)",
+          "detail": "missing words: need weed we deliver retail space coming soon outhere music receives four award nominations arcana wins choral at 2022 icmas alpha classics artists named polar"
+        },
+        {
+          "severity": "major",
+          "code": "content-block-missing",
+          "title": "18 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"2022 icmas alpha classics artists named polar music prize winners music for lovers our valentine s day promotion\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "6 source H2 section(s) absent",
+          "detail": "need weed? we deliver! | retail space coming soon | outhere music receives four award nominations | arcana wins the choral award at the 2022 icmas | alpha classics artists named polar music prize winners | music for lovers: our valentine’s day promotion"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/category/uncategorized",
+      "file": "category/uncategorized/index.html",
+      "pageType": "article",
+      "status": "DIFFERS",
+      "recall": 0.0513,
+      "missingWords": 37,
+      "longestMissingRun": 18,
+      "sourceWords": 38,
+      "rebuiltWords": 12,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Uncategorized – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 5.1% (floor 95%)",
+          "detail": "missing words: need weed we deliver retail space coming soon outhere music receives four award nominations arcana wins choral at 2022 icmas alpha classics artists named polar"
+        },
+        {
+          "severity": "major",
+          "code": "content-block-missing",
+          "title": "18 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"2022 icmas alpha classics artists named polar music prize winners music for lovers our valentine s day promotion\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "6 source H2 section(s) absent",
+          "detail": "need weed? we deliver! | retail space coming soon | outhere music receives four award nominations | arcana wins the choral award at the 2022 icmas | alpha classics artists named polar music prize winners | music for lovers: our valentine’s day promotion"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/connect",
+      "file": "connect/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 52,
+      "rebuiltWords": 72,
+      "sourceH1": [
+        "connect"
+      ],
+      "rebuiltH1": [
+        "Connect"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 77,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Connect – The Higher Company\" -> \"Connect with The Higher Company | Send Us a Message\""
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"connect\" -> \"Connect\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "7 image(s) without alt",
+          "detail": "connect/index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/contact",
+      "file": "contact/index.html",
+      "pageType": "contact",
+      "status": "DIFFERS",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 66,
+      "rebuiltWords": 180,
+      "sourceH1": [
+        "Contact"
+      ],
+      "rebuiltH1": [
+        "Contact"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 84,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Contact – The Higher Company\" -> \"Contact The Higher Company: 123 E Willow St, Syracuse, NY\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "7 image(s) without alt",
+          "detail": "contact/index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/delivery",
+      "file": "delivery/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0281,
+      "missingWords": 415,
+      "longestMissingRun": 141,
+      "sourceWords": 421,
+      "rebuiltWords": 23,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Delivery"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Need Weed? We Deliver! – The Higher Company\" -> \"Delivery – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 2.8% (floor 95%)",
+          "detail": "missing words: giulio prandi s recording of rossini petite messe solennelle triumphs at international classical music awards the core mission high quality cultural products rather than commercial"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "141 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"know that all too well we really got a lot of luck radio wise and that makes a big difference drummer vince nudo absolutely destroys the kit each song is met with military like precision and such over\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/faqs",
+      "file": "faqs/index.html",
+      "pageType": "faq",
+      "status": "DIFFERS",
+      "recall": 0.9803,
+      "missingWords": 12,
+      "longestMissingRun": 6,
+      "sourceWords": 600,
+      "rebuiltWords": 708,
+      "sourceH1": [
+        "Frequently Asked Questions"
+      ],
+      "rebuiltH1": [
+        "Frequently Asked Questions"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 92,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"FAQS – The Higher Company\" -> \"FAQ: ID, Payment, Parking and Pickup | The Higher Company, Syracuse\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "7 image(s) without alt",
+          "detail": "faqs/index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/gallery",
+      "file": "gallery/index.html",
+      "pageType": "portfolio",
+      "status": "OK",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 1,
+      "rebuiltWords": 22,
+      "sourceH1": [
+        "Gallery"
+      ],
+      "rebuiltH1": [
+        "Gallery"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": []
+    },
+    {
+      "url": "https://www.thehigherco420.com/media",
+      "file": "media/index.html",
+      "pageType": "page",
+      "status": "OK",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 0,
+      "rebuiltWords": 15,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Media"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": []
+    },
+    {
+      "url": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+      "file": "music-for-lovers-our-valentines-day-promotion/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0088,
+      "missingWords": 452,
+      "longestMissingRun": 284,
+      "sourceWords": 450,
+      "rebuiltWords": 11,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Music For Lovers: Our Valentine’s Day Promotion – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 0.9% (floor 95%)",
+          "detail": "missing words: enjoy poetic piano music romantic symphonies seductive lieder more in our valentine s day promotion first time i picked up the guitar was elementary school"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "284 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"play and study music regularly at the age of 15 16 until the spring of 2020 it was more of an unconscious hobby that i didn t really take seriously but when the quarantine began i finally abandoned th\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+      "file": "outhere-music-receives-four-award-nominations/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0071,
+      "missingWords": 558,
+      "longestMissingRun": 395,
+      "sourceWords": 555,
+      "rebuiltWords": 11,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Journal"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Outhere Music Receives Four Award Nominations – The Higher Company\" -> \"Journal – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 0.7% (floor 95%)",
+          "detail": "missing words: kate lindsey english concert patricia kopatchinskaja and dunedin consort receive bbc music magazine award nominations in addition outhere operates a fully autonomous digital distribution structure"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "395 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"happened which is reflected in my songs there was a musical group hitchhiking ups and downs i want to share all this do it in such a way that the listeners awaken new feelings for doing crazy things a\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/retail-space",
+      "file": "retail-space/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 0.0088,
+      "missingWords": 449,
+      "longestMissingRun": 277,
+      "sourceWords": 445,
+      "rebuiltWords": 12,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Retail Space"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Retail Space Coming Soon – The Higher Company\" -> \"Retail Space – The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 0.9% (floor 95%)",
+          "detail": "missing words: giulio prandi s recording of rossini petite messe solennelle triumphs at international classical music awards but when the quarantine began i finally abandoned university had"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "277 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"think about my desires i began to study sound production mixing and all sorts of other things related to music now i m experimenting a lot writing quite different tracks and little by little i m findi\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "1 source H2 section(s) absent",
+          "detail": "an eclectic approach to music"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/sample-page-2",
+      "file": "sample-page-2/index.html",
+      "pageType": "page",
+      "status": "OK",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 2,
+      "rebuiltWords": 14,
+      "sourceH1": [
+        "Coming Soon"
+      ],
+      "rebuiltH1": [
+        "Coming Soon"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": []
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/beauty-treatments",
+      "file": "services/beauty-treatments/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 318,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Beauty Treatments"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Beauty Treatments – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/beauty-treatments/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Beauty Treatments\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 250 beauty treatments bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that evolved"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "318 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/body-recovery",
+      "file": "services/body-recovery/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 318,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Body Recovery"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Body Recovery – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/body-recovery/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Body Recovery\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 220 body recovery bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that evolved"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "318 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "file": "services/cosmetics-and-care/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 317,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Cosmetics and Care"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Cosmetics and Care – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/cosmetics-and-care/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Cosmetics and Care\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 250 cosmetics and care bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "317 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "file": "services/eyelash-extensions/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 318,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Eyelash Extensions"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Eyelash Extensions – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/eyelash-extensions/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Eyelash Extensions\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 170 eyelash extensions bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that evolved"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "318 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "file": "services/flowers-in-your-eyes/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Flowers in Your Eyes"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Flowers in Your Eyes – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/flowers-in-your-eyes/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Flowers in Your Eyes\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance flowers in your eyes lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis \""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | new cats turbo | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/makeup",
+      "file": "services/makeup/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 319,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Makeup"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Makeup – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/makeup/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Makeup\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 300 makeup bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that evolved generation"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "319 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/moon-swing",
+      "file": "services/moon-swing/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Moon Swing"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Moon Swing – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/moon-swing/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Moon Swing\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance moon swing lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis tellus boo\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | flowers in your eyes | new cats turbo | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "file": "services/new-cats-turbo/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "New Cats Turbo"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"New Cats Turbo – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/new-cats-turbo/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"New Cats Turbo\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance new cats turbo lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis tellus\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/our-little-big",
+      "file": "services/our-little-big/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Ghost Hippies"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Ghost Hippies – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/our-little-big/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Ghost Hippies\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance ghost hippies lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis tellus \""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | moon swing | flowers in your eyes | new cats turbo | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/rocky-mountain",
+      "file": "services/rocky-mountain/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Rocky Mountain"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Rocky Mountain – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/rocky-mountain/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Rocky Mountain\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance rocky mountain lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis tellus\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/skin-care",
+      "file": "services/skin-care/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0115,
+      "missingWords": 343,
+      "longestMissingRun": 318,
+      "sourceWords": 343,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Skin Care"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Skin Care – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/skin-care/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Skin Care\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.2% (floor 95%)",
+          "detail": "missing words: from 120 skin care bring table win survival strategies to ensure proactive domination at end of the day going forward a new normal that evolved"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "318 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"evolved from generation x is on the runway heading towards a streamlined cloud solution user generated content in real time will have multiple touchpoints for offshoring capitalize on low hanging frui\""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | streetball with guys | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "file": "services/streetball-with-guys/index.html",
+      "pageType": "service",
+      "status": "DIFFERS",
+      "recall": 0.0107,
+      "missingWords": 277,
+      "longestMissingRun": 249,
+      "sourceWords": 278,
+      "rebuiltWords": 13,
+      "sourceH1": [
+        "Streetball with Guys"
+      ],
+      "rebuiltH1": [
+        "The Higher Company"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 1,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Streetball with Guys – The Higher Company\" -> \"The Higher Company – The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "description-changed",
+          "title": "Meta description changed",
+          "detail": "services/streetball-with-guys/index.html"
+        },
+        {
+          "severity": "minor",
+          "code": "h1-changed",
+          "title": "H1 changed",
+          "detail": "\"Streetball with Guys\" -> \"The Higher Company\""
+        },
+        {
+          "severity": "blocker",
+          "code": "content-loss",
+          "title": "Body content recall 1.1% (floor 95%)",
+          "detail": "missing words: 1 i am night colour me black 2 lay down 3 two kids 4 talk her 5 time will cut you 6 everything that are"
+        },
+        {
+          "severity": "blocker",
+          "code": "content-block-missing",
+          "title": "249 consecutive source words absent from the rebuild (limit 12)",
+          "detail": "\"shakes 8 performance streetball with guys lorem ipsum dolor sit amet consectetur adipiscing elit integer id posuere erat a gravida turpis in vestibulum cursus sapien vel ultricies mauris ut venenatis \""
+        },
+        {
+          "severity": "major",
+          "code": "section-lost",
+          "title": "11 source H2 section(s) absent",
+          "detail": "you may also like | rocky mountain | ghost hippies | moon swing | flowers in your eyes | new cats turbo | cosmetics and care | makeup"
+        },
+        {
+          "severity": "blocker",
+          "code": "contact-lost",
+          "title": "Phone number missing from rebuild",
+          "detail": "+312 123 4568"
+        },
+        {
+          "severity": "major",
+          "code": "contact-lost",
+          "title": "Email missing from rebuild",
+          "detail": "info@example.com"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/shop",
+      "file": "shop/index.html",
+      "pageType": "commerce",
+      "status": "DIFFERS",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 0,
+      "rebuiltWords": 129,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Shop Cannabis"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 90,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Shop – The Higher Company\" -> \"Shop Cannabis: Live Menu for Pickup | The Higher Company, Syracuse\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "15 image(s) without alt",
+          "detail": "shop/index.html"
+        }
+      ]
+    },
+    {
+      "url": "https://www.thehigherco420.com/subscribe",
+      "file": "subscribe/index.html",
+      "pageType": "page",
+      "status": "DIFFERS",
+      "recall": 1,
+      "missingWords": 0,
+      "longestMissingRun": 0,
+      "sourceWords": 7,
+      "rebuiltWords": 153,
+      "sourceH1": [],
+      "rebuiltH1": [
+        "Join the List"
+      ],
+      "sourceLinks": 0,
+      "rebuiltLinks": 75,
+      "findings": [
+        {
+          "severity": "minor",
+          "code": "title-changed",
+          "title": "Title changed",
+          "detail": "\"Subscribe – The Higher Company\" -> \"Join the List: News and Drops from The Higher Company\""
+        },
+        {
+          "severity": "minor",
+          "code": "alt-missing",
+          "title": "7 image(s) without alt",
+          "detail": "subscribe/index.html"
+        }
+      ]
+    }
+  ]
+}

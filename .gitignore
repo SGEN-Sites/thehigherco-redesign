@@ -1,0 +1,13 @@
+.DS_Store
+.tmp/
+*.local
+*.zip
+# audit/raw holds the untouched live-site capture — keep it, it is the evidence.
+audit/capture/
+audit/screens/
+audit/sweeps-raw/
+dist-preview/
+node_modules/
+private/
+publish/
+Thumbs.db

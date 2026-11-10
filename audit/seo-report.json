@@ -1,0 +1,1020 @@
+{
+  "schema": "site-reforge/seo-report@1",
+  "generated": "2026-11-10T01:34:32.069Z",
+  "origin": "https://www.thehigherco420.com",
+  "buildDir": "dist",
+  "siteUrl": "https://www.thehigherco420.com",
+  "mode": "standing (clone served elsewhere)",
+  "limits": {
+    "titleMax": 60,
+    "titleMin": 15,
+    "descMax": 160,
+    "descMin": 50
+  },
+  "pages": 30,
+  "emitted": {
+    "wrote": [
+      {
+        "file": "robots.txt",
+        "from": "source robots.txt, Sitemap: lines dropped",
+        "droppedRules": [
+          "Disallow: /wp-admin/",
+          "Allow: /wp-admin/admin-ajax.php"
+        ]
+      },
+      {
+        "file": "robots.txt",
+        "from": "rule dropped, path not served here: Disallow: /wp-admin/ · Allow: /wp-admin/admin-ajax.php"
+      },
+      {
+        "file": "sitemap.xml",
+        "from": "51 pages the build actually serves"
+      },
+      {
+        "file": "llms.txt",
+        "from": "51 pages"
+      }
+    ],
+    "skipped": [],
+    "pages": 51
+  },
+  "externalLinks": null,
+  "repaired": {
+    "pagesTouched": 51,
+    "fieldsWritten": 819
+  },
+  "counts": {
+    "source": {
+      "major": 52,
+      "minor": 70,
+      "blocker": 12
+    },
+    "migration": {
+      "minor": 1
+    },
+    "byCode": {
+      "description-missing": 18,
+      "schema-missing": 30,
+      "og-image-missing": 30,
+      "alt-missing": 30,
+      "h1-missing": 12,
+      "title-too-long": 4,
+      "canonical-missing": 2,
+      "description-too-short": 6,
+      "description-duplicate": 2,
+      "redirects-absent": 1
+    }
+  },
+  "findings": {
+    "source": [
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/",
+        "field": "alt",
+        "detail": "3 of 3 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/about",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/about",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/about",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/about",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/about",
+        "field": "alt",
+        "detail": "3 of 3 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "title-too-long",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "title",
+        "detail": "75 chars (limit 60)"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "title-too-long",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "title",
+        "detail": "67 chars (limit 60)"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "major",
+        "code": "canonical-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "canonical",
+        "detail": "no rel=canonical"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/author/admin",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "major",
+        "code": "canonical-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "canonical",
+        "detail": "no rel=canonical"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/category/uncategorized",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/connect",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/connect",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/connect",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/connect",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/contact",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/contact",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/contact",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/contact",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/delivery",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/delivery",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/delivery",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/delivery",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/delivery",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/faqs",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/faqs",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/faqs",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/faqs",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/gallery",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/gallery",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/gallery",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/gallery",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/media",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/media",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/media",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/media",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/media",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "title-too-long",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "title",
+        "detail": "68 chars (limit 60)"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "title-too-long",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "title",
+        "detail": "66 chars (limit 60)"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/retail-space",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/retail-space",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/retail-space",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/retail-space",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/retail-space",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/sample-page-2",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/sample-page-2",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/sample-page-2",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/sample-page-2",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/beauty-treatments",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/beauty-treatments",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/beauty-treatments",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/beauty-treatments",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/body-recovery",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/body-recovery",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/body-recovery",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/body-recovery",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/eyelash-extensions",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/eyelash-extensions",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/eyelash-extensions",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/eyelash-extensions",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/makeup",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/makeup",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/makeup",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/makeup",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/moon-swing",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/moon-swing",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/moon-swing",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/new-cats-turbo",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/new-cats-turbo",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/new-cats-turbo",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/our-little-big",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/our-little-big",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/our-little-big",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/rocky-mountain",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/rocky-mountain",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/rocky-mountain",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "description-too-short",
+        "page": "https://www.thehigherco420.com/services/skin-care",
+        "field": "description",
+        "detail": "9 chars"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/skin-care",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/skin-care",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/skin-care",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/services/streetball-with-guys",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/services/streetball-with-guys",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/services/streetball-with-guys",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/shop",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/shop",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/shop",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/shop",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/shop",
+        "field": "alt",
+        "detail": "2 of 2 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-missing",
+        "page": "https://www.thehigherco420.com/subscribe",
+        "field": "description",
+        "detail": "no meta description"
+      },
+      {
+        "severity": "blocker",
+        "code": "h1-missing",
+        "page": "https://www.thehigherco420.com/subscribe",
+        "field": "h1",
+        "detail": "no H1 on the page"
+      },
+      {
+        "severity": "minor",
+        "code": "schema-missing",
+        "page": "https://www.thehigherco420.com/subscribe",
+        "field": "jsonLd",
+        "detail": "no structured data"
+      },
+      {
+        "severity": "minor",
+        "code": "og-image-missing",
+        "page": "https://www.thehigherco420.com/subscribe",
+        "field": "og:image",
+        "detail": "no social preview image"
+      },
+      {
+        "severity": "major",
+        "code": "alt-missing",
+        "page": "https://www.thehigherco420.com/subscribe",
+        "field": "alt",
+        "detail": "3 of 3 images have no alt"
+      },
+      {
+        "severity": "major",
+        "code": "description-duplicate",
+        "page": "https://www.thehigherco420.com/services/beauty-treatments",
+        "field": "description",
+        "detail": "2 pages share a description and do NOT share one canonical — e.g. https://www.thehigherco420.com/services/beauty-treatments , https://www.thehigherco420.com/services/cosmetics-and-care"
+      },
+      {
+        "severity": "major",
+        "code": "description-duplicate",
+        "page": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "field": "description",
+        "detail": "6 pages share a description and do NOT share one canonical — e.g. https://www.thehigherco420.com/services/flowers-in-your-eyes , https://www.thehigherco420.com/services/moon-swing , https://www.thehigherco420.com/services/new-cats-turbo"
+      }
+    ],
+    "migration": [
+      {
+        "severity": "minor",
+        "code": "redirects-absent",
+        "page": "-",
+        "field": "redirects",
+        "detail": "no redirect map — not needed unless this build replaces the original at its own domain (--migrating)"
+      }
+    ]
+  },
+  "note": "APPLIED. This run wrote into the build: 819 field(s) on 51 page(s), each recorded in audit/seo-changes.json with its source. SOURCE findings are the live site's own defects and repairing them is an improvement, not a preservation. MIGRATION findings are damage the rebuild created and did not exist on the source."
+}

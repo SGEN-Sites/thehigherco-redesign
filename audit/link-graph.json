@@ -1,0 +1,814 @@
+{
+  "schema": "site-reforge/link-graph@1",
+  "generated": "2026-11-09T23:45:05.670Z",
+  "nodes": [
+    {
+      "url": "https://www.thehigherco420.com/",
+      "type": "home",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/about",
+      "type": "about",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/author/admin",
+      "type": "article",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/category/uncategorized",
+      "type": "article",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/connect",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/contact",
+      "type": "contact",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/delivery",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/faqs",
+      "type": "faq",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/gallery",
+      "type": "portfolio",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/media",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/retail-space",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/sample-page-2",
+      "type": "page",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/beauty-treatments",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/body-recovery",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/makeup",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/moon-swing",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/our-little-big",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/rocky-mountain",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/skin-care",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "type": "service",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/shop",
+      "type": "commerce",
+      "depth": 0
+    },
+    {
+      "url": "https://www.thehigherco420.com/subscribe",
+      "type": "page",
+      "depth": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "https://www.thehigherco420.com/",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/",
+      "to": "https://www.thehigherco420.com/shop"
+    },
+    {
+      "from": "https://www.thehigherco420.com/about",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/delivery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/retail-space"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners"
+    },
+    {
+      "from": "https://www.thehigherco420.com/author/admin",
+      "to": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/delivery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/retail-space"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners"
+    },
+    {
+      "from": "https://www.thehigherco420.com/category/uncategorized",
+      "to": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion"
+    },
+    {
+      "from": "https://www.thehigherco420.com/connect",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/contact",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/delivery",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/faqs",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/gallery",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/gallery",
+      "to": "https://www.thehigherco420.com/wp-content/plugins/us-core/assets/images/placeholder.svg"
+    },
+    {
+      "from": "https://www.thehigherco420.com/media",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/retail-space",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/sample-page-2",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/beauty-treatments",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/body-recovery",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/makeup",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/moon-swing",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/our-little-big",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/rocky-mountain",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/streetball-with-guys"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/skin-care",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/rocky-mountain"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/our-little-big"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/moon-swing"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/new-cats-turbo"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/cosmetics-and-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/makeup"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/eyelash-extensions"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/skin-care"
+    },
+    {
+      "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "to": "https://www.thehigherco420.com/services/body-recovery"
+    },
+    {
+      "from": "https://www.thehigherco420.com/shop",
+      "to": "https://www.thehigherco420.com/"
+    },
+    {
+      "from": "https://www.thehigherco420.com/subscribe",
+      "to": "https://www.thehigherco420.com/"
+    }
+  ]
+}

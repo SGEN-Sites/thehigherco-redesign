@@ -1,0 +1,1473 @@
+{
+  "schema": "site-reforge/site-inventory@1",
+  "target": "https://www.thehigherco420.com/",
+  "origin": "https://www.thehigherco420.com",
+  "generated": "2026-11-09T23:44:49.113Z",
+  "discovery": {
+    "robots": {
+      "status": 200,
+      "sitemaps": [
+        "https://www.thehigherco420.com/wp-sitemap.xml"
+      ],
+      "disallow": [
+        "/wp-admin/"
+      ],
+      "allow": [
+        "/wp-admin/admin-ajax.php"
+      ]
+    },
+    "sitemaps": [
+      "https://www.thehigherco420.com/wp-sitemap.xml",
+      "https://www.thehigherco420.com/sitemap.xml",
+      "https://www.thehigherco420.com/sitemap_index.xml",
+      "https://www.thehigherco420.com/sitemap-index.xml"
+    ],
+    "sitemapUrlCount": 30,
+    "sitemapsFetched": [
+      "https://www.thehigherco420.com/wp-sitemap.xml",
+      "https://www.thehigherco420.com/sitemap.xml",
+      "https://www.thehigherco420.com/sitemap_index.xml",
+      "https://www.thehigherco420.com/sitemap-index.xml",
+      "https://www.thehigherco420.com/wp-sitemap-posts-post-1.xml",
+      "https://www.thehigherco420.com/wp-sitemap-posts-page-1.xml",
+      "https://www.thehigherco420.com/wp-sitemap-posts-us_portfolio-1.xml",
+      "https://www.thehigherco420.com/wp-sitemap-taxonomies-category-1.xml",
+      "https://www.thehigherco420.com/wp-sitemap-users-1.xml"
+    ],
+    "robotsHonoured": true
+  },
+  "counts": {
+    "pages": 30,
+    "html": 30,
+    "nonHtml": 0,
+    "failed": 0,
+    "fetchedThisRun": 30,
+    "skippedResume": 0,
+    "blockedByRobots": 0,
+    "refusedHosts": [],
+    "aliasesCollapsed": 0
+  },
+  "truncated": false,
+  "queueRemaining": 0,
+  "maxPages": 200,
+  "pages": [
+    {
+      "url": "https://www.thehigherco420.com/",
+      "finalUrl": "https://www.thehigherco420.com/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 76485,
+      "sha256": "1e1498caba82bb987eee645c0fbbe6892893b14abe336c7821ef0527bbca2e55",
+      "savedAs": "index.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/11>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/shop"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 43014,
+      "fetchedAt": "2026-11-09T23:44:00.494Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/about",
+      "finalUrl": "https://www.thehigherco420.com/about/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 72006,
+      "sha256": "ba0a5bbfb502420cd445d35c193d1c996d6653b8391662f8d8449130113cbed8",
+      "savedAs": "about.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/about",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/about/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/532>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=532>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:13.780Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+      "finalUrl": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70686,
+      "sha256": "b0d59a656689d5b40ee800ff331984020059ffeea2c7883171b422b547d847c3",
+      "savedAs": "alpha-classics-artists-named-polar-music-prize-winners.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/75>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=75>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:03.156Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+      "finalUrl": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70605,
+      "sha256": "74c66083a7212e6f5b33d97a999cfc376fcdbbcb729cda3077505f9314955783",
+      "savedAs": "arcana-wins-the-choral-award-at-the-2022-icmas.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/77>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=77>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:03.157Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/author/admin",
+      "finalUrl": "https://www.thehigherco420.com/author/admin/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 71378,
+      "sha256": "42084fc4b63b85b6092ce89a02f40b676e6566814ea7dcb44e755042b649fa1a",
+      "savedAs": "author-admin.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/author/admin",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/author/admin/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/users/1>; rel=\"alternate\"; type=\"application/json\""
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/delivery",
+        "https://www.thehigherco420.com/retail-space",
+        "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42387,
+      "fetchedAt": "2026-11-09T23:44:49.113Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/category/uncategorized",
+      "finalUrl": "https://www.thehigherco420.com/category/uncategorized/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 71693,
+      "sha256": "5f612f6cad04df593c92671b04011d0d2bdeb954e1b16eeb56ae451674f69f8b",
+      "savedAs": "category-uncategorized.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/category/uncategorized",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/category/uncategorized/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/categories/1>; rel=\"alternate\"; type=\"application/json\""
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/delivery",
+        "https://www.thehigherco420.com/retail-space",
+        "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+        "https://www.thehigherco420.com/arcana-wins-the-choral-award-at-the-2022-icmas",
+        "https://www.thehigherco420.com/alpha-classics-artists-named-polar-music-prize-winners",
+        "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42387,
+      "fetchedAt": "2026-11-09T23:44:49.112Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/connect",
+      "finalUrl": "https://www.thehigherco420.com/connect/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70634,
+      "sha256": "f1848fa51cbf7791bb85f3d884c828caaf889540e1d0d7f9ae050c1c49381d57",
+      "savedAs": "connect.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/connect",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/connect/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/19>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=19>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42287,
+      "fetchedAt": "2026-11-09T23:44:11.051Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/contact",
+      "finalUrl": "https://www.thehigherco420.com/contact/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 72790,
+      "sha256": "5514116ca293a92e6e0173792809281edee2ce78602e6ec468d9910e9a10019a",
+      "savedAs": "contact.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/contact",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/contact/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/556>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=556>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 43117,
+      "fetchedAt": "2026-11-09T23:44:19.117Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/delivery",
+      "finalUrl": "https://www.thehigherco420.com/delivery/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70317,
+      "sha256": "e95487e7735259d8ee2f7588e30f2df2c09aad5e6f5577198322afac8d1fbe1b",
+      "savedAs": "delivery.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/delivery",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/delivery/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/83>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=83>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:08.395Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/faqs",
+      "finalUrl": "https://www.thehigherco420.com/faqs/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 77880,
+      "sha256": "fe033ffbabb43a957bdb858481b119ded2b9a08aa0adeeddf690ecd5dd7b02d1",
+      "savedAs": "faqs.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/faqs",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/faqs/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/15>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=15>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42149,
+      "fetchedAt": "2026-11-09T23:44:08.396Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/gallery",
+      "finalUrl": "https://www.thehigherco420.com/gallery/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 71399,
+      "sha256": "f2b7463f6ffed31e551f292fe60daed2327656c5b7f6c1033ae4f2eb87becdda",
+      "savedAs": "gallery.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/gallery",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/gallery/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/127>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=127>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/wp-content/plugins/us-core/assets/images/placeholder.svg"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42408,
+      "fetchedAt": "2026-11-09T23:44:11.051Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/media",
+      "finalUrl": "https://www.thehigherco420.com/media/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 67526,
+      "sha256": "ba5da6bd47a9d996aec389d997656d6789557b0c12932821e0ba29849c9ef792",
+      "savedAs": "media.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/media",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/media/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/542>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=542>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:16.451Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+      "finalUrl": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70604,
+      "sha256": "1a1ea68cad370348fb17b85c1635c41beaf9cf8a0147ff352147f4d43a8b36e9",
+      "savedAs": "music-for-lovers-our-valentines-day-promotion.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/music-for-lovers-our-valentines-day-promotion/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/73>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=73>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:00.497Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+      "finalUrl": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 71242,
+      "sha256": "400790c33153300612785e97436c58bc14a3b747334436154289c029f33f9316",
+      "savedAs": "outhere-music-receives-four-award-nominations.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/outhere-music-receives-four-award-nominations/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/79>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=79>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:05.795Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/retail-space",
+      "finalUrl": "https://www.thehigherco420.com/retail-space/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 70425,
+      "sha256": "20aedb0d43181945f3fb4b271b52d684ec14b7f02d34ab571e1076df29c2d74c",
+      "savedAs": "retail-space.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/retail-space",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/retail-space/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/posts/81>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=81>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:05.796Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/sample-page-2",
+      "finalUrl": "https://www.thehigherco420.com/sample-page-2/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 68088,
+      "sha256": "25f6c25e185c17c0c95615cf6693d4aed6a62bc87ae9fc72ae685dc973c902f5",
+      "savedAs": "sample-page-2.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/sample-page-2",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/sample-page-2/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/555>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=555>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42149,
+      "fetchedAt": "2026-11-09T23:44:16.452Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/beauty-treatments",
+      "finalUrl": "https://www.thehigherco420.com/services/beauty-treatments/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82251,
+      "sha256": "28fc98538ad21ada8edaf6fb7b2a2d031963d546d9bebbcf6ca132dc1024cabc",
+      "savedAs": "services-beauty-treatments.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/beauty-treatments",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/beauty-treatments/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=28>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:21.837Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/body-recovery",
+      "finalUrl": "https://www.thehigherco420.com/services/body-recovery/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82223,
+      "sha256": "b0303019cb508aa5a245bd3e1e96d4d83aafabf5799dade617f3a5872328ba32",
+      "savedAs": "services-body-recovery.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/body-recovery",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/body-recovery/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=42>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:21.837Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/cosmetics-and-care",
+      "finalUrl": "https://www.thehigherco420.com/services/cosmetics-and-care/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82238,
+      "sha256": "6149fd3b21c3622f55cd960a752633a662c295d8b08285cce602a9a03e6dfed8",
+      "savedAs": "services-cosmetics-and-care.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/cosmetics-and-care",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/cosmetics-and-care/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=50>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:27.124Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/eyelash-extensions",
+      "finalUrl": "https://www.thehigherco420.com/services/eyelash-extensions/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82238,
+      "sha256": "02401aac0e796ae1ac992e965d9c151b4d3339070dda80093499a6019475dafb",
+      "savedAs": "services-eyelash-extensions.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/eyelash-extensions",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/eyelash-extensions/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=46>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:24.463Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+      "finalUrl": "https://www.thehigherco420.com/services/flowers-in-your-eyes/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82011,
+      "sha256": "fb8a12a50271842cd6e89fdd151c31a5a351add1c8ac174829bf53e07cdbb57f",
+      "savedAs": "services-flowers-in-your-eyes.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/flowers-in-your-eyes/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=101>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:30.270Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/makeup",
+      "finalUrl": "https://www.thehigherco420.com/services/makeup/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82202,
+      "sha256": "8ed1c4cc4b47b4fc308b505e88812e9625a6fcb8cee64e4e5824fc659a74e8d9",
+      "savedAs": "services-makeup.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/makeup",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/makeup/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=48>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:27.120Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/moon-swing",
+      "finalUrl": "https://www.thehigherco420.com/services/moon-swing/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 81981,
+      "sha256": "2b6dfa66d168f2d68636bd1742c549feb49039c5278a28c125aa807611200a35",
+      "savedAs": "services-moon-swing.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/moon-swing",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/moon-swing/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=103>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:38.377Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/new-cats-turbo",
+      "finalUrl": "https://www.thehigherco420.com/services/new-cats-turbo/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 81992,
+      "sha256": "9aaea0bd99327a1dcea1376803efeb79f4679c21b35bf7755dd8731e5576088d",
+      "savedAs": "services-new-cats-turbo.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/new-cats-turbo",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/new-cats-turbo/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=94>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:30.269Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/our-little-big",
+      "finalUrl": "https://www.thehigherco420.com/services/our-little-big/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 81992,
+      "sha256": "a4ef60379198e15c497f8a99390956b9fc54635df374f734ae0269ef23ef7cd1",
+      "savedAs": "services-our-little-big.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/our-little-big",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/our-little-big/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=212>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:38.381Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/rocky-mountain",
+      "finalUrl": "https://www.thehigherco420.com/services/rocky-mountain/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 81993,
+      "sha256": "356a7c6774d3804e4cb6afdbd7564c01b19498dcdbc9a14325c82a775d5ef659",
+      "savedAs": "services-rocky-mountain.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/rocky-mountain",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/rocky-mountain/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=217>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:46.111Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/skin-care",
+      "finalUrl": "https://www.thehigherco420.com/services/skin-care/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82211,
+      "sha256": "9cfa18481ee63df84dfa43ebeb54691f9edd9eee54c3c755bcae4bfb2bd75571",
+      "savedAs": "services-skin-care.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/skin-care",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/skin-care/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=44>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/streetball-with-guys",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:24.461Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/services/streetball-with-guys",
+      "finalUrl": "https://www.thehigherco420.com/services/streetball-with-guys/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 82011,
+      "sha256": "0532f73a01b9f9679c6d793d77a066d01d72ae06680d9ddfd12af0bbfb1ba9db",
+      "savedAs": "services-streetball-with-guys.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/services/streetball-with-guys",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/services/streetball-with-guys/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/?p=214>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/",
+        "https://www.thehigherco420.com/services/rocky-mountain",
+        "https://www.thehigherco420.com/services/our-little-big",
+        "https://www.thehigherco420.com/services/moon-swing",
+        "https://www.thehigherco420.com/services/flowers-in-your-eyes",
+        "https://www.thehigherco420.com/services/new-cats-turbo",
+        "https://www.thehigherco420.com/services/cosmetics-and-care",
+        "https://www.thehigherco420.com/services/makeup",
+        "https://www.thehigherco420.com/services/eyelash-extensions",
+        "https://www.thehigherco420.com/services/skin-care",
+        "https://www.thehigherco420.com/services/body-recovery"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 44272,
+      "fetchedAt": "2026-11-09T23:44:46.110Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/shop",
+      "finalUrl": "https://www.thehigherco420.com/shop/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 68012,
+      "sha256": "98957a32077877291e8ab89969b2c61261cc61a1d89f1853646343c085775881",
+      "savedAs": "shop.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/shop",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/shop/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/619>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=619>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:19.118Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/subscribe",
+      "finalUrl": "https://www.thehigherco420.com/subscribe/",
+      "aliases": [],
+      "status": 200,
+      "ok": true,
+      "contentType": "text/html",
+      "bytes": 69795,
+      "sha256": "9015f31cb3afac0453f7bfca125feca9663af33183d8521e6fc79a6c8fc71ff8",
+      "savedAs": "subscribe.html",
+      "depth": 0,
+      "discoveredFrom": "seed",
+      "redirectChain": [
+        {
+          "from": "https://www.thehigherco420.com/subscribe",
+          "status": 301,
+          "to": "https://www.thehigherco420.com/subscribe/"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "x-powered-by": "",
+        "server": "Apache",
+        "cache-control": "",
+        "link": "<https://www.thehigherco420.com/wp-json/>; rel=\"https://api.w.org/\", <https://www.thehigherco420.com/wp-json/wp/v2/pages/498>; rel=\"alternate\"; type=\"application/json\", <https://www.thehigherco420.com/?p=498>; rel=shortlink"
+      },
+      "internalLinks": [
+        "https://www.thehigherco420.com/"
+      ],
+      "externalLinks": [
+        "https://www.instagram.com/thehighercothc?hl=en",
+        "https://www.facebook.com/thehigherco"
+      ],
+      "stylesheetHrefs": [
+        "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+        "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+        "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+        "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+        "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+      ],
+      "inlineStyleBytes": 42101,
+      "fetchedAt": "2026-11-09T23:44:13.779Z"
+    }
+  ]
+}

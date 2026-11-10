@@ -1,0 +1,571 @@
+{
+  "schema": "site-reforge/pixeldiff-report@1",
+  "generated": "2026-11-10T01:39:09.629Z",
+  "threshold": 0.02,
+  "tolerance": 8,
+  "pairCount": 28,
+  "verdict": "DRIFT",
+  "worst": [
+    {
+      "file": "about.390.png",
+      "ratio": 0.98528,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "about.768.png",
+      "ratio": 0.982876,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "subscribe.390.png",
+      "ratio": 0.982169,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "index.768.png",
+      "ratio": 0.972169,
+      "verdict": "SIZE-MISMATCH"
+    },
+    {
+      "file": "index.1440.png",
+      "ratio": 0.968479,
+      "verdict": "SIZE-MISMATCH"
+    }
+  ],
+  "unpairedBaseline": [],
+  "unpairedRebuild": [],
+  "pairs": [
+    {
+      "file": "about.1024.png",
+      "slug": "about",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3575853,
+      "compared": 3699712,
+      "ratio": 0.966522,
+      "baselineSize": [
+        1024,
+        3613
+      ],
+      "rebuildSize": [
+        1024,
+        6377
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/about.1024.png"
+    },
+    {
+      "file": "about.1440.png",
+      "slug": "about",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3366749,
+      "compared": 3552480,
+      "ratio": 0.947718,
+      "baselineSize": [
+        1440,
+        2467
+      ],
+      "rebuildSize": [
+        1440,
+        6761
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/about.1440.png"
+    },
+    {
+      "file": "about.390.png",
+      "slug": "about",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1517439,
+      "compared": 1540110,
+      "ratio": 0.98528,
+      "baselineSize": [
+        390,
+        3949
+      ],
+      "rebuildSize": [
+        780,
+        19310
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/about.390.png"
+    },
+    {
+      "file": "about.768.png",
+      "slug": "about",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 3142437,
+      "compared": 3197184,
+      "ratio": 0.982876,
+      "baselineSize": [
+        768,
+        4163
+      ],
+      "rebuildSize": [
+        768,
+        7398
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/about.768.png"
+    },
+    {
+      "file": "connect.1024.png",
+      "slug": "connect",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2218705,
+      "compared": 2510848,
+      "ratio": 0.883648,
+      "baselineSize": [
+        1024,
+        2467
+      ],
+      "rebuildSize": [
+        1024,
+        2452
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/connect.1024.png"
+    },
+    {
+      "file": "connect.1440.png",
+      "slug": "connect",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1692553,
+      "compared": 1984320,
+      "ratio": 0.852964,
+      "baselineSize": [
+        1440,
+        1378
+      ],
+      "rebuildSize": [
+        1440,
+        2350
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/connect.1440.png"
+    },
+    {
+      "file": "connect.390.png",
+      "slug": "connect",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 604415,
+      "compared": 674310,
+      "ratio": 0.896346,
+      "baselineSize": [
+        390,
+        1729
+      ],
+      "rebuildSize": [
+        780,
+        6412
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/connect.390.png"
+    },
+    {
+      "file": "connect.768.png",
+      "slug": "connect",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1525347,
+      "compared": 1693440,
+      "ratio": 0.900739,
+      "baselineSize": [
+        768,
+        2205
+      ],
+      "rebuildSize": [
+        768,
+        2356
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/connect.768.png"
+    },
+    {
+      "file": "contact.1024.png",
+      "slug": "contact",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2957251,
+      "compared": 3078144,
+      "ratio": 0.960725,
+      "baselineSize": [
+        1024,
+        3006
+      ],
+      "rebuildSize": [
+        1024,
+        3275
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.1024.png"
+    },
+    {
+      "file": "contact.1440.png",
+      "slug": "contact",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2089180,
+      "compared": 2430720,
+      "ratio": 0.85949,
+      "baselineSize": [
+        1440,
+        1688
+      ],
+      "rebuildSize": [
+        1440,
+        3245
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.1440.png"
+    },
+    {
+      "file": "contact.390.png",
+      "slug": "contact",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 578183,
+      "compared": 797940,
+      "ratio": 0.724595,
+      "baselineSize": [
+        390,
+        2046
+      ],
+      "rebuildSize": [
+        780,
+        9544
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.390.png"
+    },
+    {
+      "file": "contact.768.png",
+      "slug": "contact",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1894435,
+      "compared": 2109696,
+      "ratio": 0.897966,
+      "baselineSize": [
+        768,
+        2747
+      ],
+      "rebuildSize": [
+        768,
+        3555
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/contact.768.png"
+    },
+    {
+      "file": "faqs.1024.png",
+      "slug": "faqs",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2399880,
+      "compared": 2914304,
+      "ratio": 0.823483,
+      "baselineSize": [
+        1024,
+        2846
+      ],
+      "rebuildSize": [
+        1024,
+        3036
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.1024.png"
+    },
+    {
+      "file": "faqs.1440.png",
+      "slug": "faqs",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1976229,
+      "compared": 2983680,
+      "ratio": 0.662346,
+      "baselineSize": [
+        1440,
+        2072
+      ],
+      "rebuildSize": [
+        1440,
+        3032
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.1440.png"
+    },
+    {
+      "file": "faqs.390.png",
+      "slug": "faqs",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 792744,
+      "compared": 875160,
+      "ratio": 0.905828,
+      "baselineSize": [
+        390,
+        2244
+      ],
+      "rebuildSize": [
+        780,
+        9488
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.390.png"
+    },
+    {
+      "file": "faqs.768.png",
+      "slug": "faqs",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1626457,
+      "compared": 1984512,
+      "ratio": 0.819575,
+      "baselineSize": [
+        768,
+        2584
+      ],
+      "rebuildSize": [
+        768,
+        3950
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/faqs.768.png"
+    },
+    {
+      "file": "index.1024.png",
+      "slug": "index",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4861623,
+      "compared": 5045248,
+      "ratio": 0.963604,
+      "baselineSize": [
+        1024,
+        4927
+      ],
+      "rebuildSize": [
+        1024,
+        11848
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.1024.png"
+    },
+    {
+      "file": "index.1440.png",
+      "slug": "index",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 5835047,
+      "compared": 6024960,
+      "ratio": 0.968479,
+      "baselineSize": [
+        1440,
+        4184
+      ],
+      "rebuildSize": [
+        1440,
+        11755
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.1440.png"
+    },
+    {
+      "file": "index.390.png",
+      "slug": "index",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1994606,
+      "compared": 2110680,
+      "ratio": 0.945006,
+      "baselineSize": [
+        390,
+        5412
+      ],
+      "rebuildSize": [
+        780,
+        32106
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.390.png"
+    },
+    {
+      "file": "index.768.png",
+      "slug": "index",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 4004899,
+      "compared": 4119552,
+      "ratio": 0.972169,
+      "baselineSize": [
+        768,
+        5364
+      ],
+      "rebuildSize": [
+        768,
+        13855
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/index.768.png"
+    },
+    {
+      "file": "shop.1024.png",
+      "slug": "shop",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2048399,
+      "compared": 2535424,
+      "ratio": 0.807912,
+      "baselineSize": [
+        1024,
+        2476
+      ],
+      "rebuildSize": [
+        1024,
+        3328
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/shop.1024.png"
+    },
+    {
+      "file": "shop.1440.png",
+      "slug": "shop",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1810647,
+      "compared": 2750400,
+      "ratio": 0.658321,
+      "baselineSize": [
+        1440,
+        1910
+      ],
+      "rebuildSize": [
+        1440,
+        3064
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/shop.1440.png"
+    },
+    {
+      "file": "shop.390.png",
+      "slug": "shop",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 670221,
+      "compared": 728130,
+      "ratio": 0.920469,
+      "baselineSize": [
+        390,
+        1867
+      ],
+      "rebuildSize": [
+        780,
+        9464
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/shop.390.png"
+    },
+    {
+      "file": "shop.768.png",
+      "slug": "shop",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1386695,
+      "compared": 1901568,
+      "ratio": 0.729238,
+      "baselineSize": [
+        768,
+        2476
+      ],
+      "rebuildSize": [
+        768,
+        3514
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/shop.768.png"
+    },
+    {
+      "file": "subscribe.1024.png",
+      "slug": "subscribe",
+      "width": 1024,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 2050449,
+      "compared": 2197504,
+      "ratio": 0.933081,
+      "baselineSize": [
+        1024,
+        2146
+      ],
+      "rebuildSize": [
+        1024,
+        2678
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/subscribe.1024.png"
+    },
+    {
+      "file": "subscribe.1440.png",
+      "slug": "subscribe",
+      "width": 1440,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1567084,
+      "compared": 2085120,
+      "ratio": 0.751556,
+      "baselineSize": [
+        1440,
+        1448
+      ],
+      "rebuildSize": [
+        1440,
+        2493
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/subscribe.1440.png"
+    },
+    {
+      "file": "subscribe.390.png",
+      "slug": "subscribe",
+      "width": 390,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 584528,
+      "compared": 595140,
+      "ratio": 0.982169,
+      "baselineSize": [
+        390,
+        1526
+      ],
+      "rebuildSize": [
+        780,
+        8684
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/subscribe.390.png"
+    },
+    {
+      "file": "subscribe.768.png",
+      "slug": "subscribe",
+      "width": 768,
+      "verdict": "SIZE-MISMATCH",
+      "differing": 1210247,
+      "compared": 1468416,
+      "ratio": 0.824185,
+      "baselineSize": [
+        768,
+        1912
+      ],
+      "rebuildSize": [
+        768,
+        3370
+      ],
+      "sizeMismatch": true,
+      "diffImage": "audit/screens/diff/subscribe.768.png"
+    }
+  ]
+}

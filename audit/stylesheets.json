@@ -1,0 +1,38 @@
+{
+  "schema": "site-reforge/stylesheets@1",
+  "generated": "2026-11-09T23:46:16.039Z",
+  "discovered": [
+    "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+    "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+    "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12"
+  ],
+  "saved": [
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.7",
+      "savedAs": "wp-content-plugins-contact-form-7-includes-css-styles.css-ver-5.8.7.css",
+      "bytes": 2894
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPoppins%3A400%2C700&display=swap&ver=6.2.11",
+      "savedAs": "css-family-Open-Sans-3A400-2C700-7CPoppins-3A400-2C700-display-swap-ver-6.2.11.css",
+      "bytes": 948
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=3.0.1",
+      "savedAs": "wp-content-plugins-dispensary-age-verification-public-css-dispensary-age-verification-public.min.css-ver-3.0.1.css",
+      "bytes": 2198
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.12",
+      "savedAs": "wp-content-plugins-revslider-sr6-assets-css-rs6.css-ver-6.7.12.css",
+      "bytes": 58327
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/css/style.min.css?ver=8.24.2",
+      "savedAs": "wp-content-themes-Impreza-css-style.min.css-ver-8.24.2.css",
+      "bytes": 440252
+    }
+  ]
+}

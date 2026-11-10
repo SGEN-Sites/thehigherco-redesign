@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-09T23:48:57.874Z",
+  "gapMs": 4000,
+  "visits": [
+    {
+      "url": "https://www.thehigherco420.com/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/",
+      "at": "2026-11-09T23:49:05.491Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/about/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/about/",
+      "at": "2026-11-09T23:49:25.132Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/shop/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/shop/",
+      "at": "2026-11-09T23:49:44.800Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/faqs/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/faqs/",
+      "at": "2026-11-09T23:50:00.261Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/contact/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/contact/",
+      "at": "2026-11-09T23:50:15.765Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/connect/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/connect/",
+      "at": "2026-11-09T23:50:31.463Z"
+    },
+    {
+      "url": "https://www.thehigherco420.com/subscribe/",
+      "status": 200,
+      "finalUrl": "https://www.thehigherco420.com/subscribe/",
+      "at": "2026-11-09T23:50:47.574Z"
+    }
+  ]
+}

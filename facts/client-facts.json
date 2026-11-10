@@ -1,0 +1,199 @@
+{
+  "schema": "site-reforge/client-facts@1",
+  "note": "Declared facts. ONLY facts recorded here or present in audit/content-inventory.json may appear as claims on the rebuild. Everything else is a fabrication and sr-fabrication.mjs fails the gate. Each entry names its source; 'operator brief 2026-11-10' = the agency operator's written brief for this redesign; public records were fetched 2026-11-10 (private/research-ny-law.md).",
+  "legalName": "The Higher Company LLC",
+  "brand": "The Higher Company (The Higher Co.)",
+  "brand_src": "OCM license record OCM-CAURD-24-000155: entity 'The Higher Company LLC', DBA 'The Higher Co.' (data.ny.gov jskf-tt3q); live site uses both names",
+  "phone": [
+    "315-870-7140",
+    "(315) 870-7140",
+    "+13158707140"
+  ],
+  "phone_src": "live site /contact/",
+  "email": [
+    "info@thehighercompanyllc.com"
+  ],
+  "email_src": "live site /contact/ and /connect/",
+  "addresses": [
+    {
+      "street": "123 E Willow St",
+      "locality": "Syracuse",
+      "region": "NY",
+      "postalCode": "13202",
+      "country": "US",
+      "display": "123 E Willow St, Syracuse, NY 13202"
+    }
+  ],
+  "addresses_src": "live site /contact/ and /faqs/; OCM license record",
+  "hours": "Sunday: 11am – 6pm; Monday – Thursday: 10am – 9pm; Friday & Saturday: 10am – 10pm",
+  "hours_src": "live site footer and /contact/ (shown site-wide). CONFLICTS: live /faqs/ and the OCM record say Sunday 10am – 8pm; the menu's online ordering hours say Sunday 12pm – 6pm. [CONFIRM WITH CLIENT]",
+  "licences": [
+    "OCM-CAURD-24-000155",
+    "Adult-Use Conditional Retail Dispensary License",
+    "Cannabis Adult-Use Retail Dispensary (CAURD) program",
+    "licensed New York State dispensary",
+    "licensed adult-use cannabis dispensary",
+    "Licensed by the New York State Office of Cannabis Management"
+  ],
+  "licences_src": "OCM 'Current OCM Licenses' dataset row for OCM-CAURD-24-000155 (status Active, issued 2024-06-10, opened to the public 2024-06-19); OCM dispensary verification list shows 'The Higher Co. | 123 E Willow St | Syracuse | 13202'",
+  "certifications": [],
+  "awards": [],
+  "statistics": [
+    "90 strains",
+    "one of the first 137 dispensaries to open in the state",
+    "$50 minimum",
+    "3 ounces of flower",
+    "24 grams of cannabis concentrate",
+    "3 ounces of cannabis",
+    "24 grams of concentrated cannabis",
+    "5 pounds",
+    "three mature and three immature plants",
+    "six mature and six immature plants",
+    "1-800-222-1222",
+    "1-877-8-HOPENY",
+    "1-877-846-7369",
+    "467369",
+    "2:00 a.m. to 8:00 a.m."
+  ],
+  "statistics_src": "90 strains, first 137, $50 minimum, 3 oz / 24 g: live site home and /faqs/. Possession, home-grow, home-storage and sale-hour figures: NY Penal Law 222.05 / 222.15 and 9 NYCRR 119.2 as fetched 2026-11-10. Poison Center and HOPEline numbers: OCM Part 129 guidance and OCM consumer flyer.",
+  "testimonials": [
+    {
+      "quote": "Our journey began with a passion for the plant and a commitment to providing safe, accessible, and high-quality cannabis products to our community.",
+      "attribution": "Joe Sweet",
+      "src": "live site /about/ (second sentence of the quote carried; the first sentence was trimmed as a wellness claim under 9 NYCRR 129.2(b)(9)); OCM lists 'Joseph Sweet' as the licence's primary contact. [CONFIRM WITH CLIENT] role and title"
+    }
+  ],
+  "clients": [],
+  "guarantees": [],
+  "pricing": [],
+  "services": [
+    "The Flower Bar",
+    "pre-order online for in-store pickup",
+    "Pick Up In-Store",
+    "smell and view the trichomes with a magnifying glass",
+    "Flower",
+    "Pre-Rolls",
+    "Vaporizers",
+    "Concentrates",
+    "Edibles",
+    "Accessories",
+    "Topicals",
+    "cash",
+    "debit cards",
+    "Apple Pay",
+    "Dutchie Pay (ACH)",
+    "Pay by Bank",
+    "ATM in the store",
+    "reserved parking across the street, free of charge"
+  ],
+  "services_src": "live site home, /about/, /faqs/; menu categories and payment list read from the store's own online menu (embedded on /shop/) on 2026-11-10. Topicals appear on the live /about/ list but the online menu shows no Topicals category on 2026-11-10 [CONFIRM WITH CLIENT].",
+  "founders": {
+    "names": [
+      "Mike Golden",
+      "co-founder Cage"
+    ],
+    "src": "operator brief 2026-11-10; news (CNY Central 2024-06-28, 2024-02-08; NCC News 2021-10-04, 2022-03-29; Daily Orange 2022-04-20) names Mike Golden and Cage as co-founders. Cage's first name differs between sources, so it is never printed (operator instruction).",
+    "story": [
+      "Syracuse locals who came up together in Syracuse neighborhoods",
+      "came out of their smoke-accessories and clothing shop The Higher Calling",
+      "The Higher Calling: a mission-based clothing brand about breaking the stigma around cannabis",
+      "ran the Stop the Stigma rally at Syracuse's Inner Harbor",
+      "received one of New York's CAURD licenses",
+      "opened at 123 E Willow St in June 2024"
+    ],
+    "story_src": "operator brief; CNY Central 2024-06-28 ('came up together in the Syracuse neighborhoods as teens'; grand opening June 29, 2024); CNY Central 2024-02-08 ('mission based clothing-brand, breaking the stigma around cannabis'); NewsHouse 2023-01-25 ('sells cannabis paraphernalia and clothing'); NCC News 2021-10-04 ('Stop the Stigma Rally at Syracuse's Inner Harbor'); OCM record (opened to the public 2024-06-19)"
+  },
+  "pillars": [
+    "Legacy to Legal",
+    "The Flower Bar",
+    "Downtown Syracuse Local",
+    "Good People",
+    "New York Pride"
+  ],
+  "pillars_src": "operator brief 2026-11-10",
+  "merch": [
+    "THC monogram snapback",
+    "Lady Liberty graphic"
+  ],
+  "merch_src": "operator brief 2026-11-10 (the graphic shows Liberty smoking a joint; the site names it but never shows consumption, per 9 NYCRR 129.2(b)(5) and (12)); live /faqs/ mentions 'accessories, apparel, and educational materials'. Apparel is sold only at the licensed premises (9 NYCRR 129.2(j)).",
+  "socials": [
+    {
+      "network": "Facebook",
+      "url": "https://www.facebook.com/thehigherco",
+      "src": "live site footer"
+    },
+    {
+      "network": "YouTube",
+      "url": "https://www.youtube.com/@TheHigherCo",
+      "src": "YouTube oEmbed author_url of the live site's own hero video J6GR_35qW58 ('The Higher Co, Syracuse's 2nd legal cannabis dispensary in downtown!')"
+    },
+    {
+      "network": "Instagram",
+      "url": "#instagram-handle-pending",
+      "src": "operator brief: the old handle (instagram.com/thehighercothc) is dead, use a placeholder [CONFIRM WITH CLIENT]"
+    }
+  ],
+  "menu": {
+    "provider": "Dutchie embedded menu",
+    "embedId": "64a2e0444b41a8000934d3bd",
+    "categories": {
+      "flower": "flower",
+      "pre-rolls": "pre-rolls",
+      "vaporizers": "vaporizers",
+      "concentrates": "concentrates",
+      "edibles": "edibles",
+      "accessories": "accessories"
+    },
+    "allProductsRoute": "dtche[path]=products",
+    "src": "live /shop/ embed; categories and deep links verified in a real browser 2026-11-10 (category pages open straight to products; add-to-cart works). The menu's store profile is named for another business in the provider's back office [CONFIRM WITH CLIENT]."
+  },
+  "delivery": "No. 'We currently do not offer delivery but we are working on it.' (live /faqs/). The OCM record carries a delivery flag [CONFIRM WITH CLIENT].",
+  "rewards": "None found. Live site: 'Stay Connected / Unlock Exclusive Offers & More / Join' (an email list).",
+  "video": {
+    "youtubeId": "J6GR_35qW58",
+    "title": "The Higher Co, Syracuse's 2nd legal cannabis dispensary in downtown!",
+    "src": "live home hero background video, from the business's own YouTube channel"
+  },
+  "addressesAlt": [
+    "123 E. Willow Street, Syracuse, NY 13202",
+    "123 E Willow St., Syracuse NY, 13202"
+  ],
+  "businessType": "Store",
+  "hoursSpec": [
+    {
+      "days": [
+        "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "18:00"
+    },
+    {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "10:00",
+      "closes": "21:00"
+    },
+    {
+      "days": [
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "22:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/thehigherco",
+    "https://www.youtube.com/@TheHigherCo"
+  ],
+  "links": [
+    "https://www.google.com/maps/dir/?api=1&destination=123+E+Willow+St%2C+Syracuse%2C+NY+13202",
+    "https://maps.apple.com/?daddr=123+E+Willow+St,+Syracuse,+NY+13202",
+    "https://www.google.com/maps?q=123+E+Willow+St,+Syracuse,+NY+13202&output=embed"
+  ],
+  "links_src": "Directions and map links built from the declared address (no review or rating content)."
+}

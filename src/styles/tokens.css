@@ -1,0 +1,241 @@
+/* tokens.css — derived by sr-tokens.mjs from computed (browser capture).
+   Every value below traces to audit/design-baseline.json. Change values HERE,
+   never at a call site: one source, or the system is not a system. */
+:root {
+  /* --- colour ------------------------------------------------------ */
+  --c-1: #ffffff;
+  --c-2: #f6f6f6;
+  --c-3: #0000004d;
+  --c-4: #333333;
+  --c-5: #c9b06d;
+  --c-6: #999999;
+  --c-7: #000000;
+  --c-8: #b79b65;
+
+  /* --- type -------------------------------------------------------- */
+  --font-body: Poppins, sans-serif;
+  --font-display: fontawesome;
+  --fs-1: 10px;
+  --fs-2: 12px;
+  --fs-3: 14px;
+  --fs-4: 14.4px;
+  --fs-5: 16px;
+  --fs-6: 16.2px;
+  --fs-7: 18px;
+  --fs-8: 19.2px;
+  --fs-9: 20.8px;
+  --fs-10: 21.6px;
+  --fs-11: 22px;
+  --fs-12: 23.4px;
+  --fs-13: 24px;
+  --fs-14: 27px;
+  --fs-15: 27.2px;
+  --fs-16: 30.6px;
+  --fs-17: 32px;
+  --fs-18: 32.4px;
+  --fs-19: 36px;
+  --fs-20: 36.8px;
+  --fs-21: 41.4px;
+  --fs-22: 54px;
+  --fs-23: 64px;
+  --fs-24: 72px;
+
+  /* --- space ------------------------------------------------------- */
+  --sp-1: 1px;
+  --sp-2: 3.2px;
+  --sp-3: 3.6px;
+  --sp-4: 4px;
+  --sp-5: 4.5px;
+  --sp-6: 5px;
+  --sp-7: 9.6px;
+  --sp-8: 10.8px;
+  --sp-9: 11.2px;
+  --sp-10: 11.6875px;
+  --sp-11: 12px;
+  --sp-12: 12.6px;
+  --sp-13: 12.8px;
+  --sp-14: 13.5px;
+  --sp-15: 14.4px;
+  --sp-16: 16px;
+  --sp-17: 18px;
+  --sp-18: 21.4px;
+  --sp-19: 21.6px;
+  --sp-20: 23.0312px;
+  --sp-21: 24px;
+  --sp-22: 27px;
+  --sp-23: 27.2px;
+  --sp-24: 30.6px;
+  --sp-25: 30.7188px;
+  --sp-26: 32px;
+  --sp-27: 34.1875px;
+  --sp-28: 36px;
+  --sp-29: 40px;
+  --sp-30: 43.1875px;
+  --sp-31: 45px;
+  --sp-32: 46.8px;
+  --sp-33: 48px;
+  --sp-34: 50px;
+  --sp-35: 54px;
+  --sp-36: 61.2969px;
+  --sp-37: 67.7969px;
+  --sp-38: 72px;
+  --sp-39: 75.96px;
+  --sp-40: 80px;
+  --sp-41: 92.16px;
+  --sp-42: 93.3906px;
+  --sp-43: 100px;
+  --sp-44: 144px;
+
+  /* --- shape ------------------------------------------------------- */
+  --radius-1: 2px;
+  --radius-2: 5.4px;
+  --radius-3: 34px;
+  --radius-4: 72px;
+  --shadow-1: rgb(128, 128, 128) 0px 0px 5px 0px;
+  --shadow-2: rgb(235, 235, 235) 0px 16px 20px 0px;
+  --shadow-3: rgb(181, 160, 114) 0px 2.7px 5.4px 0px;
+
+  /* --- layout ------------------------------------------------------ */
+  --container: 100%;
+  --bp-1: 100px;
+  --bp-2: 480px;
+  --bp-3: 500px;
+  --bp-4: 600px;
+  --bp-5: 601px;
+  --bp-6: 767px;
+  --bp-7: 768px;
+  --bp-8: 783px;
+  --bp-9: 800px;
+  --bp-10: 900px;
+  --bp-11: 1023px;
+  --bp-12: 1024px;
+  --bp-13: 1025px;
+  --bp-14: 1199px;
+  --bp-15: 1370px;
+  --bp-16: 1380px;
+  --bp-17: 1381px;
+}
+
+/* ===================================================================================================
+   REDESIGN LAYER — "Gallery meets block party" (The Higher Company, 2026-11-10).
+   The measured baseline above stays as captured. Values the redesign carries over are referenced from it
+   (brass = --c-8, body face = --font-body); new values come from the operator's brief. Every colour the site
+   uses is declared here and nowhere else. Contrast ratios measured with the WCAG 2.x formula.
+   =================================================================================================== */
+:root {
+  /* grounds */
+  --ink: #0E0E0E;            /* base dark (brief) */
+  --ink-2: #161514;          /* raised dark band */
+  --ink-3: #1F1D1B;          /* card on dark */
+  --ink-4: #2B2723;          /* hover / rule on dark */
+  --gallery: #F6F4EF;        /* base light (brief) — ink on gallery 17.56:1 */
+  --gallery-2: #EDE9E0;      /* second light ground */
+  --gallery-3: #E2DCCF;      /* light rule / wall shadow */
+  --paper: #FFFFFF;
+
+  /* brand accents */
+  --brass: var(--c-8);       /* #b79b65, measured on the live site — on ink 7.25:1; rules/large type on light only */
+  --brass-ink: #6E5732;      /* brass for text on gallery — 6.22:1 */
+  --oak: #D9B98A;            /* light oak (brief) — on ink 10.35:1 */
+  --oak-2: #C6A272;          /* oak shade for shelves */
+  --oak-3: #A8865A;          /* oak edge / shadow */
+  --mint: #3FBFA0;           /* Liberty mint, the accent pop (brief) — on ink 8.43:1; ink on mint 8.43:1 */
+  --mint-ink: #17695A;       /* mint for text on gallery — 5.96:1 */
+  --mint-soft: #9FE0CF;      /* mint tint for highlights on dark */
+  --brick: #9E3B2A;          /* brick red, used rarely (brief) — gallery on brick 6.14:1 */
+  --brick-2: #7A2C1F;
+
+  /* text */
+  --on-dark: #F6F4EF;        /* 17.56:1 on ink */
+  --on-dark-2: #B5B4B0;      /* 9.30:1 on ink */
+  --on-dark-3: #9E9D9A;      /* 7.12:1 on ink */
+  --on-light: #0E0E0E;
+  --on-light-2: #4A4743;     /* 8.40:1 on gallery */
+  --on-light-3: #5C5853;     /* 6.42:1 on gallery */
+
+  /* regulatory: 9 NYCRR 129.2(e) + OCM Part 129 guidance — warnings sit in a bright yellow (#FFFF00) box */
+  --ocm-yellow: #FFFF00;     /* ink on yellow 17.98:1 */
+
+  /* translucency (glass, scrims, light) */
+  --glass-dark: rgba(14, 14, 14, .62);
+  --glass-dark-2: rgba(22, 21, 20, .82);
+  --glass-light: rgba(246, 244, 239, .72);
+  --glass-edge: rgba(246, 244, 239, .16);
+  --glass-edge-2: rgba(246, 244, 239, .30);
+  --line-dark: rgba(246, 244, 239, .12);
+  --line-light: rgba(14, 14, 14, .12);
+  --scrim: rgba(14, 14, 14, .78);
+  --scrim-soft: rgba(14, 14, 14, .45);
+  --clear: rgba(14, 14, 14, 0);
+  --clear-gallery: rgba(246, 244, 239, 0);
+  --light-mint: rgba(63, 191, 160, .30);
+  --light-mint-2: rgba(63, 191, 160, .14);
+  --light-brass: rgba(183, 155, 101, .34);
+  --light-brass-2: rgba(183, 155, 101, .14);
+  --light-warm: rgba(255, 214, 160, .30);
+  --light-warm-2: rgba(255, 214, 160, .10);
+  --shade: rgba(0, 0, 0, .55);
+  --shade-2: rgba(0, 0, 0, .28);
+  --shine: rgba(255, 255, 255, .55);
+  --shine-2: rgba(255, 255, 255, .16);
+
+  /* type */
+  --f-display: "Archivo", "Archivo Fallback", "Helvetica Neue", Arial, sans-serif;
+  --f-serif: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
+  --f-body: "Poppins", var(--font-body);
+  --f-legal: Arial, Helvetica, sans-serif;   /* 129.2(e): warnings in Times New Roman, Calibri, Arial or Helvetica */
+  --wdth-poster: 125%;
+  --wdth-wide: 112%;
+  --wdth-tall: 68%;
+  --fs-mega: clamp(4.25rem, 15vw, 15rem);
+  --fs-display: clamp(3rem, 8vw, 7.4rem);
+  --fs-h1: clamp(2.6rem, 6vw, 5.4rem);
+  --fs-h2: clamp(2rem, 4.2vw, 3.7rem);
+  --fs-h3: clamp(1.3rem, 1.9vw, 1.65rem);
+  --fs-lead: clamp(1.1rem, 1.35vw, 1.3rem);
+  --fs-body: 1.0625rem;
+  --fs-small: .9375rem;
+  --fs-kicker: .8125rem;     /* 13px: kickers never below 13px on a phone (learnings §2.1) */
+  --fs-legal: .875rem;
+  --lh-display: .94;
+  --lh-head: 1.04;
+  --lh-body: 1.68;
+
+  /* space + layout */
+  --container: 1320px;
+  --container-narrow: 760px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --band-y: clamp(80px, 11vw, 168px);
+  --band-y-tight: clamp(56px, 7vw, 104px);
+  --header-h: 76px;
+  --utility-h: 34px;
+  --bottom-stack: 0px;
+
+  /* shape */
+  --r-frame: 4px;            /* gallery frames and cards */
+  --r-soft: 14px;
+  --r-pill: 999px;
+  --shadow-lift: 0 30px 60px -28px var(--shade), 0 12px 24px -16px var(--shade-2);
+  --shadow-float: 0 40px 80px -30px var(--shade), 0 0 0 1px var(--line-dark);
+  --shadow-light: 0 24px 48px -30px rgba(14, 14, 14, .35), 0 2px 6px -2px rgba(14, 14, 14, .12);
+
+  /* motion */
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --ease-io: cubic-bezier(.65, 0, .35, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: .25s;
+  --t-med: .5s;
+  --t-slow: 1s;
+  --t-crawl: 2.4s;
+
+  /* layers */
+  --z-base: 1;
+  --z-float: 5;
+  --z-header: 50;
+  --z-bar: 60;
+  --z-drawer: 70;
+  --z-gate: 100;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 0s; --t-med: 0s; --t-slow: 0s; --t-crawl: 0s; }
+}

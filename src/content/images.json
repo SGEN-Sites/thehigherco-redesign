@@ -1,0 +1,774 @@
+{
+ "note": "Every asset in this file was generated with AI (fal). None of them shows the real store, staff, customers or products. Real photos should replace the place images before launch.",
+ "images": {
+  "storefront": {
+   "w": 3136,
+   "h": 1344,
+   "ratio": 2.3333,
+   "alt": "AI illustration: a red-brick building at night, its tall arched shop windows glowing warm over a wet, empty street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 549,
+     "file": "assets/img/gen/storefront-1280.webp",
+     "bytes": 44880
+    },
+    {
+     "w": 1920,
+     "h": 823,
+     "file": "assets/img/gen/storefront-1920.webp",
+     "bytes": 80988
+    },
+    {
+     "w": 2560,
+     "h": 1097,
+     "file": "assets/img/gen/storefront-2560.webp",
+     "bytes": 119710
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "storefront-b-clean",
+     "endpoint": "fal-ai/bria/eraser",
+     "request_id": "01a1c2c6-eeff-7c12-9688-410fa8f227d2",
+     "prompt": null
+    },
+    {
+     "job": "storefront-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c3-dc20-7400-a207-eb13713972bf",
+     "prompt": "Cinematic night street photograph, eye level from across the street: an old red-brick building with arched upper windows and a ground-floor shop framed by black cast-iron columns, its big glass windows glowing warm white and amber from a clean gallery-like interior with light oak counters and lit glass cases, light rain just ended, puddles reflecting the glow, a single vintage streetlamp with soft haze, calm and premium, the building on the right and dark empty space on the left, shot on a full-frame camera, natural cinematic color, fine film grain, no text, no lettering, no signage, no logos, no neon, no people, no cars"
+    }
+   ]
+  },
+  "interior": {
+   "w": 2752,
+   "h": 1536,
+   "ratio": 1.7917,
+   "alt": "AI illustration: a bright gallery-like shop with white walls, exposed red brick, light oak counters and lit glass display cases",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 714,
+     "file": "assets/img/gen/interior-1280.webp",
+     "bytes": 61236
+    },
+    {
+     "w": 1920,
+     "h": 1072,
+     "file": "assets/img/gen/interior-1920.webp",
+     "bytes": 106022
+    },
+    {
+     "w": 2560,
+     "h": 1429,
+     "file": "assets/img/gen/interior-2560.webp",
+     "bytes": 148720
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "interior-a-clean",
+     "endpoint": "fal-ai/bria/eraser",
+     "request_id": "01a1c2c6-ef03-77e1-8485-009ef3a9e764",
+     "prompt": null
+    },
+    {
+     "job": "interior-a",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c3-e4aa-7882-b19c-6e81400a7b63",
+     "prompt": "Architectural interior photograph of a bright, clean, gallery-like boutique shop: white walls and one exposed red-brick wall, long light oak counters, illuminated glass display cases holding rows of small clear glass jars with no labels, slender black cast-iron columns, warm track lighting, polished concrete floor, calm premium atmosphere, deep one-point perspective, generous empty white wall space on the left, shot on a full-frame camera, natural color, fine film grain, no text, no lettering, no signage, no logos, no posters, no people"
+    }
+   ]
+  },
+  "macro-a": {
+   "w": 2752,
+   "h": 1536,
+   "ratio": 1.7917,
+   "alt": "AI illustration: extreme close-up of a cannabis flower covered in glistening trichomes, with orange pistils, on black",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 960,
+     "h": 536,
+     "file": "assets/img/gen/macro-a-960.webp",
+     "bytes": 61558
+    },
+    {
+     "w": 1600,
+     "h": 893,
+     "file": "assets/img/gen/macro-a-1600.webp",
+     "bytes": 131472
+    },
+    {
+     "w": 2400,
+     "h": 1340,
+     "file": "assets/img/gen/macro-a-2400.webp",
+     "bytes": 226664
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "macro-a",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-08c1-7423-8281-4a0a17b898d3",
+     "prompt": "Extreme macro photograph of a cannabis flower: a dense forest of glistening mushroom-shaped glandular trichomes with milky and clear resin heads over pale green bracts and thin orange pistils, razor-thin focus plane, creamy bokeh, soft cinematic key light from the upper left and a cool mint-green rim light, deep black background, scientific yet beautiful, no text"
+    }
+   ]
+  },
+  "macro-b": {
+   "w": 2496,
+   "h": 1664,
+   "ratio": 1.5,
+   "alt": "AI illustration: a cured cannabis bud frosted with trichomes, some turning amber, lit in warm gold against black",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 960,
+     "h": 640,
+     "file": "assets/img/gen/macro-b-960.webp",
+     "bytes": 75044
+    },
+    {
+     "w": 1600,
+     "h": 1067,
+     "file": "assets/img/gen/macro-b-1600.webp",
+     "bytes": 156464
+    },
+    {
+     "w": 2400,
+     "h": 1600,
+     "file": "assets/img/gen/macro-b-2400.webp",
+     "bytes": 251166
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "macro-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-18f1-7a81-a251-98b6214d3642",
+     "prompt": "Macro photograph of a cured cannabis bud covered in frosty trichomes, a few resin heads turning amber, warm brass-colored key light raking from the right, deep black background falling off to darkness, shallow depth of field, rich texture, still life, no text"
+    }
+   ]
+  },
+  "macro-c": {
+   "w": 2048,
+   "h": 2048,
+   "ratio": 1.0,
+   "alt": "AI illustration: trichome heads up close, like tiny clear and amber crystals, against a dark background",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 800,
+     "h": 800,
+     "file": "assets/img/gen/macro-c-800.webp",
+     "bytes": 52560
+    },
+    {
+     "w": 1400,
+     "h": 1400,
+     "file": "assets/img/gen/macro-c-1400.webp",
+     "bytes": 116124
+    },
+    {
+     "w": 2048,
+     "h": 2048,
+     "file": "assets/img/gen/macro-c-2048.webp",
+     "bytes": 189516
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "macro-c",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-31b1-7090-a14b-f78068ec8e56",
+     "prompt": "Ultra close-up microscope-style macro of cannabis trichome heads like tiny crystal mushrooms, clear and milky resin glands catching light, a few amber heads, soft cool mint and warm gold highlights, deep black background, dreamy bokeh, no text"
+    }
+   ]
+  },
+  "macro-v": {
+   "w": 1536,
+   "h": 2752,
+   "ratio": 0.5581,
+   "alt": "AI illustration: the frosted tip of a cannabis flower with orange pistils, lit from above on black",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 760,
+     "h": 1362,
+     "file": "assets/img/gen/macro-v-760.webp",
+     "bytes": 118778
+    },
+    {
+     "w": 1200,
+     "h": 2150,
+     "file": "assets/img/gen/macro-v-1200.webp",
+     "bytes": 202880
+    },
+    {
+     "w": 1536,
+     "h": 2752,
+     "file": "assets/img/gen/macro-v-1536.webp",
+     "bytes": 266800
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "macro-v",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-373a-7891-82ae-90ce96d01b1c",
+     "prompt": "Vertical extreme macro photograph of the tip of a cannabis flower glistening with milky trichomes and thin orange pistils, soft cinematic key light from above, cool mint rim light, deep black background, the lower half of the frame dark and empty, no text"
+    }
+   ]
+  },
+  "magnifier": {
+   "w": 2496,
+   "h": 1664,
+   "ratio": 1.5,
+   "alt": "AI illustration: a brass magnifying glass on a light oak counter beside a cannabis bud, under a warm spotlight",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 960,
+     "h": 640,
+     "file": "assets/img/gen/magnifier-960.webp",
+     "bytes": 40784
+    },
+    {
+     "w": 1600,
+     "h": 1067,
+     "file": "assets/img/gen/magnifier-1600.webp",
+     "bytes": 79050
+    },
+    {
+     "w": 2400,
+     "h": 1600,
+     "file": "assets/img/gen/magnifier-2400.webp",
+     "bytes": 128938
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "magnifier",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-44ee-75f0-bbd9-2959fe3cb739",
+     "prompt": "Still life on a light oak counter: a vintage brass-rimmed magnifying glass resting next to a single dense cannabis flower bud, the lens enlarging its frosty trichomes, one warm gallery spotlight from above, the background falling off into deep black, calm and premium, shot on a full-frame camera, fine film grain, no people, no hands, no text"
+    }
+   ]
+  },
+  "oak-jars": {
+   "w": 2496,
+   "h": 1664,
+   "ratio": 1.5,
+   "alt": "AI illustration: clear glass jars of cannabis flower lined up along a light oak counter under warm gallery light",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 960,
+     "h": 640,
+     "file": "assets/img/gen/oak-jars-960.webp",
+     "bytes": 35228
+    },
+    {
+     "w": 1600,
+     "h": 1067,
+     "file": "assets/img/gen/oak-jars-1600.webp",
+     "bytes": 64910
+    },
+    {
+     "w": 2400,
+     "h": 1600,
+     "file": "assets/img/gen/oak-jars-2400.webp",
+     "bytes": 105016
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "oak-jars",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-af62-7c23-9c9d-1ae346cd3b69",
+     "prompt": "Close view along a light oak counter lined with clear glass display jars with no labels, each holding cannabis flower, under warm gallery track lighting, shallow depth of field, a white wall and a black cast-iron column softly blurred behind, calm and premium, shot on a full-frame camera, natural color, fine film grain, no people, no hands, no text, no labels"
+    }
+   ]
+  },
+  "plinth": {
+   "w": 2752,
+   "h": 1536,
+   "ratio": 1.7917,
+   "alt": "AI illustration: an empty white gallery plinth under a single warm spotlight against an old red-brick wall",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 714,
+     "file": "assets/img/gen/plinth-1280.webp",
+     "bytes": 31744
+    },
+    {
+     "w": 1920,
+     "h": 1072,
+     "file": "assets/img/gen/plinth-1920.webp",
+     "bytes": 53124
+    },
+    {
+     "w": 2560,
+     "h": 1429,
+     "file": "assets/img/gen/plinth-2560.webp",
+     "bytes": 75916
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "plinth",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-9ff4-7202-a1bf-ef4e56b91b7c",
+     "prompt": "An empty white gallery plinth standing under a single warm spotlight in a dark room, an old exposed red-brick wall softly lit behind it, a cone of light with faint haze, museum atmosphere, the top of the plinth bare and ready for an object, shot on a full-frame camera, fine film grain, no text, no people, no objects"
+    }
+   ]
+  },
+  "brick": {
+   "w": 1664,
+   "h": 2496,
+   "ratio": 0.6667,
+   "alt": "AI illustration: a black cast-iron column against weathered red brick at blue hour, warm window light at the edge",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 800,
+     "h": 1200,
+     "file": "assets/img/gen/brick-800.webp",
+     "bytes": 39644
+    },
+    {
+     "w": 1200,
+     "h": 1800,
+     "file": "assets/img/gen/brick-1200.webp",
+     "bytes": 65806
+    },
+    {
+     "w": 1664,
+     "h": 2496,
+     "file": "assets/img/gen/brick-1664.webp",
+     "bytes": 95662
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "brick-detail",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-ba4c-7b83-89e0-8cf058ccbb1b",
+     "prompt": "Close detail of a fluted black cast-iron column against an old weathered red-brick wall at blue hour, a warm window glow spilling in from the edge of the frame, rich texture, moody and quiet, shot on a full-frame camera, fine film grain, no text, no signage, no people"
+    }
+   ]
+  },
+  "blockparty": {
+   "w": 2752,
+   "h": 1536,
+   "ratio": 1.7917,
+   "alt": "AI illustration: string lights zigzag over a red-brick street at dusk, a boombox and a crate of records waiting on a folding table",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 714,
+     "file": "assets/img/gen/blockparty-1280.webp",
+     "bytes": 71378
+    },
+    {
+     "w": 1920,
+     "h": 1072,
+     "file": "assets/img/gen/blockparty-1920.webp",
+     "bytes": 117964
+    },
+    {
+     "w": 2560,
+     "h": 1429,
+     "file": "assets/img/gen/blockparty-2560.webp",
+     "bytes": 163690
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "blockparty-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c6-ef03-72c1-9038-de375f6b3d6c",
+     "prompt": "Low-angle close view along an old red-brick building wall at dusk, warm string lights zigzagging overhead against a deep blue sky, on the sidewalk below a folding table holding a vintage silver boombox and a wooden crate of vinyl records, a black cast-iron column at the edge of frame, everything set up and waiting, nobody present, warm and joyful but calm, the street itself out of frame, shot on a full-frame camera, natural cinematic color, fine film grain, no text, no lettering, no chalk, no signage, no posters, no logos, no people, no cars"
+    }
+   ]
+  },
+  "merch-mood": {
+   "w": 1792,
+   "h": 2368,
+   "ratio": 0.7568,
+   "alt": "AI illustration: a plain black cap and a folded black t-shirt on a light oak bench in a white gallery room",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 800,
+     "h": 1057,
+     "file": "assets/img/gen/merch-mood-800.webp",
+     "bytes": 18708
+    },
+    {
+     "w": 1200,
+     "h": 1586,
+     "file": "assets/img/gen/merch-mood-1200.webp",
+     "bytes": 31150
+    },
+    {
+     "w": 1792,
+     "h": 2368,
+     "file": "assets/img/gen/merch-mood-1792.webp",
+     "bytes": 53660
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "merch-mood",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-cad2-7701-adfc-9eb0bc5f4efb",
+     "prompt": "A plain black snapback cap with no logo and a folded heavyweight black t-shirt with no print resting on a light oak bench in a white gallery room, a single warm spotlight, an exposed red-brick wall at the edge, minimal and premium, shot on a full-frame camera, fine film grain, no text, no logos, no graphics, no people"
+    }
+   ]
+  },
+  "storefront-tall": {
+   "w": 756,
+   "h": 1344,
+   "ratio": 0.5625,
+   "alt": "AI illustration: a red-brick building at night, its tall arched shop windows glowing warm over a wet street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 756,
+     "h": 1344,
+     "file": "assets/img/gen/storefront-tall-756.webp",
+     "bytes": 49940
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "storefront-b-clean",
+     "endpoint": "fal-ai/bria/eraser",
+     "request_id": "01a1c2c6-eeff-7c12-9688-410fa8f227d2",
+     "prompt": null
+    },
+    {
+     "job": "storefront-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c3-dc20-7400-a207-eb13713972bf",
+     "prompt": "Cinematic night street photograph, eye level from across the street: an old red-brick building with arched upper windows and a ground-floor shop framed by black cast-iron columns, its big glass windows glowing warm white and amber from a clean gallery-like interior with light oak counters and lit glass cases, light rain just ended, puddles reflecting the glow, a single vintage streetlamp with soft haze, calm and premium, the building on the right and dark empty space on the left, shot on a full-frame camera, natural cinematic color, fine film grain, no text, no lettering, no signage, no logos, no neon, no people, no cars"
+    }
+   ]
+  },
+  "cut-flower": {
+   "w": 630,
+   "h": 900,
+   "ratio": 0.7,
+   "alt": "AI illustration: a single frosted cannabis flower bud",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 514,
+     "file": "assets/img/gen/cut-flower-360.webp",
+     "bytes": 77868
+    },
+    {
+     "w": 630,
+     "h": 900,
+     "file": "assets/img/gen/cut-flower-630.webp",
+     "bytes": 169824
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-flower",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-b85a-77f2-aa47-4b97d0977dbb",
+     "prompt": null
+    },
+    {
+     "job": "cat-flower",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-55de-7d72-aa35-62e362d6629d",
+     "prompt": "Studio still life of a single dense cured cannabis flower bud with frosty trichomes and orange pistils, centered and floating, isolated on a pure black background, soft key light from the upper left, subtle cool mint rim light, crisp detail, no text, no props"
+    }
+   ]
+  },
+  "cut-prerolls": {
+   "w": 665,
+   "h": 900,
+   "ratio": 0.7389,
+   "alt": "AI illustration: three cone-shaped pre-rolls in natural brown paper",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 487,
+     "file": "assets/img/gen/cut-prerolls-360.webp",
+     "bytes": 42528
+    },
+    {
+     "w": 640,
+     "h": 866,
+     "file": "assets/img/gen/cut-prerolls-640.webp",
+     "bytes": 89850
+    },
+    {
+     "w": 665,
+     "h": 900,
+     "file": "assets/img/gen/cut-prerolls-665.webp",
+     "bytes": 92186
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-prerolls",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-b85f-7603-955f-aee6d2c6c82d",
+     "prompt": null
+    },
+    {
+     "job": "cat-prerolls",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-5e79-7770-a2ae-85bf25ad2d5f",
+     "prompt": "Studio still life of three cone-shaped pre-rolled joints made of natural unbleached light brown paper with neatly twisted tips, filled with green herb visible at the open ends, lying side by side on a small round brushed brass tray, isolated on a pure black background, warm key light from the upper left, no filters, no cigarettes, no smoke, no text"
+    }
+   ]
+  },
+  "cut-vapes": {
+   "w": 159,
+   "h": 900,
+   "ratio": 0.1767,
+   "alt": "AI illustration: an unbranded glass vape cartridge filled with golden oil",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 159,
+     "h": 900,
+     "file": "assets/img/gen/cut-vapes-159.webp",
+     "bytes": 22114
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-vapes",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-b860-7360-9047-fbb7b40e8d25",
+     "prompt": null
+    },
+    {
+     "job": "cat-vapes",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-74fe-7dc2-aa55-cb3a50f56d96",
+     "prompt": "Studio still life of one sleek unbranded glass vaporizer cartridge filled with golden amber oil and a matte black mouthpiece, standing upright, isolated on a pure black background, soft key light from the upper left, subtle cool mint rim light, crisp reflections, no text, no logo, no smoke"
+    }
+   ]
+  },
+  "cut-concentrates": {
+   "w": 1689,
+   "h": 900,
+   "ratio": 1.8767,
+   "alt": "AI illustration: shards of golden amber shatter beside a dollop of creamy badder",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 192,
+     "file": "assets/img/gen/cut-concentrates-360.webp",
+     "bytes": 25458
+    },
+    {
+     "w": 640,
+     "h": 341,
+     "file": "assets/img/gen/cut-concentrates-640.webp",
+     "bytes": 56356
+    },
+    {
+     "w": 1689,
+     "h": 900,
+     "file": "assets/img/gen/cut-concentrates-1689.webp",
+     "bytes": 183962
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-concentrates",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-b858-7d50-8d60-b3838a486a92",
+     "prompt": null
+    },
+    {
+     "job": "cat-concentrates",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-7603-76c2-9dfb-ccaf96b4ccb7",
+     "prompt": "Macro studio still life of a shard of translucent golden amber cannabis shatter and a small dollop of creamy light gold badder on a small round clear glass dish, isolated on a pure black background, warm key light glowing through the amber, no text, no tools"
+    }
+   ]
+  },
+  "cut-edibles": {
+   "w": 1128,
+   "h": 900,
+   "ratio": 1.2533,
+   "alt": "AI illustration: squares of dark chocolate beside a small black tin",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 287,
+     "file": "assets/img/gen/cut-edibles-360.webp",
+     "bytes": 18124
+    },
+    {
+     "w": 640,
+     "h": 511,
+     "file": "assets/img/gen/cut-edibles-640.webp",
+     "bytes": 41928
+    },
+    {
+     "w": 1128,
+     "h": 900,
+     "file": "assets/img/gen/cut-edibles-1128.webp",
+     "bytes": 90656
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-edibles",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-d345-7012-894b-9a27214aa375",
+     "prompt": null
+    },
+    {
+     "job": "cat-edibles",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-7ffe-75f0-93ee-35086cede646",
+     "prompt": "Studio still life of a few squares of dark chocolate stacked beside a small unlabeled matte black metal tin with its lid ajar, isolated on a pure black background, warm key light from the upper left, minimal and premium, no candy, no gummies, no text, no logo"
+    }
+   ]
+  },
+  "cut-accessories": {
+   "w": 1084,
+   "h": 900,
+   "ratio": 1.2044,
+   "alt": "AI illustration: a brass herb grinder beside a clear glass hand pipe",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 299,
+     "file": "assets/img/gen/cut-accessories-360.webp",
+     "bytes": 31170
+    },
+    {
+     "w": 640,
+     "h": 531,
+     "file": "assets/img/gen/cut-accessories-640.webp",
+     "bytes": 67592
+    },
+    {
+     "w": 1084,
+     "h": 900,
+     "file": "assets/img/gen/cut-accessories-1084.webp",
+     "bytes": 128264
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cut-accessories",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c2c9-d3af-7c30-8502-c376804f4092",
+     "prompt": null
+    },
+    {
+     "job": "cat-accessories",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c2c4-98e1-7dc1-9cb6-41ac4a72bf5a",
+     "prompt": "Studio still life of a brushed brass herb grinder beside a minimalist clear glass hand pipe, isolated on a pure black background, soft key light from the upper left, subtle cool mint rim light, crisp reflections, no text, no logos, no smoke"
+    }
+   ]
+  },
+  "liberty": {
+   "w": 1509,
+   "h": 2048,
+   "ratio": 0.7368,
+   "ai": "generated",
+   "alpha": true,
+   "alt": "AI illustration: an original line drawing of the Statue of Liberty raising her torch, in mint on black",
+   "files": [
+    {
+     "w": 1509,
+     "h": 2048,
+     "file": "assets/img/gen/liberty.svg",
+     "bytes": 74999
+    }
+   ],
+   "provenance": [
+    {
+     "job": "liberty-b",
+     "endpoint": "fal-ai/recraft/v4.1/text-to-vector",
+     "request_id": "01a1c2c3-9caa-7cc3-af6a-0de80bc67978",
+     "prompt": "Elegant single-color line drawing of the Statue of Liberty from the shoulders up, crowned head turned slightly to the left, raised arm with the torch, the flame drawn as clean flowing lines, generous negative space, refined art-poster style, single color on a solid near-black background, no text, no frame, no smoke"
+    }
+   ],
+   "note": "SVG keeps the generator's embedded C2PA content-credentials manifest."
+  }
+ },
+ "videos": {
+  "vid-storefront": {
+   "file": "assets/video/vid-storefront.mp4",
+   "bytes": 166260,
+   "poster": "assets/img/gen/vid-storefront-poster.webp",
+   "w": 1600,
+   "h": 900,
+   "alt": "AI-generated loop: mist and light shimmer outside a red-brick building at night",
+   "ai": "generated",
+   "provenance": [
+    {
+     "job": "vid-storefront",
+     "endpoint": "fal-ai/kling-video/v2.1/pro/image-to-video",
+     "request_id": "01a1c2c9-e757-70c2-b43f-4b2f35b96a0e",
+     "prompt": "Static locked-off camera, a quiet street at night. Gentle mist drifts slowly through the warm light of the old streetlamp, the shop windows glow steadily with a soft warm shimmer, faint ripples move across the reflections on the wet pavement. The building, the windows and the street stay perfectly still. No people, no cars, no camera movement."
+    }
+   ]
+  },
+  "vid-macro": {
+   "file": "assets/video/vid-macro.mp4",
+   "bytes": 267753,
+   "poster": "assets/img/gen/vid-macro-poster.webp",
+   "w": 1600,
+   "h": 890,
+   "alt": "AI-generated loop: light glints across the trichomes of a cannabis flower",
+   "ai": "generated",
+   "provenance": [
+    {
+     "job": "vid-macro",
+     "endpoint": "fal-ai/kling-video/v2.1/pro/image-to-video",
+     "request_id": "01a1c2c9-d46d-7a23-ad89-ac21585eb051",
+     "prompt": "Locked-off macro shot. A soft band of light sweeps very slowly across the frame from left to right, tiny glints twinkle on the glistening resin heads, the shallow focus breathes gently. The flower itself keeps its exact shape and does not move. No camera movement."
+    }
+   ]
+  }
+ }
+}

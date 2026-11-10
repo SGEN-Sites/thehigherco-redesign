@@ -1,0 +1,140 @@
+{
+  "schema": "site-reforge/fonts@1",
+  "generated": "2026-11-09T23:46:10.720Z",
+  "discovered": [
+    "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+    "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+    "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf",
+    "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.eot?5510888",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.ttf?5510888",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.svg?5510888",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-solid-900.woff2?ver=8.24.2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-regular-400.woff2?ver=8.24.2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-light-300.woff2?ver=8.24.2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-duotone-900.woff2?ver=8.24.2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/material-icons.woff2?ver=8.24.2"
+  ],
+  "saved": [
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+      "savedAs": "memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+      "bytes": 35316,
+      "sha256": "d8f99fb48842f2a6b113cb9934e41bde592193380396bf352aa85d634e77ce9f"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+      "savedAs": "memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+      "bytes": 35292,
+      "sha256": "0da08354e9db8b0d47832c36325d314bbc8d41e0f6729cb15f9731181c8245bd"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf",
+      "savedAs": "pxiEyp8kv8JHgFVrJJfedw.ttf",
+      "bytes": 16148,
+      "sha256": "66807e8e108c648c970aeace0886706f8c95c616f036529a4b628525208f18e8"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.eot?5510888",
+      "savedAs": "revicons.eot",
+      "bytes": 12136,
+      "sha256": "9e4d4c6813568fdf70c61eca9446d1bb80f84e79e8f2e5ed177365b6d5de5fbf"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+      "savedAs": "pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+      "bytes": 15816,
+      "sha256": "884d2cd5ba1b567924c3d174d5cb03f9ad49777bd3c4aa97ce01567acdcdf587"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888",
+      "savedAs": "revicons.woff",
+      "bytes": 7536,
+      "sha256": "f7b9c3065e55fa3b9e320093612e7b30dcb14355a44ec461247b495a3e729686"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.ttf?5510888",
+      "savedAs": "revicons.ttf",
+      "bytes": 11968,
+      "sha256": "4ca02b8a5c8034de8ddb76e33e50e8398758a83bd18a5073493cace46362780a"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.svg?5510888",
+      "savedAs": "revicons.svg",
+      "bytes": 13691,
+      "sha256": "80576a94aba7e5b97d33a3ebb50c0e656b2d8458a0ca38978216687f07d7a575"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-solid-900.woff2?ver=8.24.2",
+      "savedAs": "fa-solid-900.woff2",
+      "bytes": 137104,
+      "sha256": "8d4d29042c23b5fcbed3af690421776de0f8ad3d308d66e24a9d80bcc8ccb522"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-regular-400.woff2?ver=8.24.2",
+      "savedAs": "fa-regular-400.woff2",
+      "bytes": 168824,
+      "sha256": "3bbb0df89b8dbe8001e8c24de4e2d1693f94997b29f007a7bda22a9802832768"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-light-300.woff2?ver=8.24.2",
+      "savedAs": "fa-light-300.woff2",
+      "bytes": 184204,
+      "sha256": "1ddc6ae069ea7aedb68a92d53a12933a5a326f28c714869b99f335377dcce217"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-duotone-900.woff2?ver=8.24.2",
+      "savedAs": "fa-duotone-900.woff2",
+      "bytes": 182080,
+      "sha256": "84f582c87b5a6f8a98b40aa9fba6bf25375f68f264ba921ab315c85976eda547"
+    },
+    {
+      "url": "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/material-icons.woff2?ver=8.24.2",
+      "savedAs": "material-icons.woff2",
+      "bytes": 128352,
+      "sha256": "8265f64786397d6b832d1ca0aafdf149ad84e72759fffa9f7272e91a0fb015d1"
+    }
+  ],
+  "map": {
+    "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+    "//fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+    "/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+    "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+    "//fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+    "/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf": "/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf",
+    "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf": "/fonts/pxiEyp8kv8JHgFVrJJfedw.ttf",
+    "//fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf": "/fonts/pxiEyp8kv8JHgFVrJJfedw.ttf",
+    "/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf": "/fonts/pxiEyp8kv8JHgFVrJJfedw.ttf",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.eot?5510888": "/fonts/revicons.eot",
+    "//www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.eot?5510888": "/fonts/revicons.eot",
+    "/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.eot?5510888": "/fonts/revicons.eot",
+    "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf": "/fonts/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+    "//fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf": "/fonts/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+    "/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf": "/fonts/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888": "/fonts/revicons.woff",
+    "//www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888": "/fonts/revicons.woff",
+    "/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff?5510888": "/fonts/revicons.woff",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.ttf?5510888": "/fonts/revicons.ttf",
+    "//www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.ttf?5510888": "/fonts/revicons.ttf",
+    "/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.ttf?5510888": "/fonts/revicons.ttf",
+    "https://www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.svg?5510888": "/fonts/revicons.svg",
+    "//www.thehigherco420.com/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.svg?5510888": "/fonts/revicons.svg",
+    "/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.svg?5510888": "/fonts/revicons.svg",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-solid-900.woff2?ver=8.24.2": "/fonts/fa-solid-900.woff2",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-solid-900.woff2?ver=8.24.2": "/fonts/fa-solid-900.woff2",
+    "/wp-content/themes/Impreza/fonts/fa-solid-900.woff2?ver=8.24.2": "/fonts/fa-solid-900.woff2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-regular-400.woff2?ver=8.24.2": "/fonts/fa-regular-400.woff2",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-regular-400.woff2?ver=8.24.2": "/fonts/fa-regular-400.woff2",
+    "/wp-content/themes/Impreza/fonts/fa-regular-400.woff2?ver=8.24.2": "/fonts/fa-regular-400.woff2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-light-300.woff2?ver=8.24.2": "/fonts/fa-light-300.woff2",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-light-300.woff2?ver=8.24.2": "/fonts/fa-light-300.woff2",
+    "/wp-content/themes/Impreza/fonts/fa-light-300.woff2?ver=8.24.2": "/fonts/fa-light-300.woff2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-duotone-900.woff2?ver=8.24.2": "/fonts/fa-duotone-900.woff2",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/fonts/fa-duotone-900.woff2?ver=8.24.2": "/fonts/fa-duotone-900.woff2",
+    "/wp-content/themes/Impreza/fonts/fa-duotone-900.woff2?ver=8.24.2": "/fonts/fa-duotone-900.woff2",
+    "https://www.thehigherco420.com/wp-content/themes/Impreza/fonts/material-icons.woff2?ver=8.24.2": "/fonts/material-icons.woff2",
+    "//www.thehigherco420.com/wp-content/themes/Impreza/fonts/material-icons.woff2?ver=8.24.2": "/fonts/material-icons.woff2",
+    "/wp-content/themes/Impreza/fonts/material-icons.woff2?ver=8.24.2": "/fonts/material-icons.woff2"
+  }
+}
