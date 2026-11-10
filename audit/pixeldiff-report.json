@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/pixeldiff-report@1",
-  "generated": "2026-11-10T01:39:09.629Z",
+  "generated": "2026-11-10T01:46:31.587Z",
   "threshold": 0.02,
   "tolerance": 8,
   "pairCount": 28,
@@ -420,9 +420,9 @@
       "slug": "shop",
       "width": 1024,
       "verdict": "SIZE-MISMATCH",
-      "differing": 2048399,
+      "differing": 2048395,
       "compared": 2535424,
-      "ratio": 0.807912,
+      "ratio": 0.80791,
       "baselineSize": [
         1024,
         2476
@@ -439,9 +439,9 @@
       "slug": "shop",
       "width": 1440,
       "verdict": "SIZE-MISMATCH",
-      "differing": 1810647,
+      "differing": 1810642,
       "compared": 2750400,
-      "ratio": 0.658321,
+      "ratio": 0.65832,
       "baselineSize": [
         1440,
         1910

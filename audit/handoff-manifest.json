@@ -3,13 +3,13 @@
   "project": "thehigherco420-com",
   "target": "https://www.thehigherco420.com/",
   "version": "v20261110",
-  "builtAt": "2026-11-10T01:39:11.341Z",
+  "builtAt": "2026-11-10T01:46:33.171Z",
   "gateVerdict": "NOT-READY",
   "decontamination": "CLEAN",
   "forced": {
     "why": "REDESIGN lane, not a clone: C22 pixel parity with the old design is intentionally broken; C17/C19 fail only on 23 retired WordPress theme-demo pages (music-award posts, beauty-service pages, archive stubs) whose content and placeholder contacts (+312 123 4568, info@example.com) are not The Higher Company's and must not be republished; each is a REMOVE row with its reason and the URL is kept as a redirect page; C04/C05 describe the live site itself (empty pages, a static-HTML heuristic on WordPress pages). All 7 pages carrying client content: parity 96.8-100% with no major/blocker findings; fabrication 0/0; decontamination clean; sweep 0 blocker/major at 390/768/1024/1440."
   },
-  "entryCount": 533,
+  "entryCount": 535,
   "checks": [
     {
       "id": "C01",
@@ -217,6 +217,7 @@
   ],
   "contents": [
     ".gitignore",
+    "README.md",
     "assets/fonts/fa-duotone-900.woff2",
     "assets/fonts/fa-light-300.woff2",
     "assets/fonts/fa-regular-400.woff2",
@@ -279,6 +280,7 @@
     "audit/preset-match.json",
     "audit/reports/thehigherco420-com-2026-11-10T01-33-16-206Z.html",
     "audit/reports/thehigherco420-com-2026-11-10T01-39-10-765Z.html",
+    "audit/reports/thehigherco420-com-2026-11-10T01-46-32-651Z.html",
     "audit/robots.txt",
     "audit/script-inventory.json",
     "audit/seo-changes.json",

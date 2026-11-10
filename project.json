@@ -4,7 +4,7 @@
   "targetUrl": "https://www.thehigherco420.com/",
   "origin": "https://www.thehigherco420.com",
   "createdAt": "2026-11-09T23:42:50.906Z",
-  "updatedAt": "2026-11-10T01:39:11.586Z",
+  "updatedAt": "2026-11-10T01:46:33.416Z",
   "config": {
     "maxPages": 300,
     "concurrency": 2,
@@ -93,7 +93,7 @@
     },
     "responsive": {
       "status": "done",
-      "at": "2026-11-10T01:37:28.362Z",
+      "at": "2026-11-10T01:44:55.658Z",
       "note": "204 sweeps at 1024/1440/390/768"
     },
     "seo": {
@@ -108,22 +108,22 @@
     },
     "decontaminate": {
       "status": "done",
-      "at": "2026-11-10T01:39:11.104Z",
+      "at": "2026-11-10T01:46:32.938Z",
       "note": "CLEAN (0 traces)"
     },
     "parity": {
       "status": "fail",
-      "at": "2026-11-10T01:39:09.788Z",
+      "at": "2026-11-10T01:46:31.726Z",
       "note": "DRIFT — 143 findings"
     },
     "fabrication": {
       "status": "done",
-      "at": "2026-11-10T01:39:09.973Z",
+      "at": "2026-11-10T01:46:31.898Z",
       "note": "SOURCED — 0 findings"
     },
     "pixeldiff": {
       "status": "fail",
-      "at": "2026-11-10T01:39:09.636Z",
+      "at": "2026-11-10T01:46:31.593Z",
       "note": "DRIFT — 28/28 pairs over threshold"
     },
     "sweep": {
@@ -138,13 +138,13 @@
     },
     "gate": {
       "status": "fail",
-      "at": "2026-11-10T01:39:11.243Z",
+      "at": "2026-11-10T01:46:33.078Z",
       "note": "NOT-READY — 24/29 passing"
     },
     "package": {
       "status": "forced",
-      "at": "2026-11-10T01:39:11.586Z",
-      "note": "thehigherco420-com-handoff-v20261110.zip — 533 entries, 14083265 bytes"
+      "at": "2026-11-10T01:46:33.416Z",
+      "note": "thehigherco420-com-handoff-v20261110.zip — 535 entries, 14091167 bytes"
     },
     "presetMatch": {
       "status": "partial",

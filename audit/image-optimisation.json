@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/image-optimisation@1",
-  "generated": "2026-11-10T01:39:10.288Z",
+  "generated": "2026-11-10T01:46:32.190Z",
   "build": "dist",
   "mode": "audit",
   "encoder": "not-used",

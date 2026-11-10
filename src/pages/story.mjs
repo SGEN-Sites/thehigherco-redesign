@@ -1,7 +1,7 @@
 // story.mjs — /about/ (live URL kept, now "Our Story"), /about/the-crew/, /the-flower-bar/, /lifestyle/.
 import { esc, u, icon } from '../lib/html.mjs';
 import { site, pillars, categories } from '../content/site.mjs';
-import { img, aiTag, wallLabel, btn, kicker, pageHero, crumbsLD, sectionHead, pillarList, ytFacade, joinBand, videoMeta } from '../lib/parts.mjs';
+import { img, aiTag, wallLabel, btn, kicker, pageHero, crumbsLD, sectionHead, pillarList, ytFacade, joinBand, videoMeta, menuEmbed } from '../lib/parts.mjs';
 import { markSVG, logoSVG, mono3D } from '../lib/brand.mjs';
 
 // ---------------------------------------------------------------- /about/  (Our Story)
@@ -282,7 +282,7 @@ export function lifestyle() {
     ${kicker('Shop Lifestyle')}
     <h1 class="lshero__t" id="ls-t" data-reveal>Drops, <em>gear</em> &amp; the mark.</h1>
     <p class="lshero__lead" data-reveal style="--i:1">The Higher Co. merch and the accessories shelf. Apparel drops are sold in store only; accessories are on the live menu for pickup.</p>
-    <div class="actions" data-reveal style="--i:2">${btn('See the drops', '#drops', { v: 'mint', ico: 'chev' })}${btn('Shop accessories', '/shop/accessories/', { v: 'ghost' })}</div>
+    <div class="actions" data-reveal style="--i:2">${btn('Shop accessories', '#shop-accessories', { v: 'mint', ico: 'chev' })}${btn('See the drops', '#drops', { v: 'ghost', ico: 'chev' })}</div>
   </div>
   ${aiTag('corner')}
 </section>
@@ -337,6 +337,14 @@ export function lifestyle() {
       <ul class="tags" role="list">${subs.map((s) => `<li><a class="chip chip--light" href="${u('/shop/accessories/')}">${esc(s)}</a></li>`).join('')}</ul>
       <div class="actions">${btn('Shop accessories', '/shop/accessories/', { v: 'ink' })}</div>
     </div>
+  </div>
+</section>
+
+<section class="band band--gallery-2 lsmenu" id="shop-accessories" aria-labelledby="lsmenu-t">
+  <div class="container">
+    ${sectionHead('On the live menu now', 'Shop the accessories shelf', 'Today&rsquo;s accessories with prices and stock. Add to your cart, choose &ldquo;Pick Up In-Store&rdquo; at checkout, and bring your ID.', { id: 'lsmenu-t' })}
+    ${menuEmbed({ category: 'accessories', label: 'Accessories' })}
+    <p class="shopnote">Prices and stock come straight from the live menu and can change. Apparel drops are sold in store only.</p>
   </div>
 </section>
 

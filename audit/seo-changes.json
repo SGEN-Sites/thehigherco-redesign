@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/seo-changes@1",
-  "generated": "2026-11-10T01:34:32.066Z",
+  "generated": "2026-11-10T01:42:12.209Z",
   "note": "Every field written into the build by sr-seo --apply. Each carries where its value came from. A field the source already filled is never rewritten here.",
   "siteUrl": "https://www.thehigherco420.com",
   "siteName": "The Higher Company",
