@@ -1,0 +1,26 @@
+[
+  {
+    "name": "hero-golden-a",
+    "endpoint": "fal-ai/nano-banana-pro/edit",
+    "input": {
+      "image_urls": ["file:private/ref/storefront-streetview-ref.jpg"],
+      "prompt": "Use the building in the attached photo only as an architectural reference and create a brand-new photograph of that same building, re-shot by a professional architectural photographer at golden hour.\n\nCamera and framing: full-frame cinema camera with a 24mm tilt-shift lens, vertical lines perfectly straight, no fisheye or panoramic distortion. The camera stands across the street at eye level, a little to the left, so the whole building, from the sidewalk up to the two gables, the small louvered cupola and the weathervane, sits in the right half of a wide frame, while the open street and the sky fill the left half.\n\nThe building: a three-story red-brick commercial block from the 1880s with tall round-arched windows trimmed in pale gray stone, bands of decorative brickwork between the floors, two steep pointed gables at the top with a small louvered cupola between them, carved stone finials on the corners, and pale stone piers at street level framing a modern ground-floor shopfront with tall dark-framed display windows and a glass door.\n\nLight: late-afternoon golden hour, the sun low on the left, warm amber light raking across the brick and the stone trim so every arch and cornice casts a soft shadow, the gables glowing, long shadows stretching across the empty sidewalk, a gentle warm lens flare at the left edge of the frame. The shopfront glows with warm interior light behind clean glass. The sky is clear, graded from deep blue at the top to soft gold near the rooftops, with a few thin clouds lit pink and gold.\n\nScene: a quiet, clean downtown street at the end of the day. No people, no cars, no bicycles, no traffic cones, no sidewalk signs, no flags, no banners, no posters, no stickers, no street signs. No text, lettering, numbers or logos anywhere; the shop windows are plain glass. No watermark.\n\nLook: photorealistic, cinematic color grade with rich deep shadows and warm highlights, natural fine film grain, high dynamic range, crisp brick texture, soft atmospheric haze in the distance.",
+      "aspect_ratio": "16:9",
+      "resolution": "4K",
+      "output_format": "png",
+      "num_images": 2
+    }
+  },
+  {
+    "name": "hero-golden-b",
+    "endpoint": "fal-ai/nano-banana-pro/edit",
+    "input": {
+      "image_urls": ["file:private/ref/storefront-streetview-ref.jpg"],
+      "prompt": "Use the building in the attached photo only as an architectural reference and create a brand-new photograph of that same building, re-shot by a professional photographer at golden hour for a cinematic film still.\n\nCamera and framing: full-frame cinema camera with a 35mm lens at f/2.8, low camera height across the street, vertical lines kept straight, no fisheye or panoramic distortion. The building stands in the right two-thirds of a wide frame, seen slightly from the left so its front and a sliver of its left side catch the light; the full height of the building, up to the two gables and the small louvered cupola, is in frame. On the left, the street recedes into soft golden haze past low older buildings that are gently out of focus.\n\nThe building: a three-story red-brick commercial block from the 1880s with tall round-arched windows trimmed in pale gray stone, bands of decorative brickwork between the floors, two steep pointed gables at the top with a small louvered cupola between them, carved stone finials on the corners, and pale stone piers at street level framing a modern ground-floor shopfront with tall dark-framed display windows and a glass door.\n\nLight: the last minutes of golden hour, the sun very low on the left, warm amber light skimming the brick and glowing on the stone trim, the upper floors and gables lit while the sidewalk is already in soft warm shade, long shadows, a subtle anamorphic lens flare. Warm interior light glows behind the clean shop glass. The sky fades from deep blue overhead to amber and peach near the rooftops.\n\nScene: an empty, clean downtown street at the end of the day. No people, no cars, no bicycles, no traffic cones, no sidewalk signs, no flags, no banners, no posters, no stickers, no street signs. No text, lettering, numbers or logos anywhere; the shop windows are plain glass. No watermark.\n\nLook: photorealistic film still, cinematic color grade with deep teal-tinted shadows and warm amber highlights, natural fine film grain, high dynamic range, crisp brick texture.",
+      "aspect_ratio": "16:9",
+      "resolution": "4K",
+      "output_format": "png",
+      "num_images": 1
+    }
+  }
+]

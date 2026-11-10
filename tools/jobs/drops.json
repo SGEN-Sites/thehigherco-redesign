@@ -1,0 +1,74 @@
+[
+ {
+  "name": "drop-cap-k",
+  "endpoint": "fal-ai/flux-pro/kontext",
+  "input": {
+   "image_url": "file:private/photos/drops/cap-crop.png",
+   "prompt": "Re-photograph this exact black snapback cap as a clean studio product photo: keep its shape, the flat brim, the black fabric, the large white THC monogram on the front panel and the black patch below it with a thin gold border that reads exactly THE HIGHER CO. in gold capital letters, and the oval sticker on the brim. Remove the glass reflections and everything behind the cap. The cap faces the camera, centred, the whole cap in frame, on a plain seamless dark charcoal backdrop, soft diffused studio light, crisp focus, photorealistic. No other text, no hands, no people.",
+   "num_images": 2,
+   "seed": 424242,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "guidance_scale": 3.5
+  }
+ },
+ {
+  "name": "drop-cap-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:drop-cap-k#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "drop-tee-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "file:private/photos/drops/tee-src-rgb.png",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "drop-tee-a",
+  "endpoint": "fal-ai/flux-pro/kontext",
+  "input": {
+   "image_url": "file:private/photos/drops/tee-src-rgb.png",
+   "prompt": "Remove the rolled joint from Lady Liberty's hand in the embroidered graphic. Her hand stays in the same place, now an open relaxed hand raised in a calm wave, holding nothing. Keep the grey cloud shape behind her. Keep everything else exactly the same: the folded black T-shirt, its collar and folds, the embroidered stitch texture, Lady Liberty's face and crown of cannabis leaves, the colours, the white marble surface, the framing and the lighting.",
+   "num_images": 2,
+   "seed": 424242,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "guidance_scale": 3.5
+  }
+ },
+ {
+  "name": "drop-tee-b",
+  "endpoint": "fal-ai/flux-pro/kontext",
+  "input": {
+   "image_url": "file:private/photos/drops/tee-src-rgb.png",
+   "prompt": "Remove the rolled joint from Lady Liberty's hand and remove all of the grey smoke clouds from the embroidered graphic, so Lady Liberty with her crown of cannabis leaves sits directly on the plain black shirt. Her hand stays in the same place, now an open relaxed hand raised in a calm wave, holding nothing. Keep everything else exactly the same: the folded black T-shirt, its collar and folds, the embroidered stitch texture, Lady Liberty's face and crown of cannabis leaves, the colours, the white marble surface, the framing and the lighting.",
+   "num_images": 2,
+   "seed": 424242,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "guidance_scale": 3.5
+  }
+ },
+ {
+  "name": "drop-tee-b1-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:drop-tee-b#1",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ }
+]

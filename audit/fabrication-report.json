@@ -1,11 +1,11 @@
 {
   "schema": "site-reforge/fabrication-report@1",
-  "generated": "2026-11-10T01:46:31.897Z",
+  "generated": "2026-11-10T15:08:53.468Z",
   "rebuildDir": "/Users/carlcelino/OSOFT/Code/thehigherco-redesign/dist",
   "filesScanned": 51,
-  "claimsChecked": 83,
+  "claimsChecked": 84,
   "sourceCorpusChars": 55382,
-  "declaredFactsChars": 6472,
+  "declaredFactsChars": 7161,
   "counts": {},
   "verdict": "SOURCED",
   "findings": []

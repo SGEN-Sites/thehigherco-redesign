@@ -1,0 +1,13 @@
+[
+  {
+    "name": "hands-engraving-a",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "An original intaglio banknote-style engraving of two hands reaching toward each other, their index fingers almost touching: the composition of Michelangelo's public-domain fresco The Creation of Adam. The left hand is relaxed, palm down, its index finger gently drooping; the right hand reaches in from the right with its index finger extended. Each forearm enters from its edge of the frame. Rendered exactly the way the portraits on paper currency are engraved: fine parallel engraved lines that follow the form of the skin, dense cross-hatching in the shadows, stipple dots for the soft modelling of the knuckles and fingertips, crisp burin line work with tapering line ends, deep green-black ink on plain off-white paper. Wide horizontal composition with the two hands in the middle third, generous empty paper above and below, and a clear gap between the two fingertips at the exact centre. No border, no frame, no oval, no background pattern, no text, no letters, no numbers, no seals, no signatures, no money, no banknote layout: only the two engraved hands on blank paper.",
+      "aspect_ratio": "21:9",
+      "resolution": "4K",
+      "output_format": "png",
+      "num_images": 2
+    }
+  }
+]

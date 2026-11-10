@@ -1,7 +1,11 @@
 // info.mjs — /faqs/, /contact/, /connect/, /subscribe/ (live URLs kept) and /visit/ (new).
+// Inner-pages update (operator, 2026-11-10: "now that you have an idea and design principle from how we built the home
+// page, i would like you to update all inner pages"): the home page's language carried over: light and dark bands, the
+// shop's own photos, the visit bar, the picture accordion, compact bands. Every sentence, link and form is the same
+// as before; inner-info.css holds the looks (every rule scoped to these five pages' body classes).
 import { esc, u, icon } from '../lib/html.mjs';
 import { site } from '../content/site.mjs';
-import { img, aiTag, btn, kicker, pageHero, crumbsLD, sectionHead, faqList, hoursTable, mapFacade, storefrontPicture } from '../lib/parts.mjs';
+import { img, imgMeta, aiTag, btn, kicker, crumbs, pageHero, crumbsLD, sectionHead, faqList, mapFacade, storefrontPicture, visitBar, accordion } from '../lib/parts.mjs';
 import { faqLD, storeLD } from '../lib/seo.mjs';
 
 const hoursAnswer = () => `<p>Hours:</p><ul>${site.hoursLines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul><p>Today: <span data-open-label>see our hours</span>.</p>`;
@@ -12,6 +16,14 @@ const ID_LIST = `<ul>
 <li>A valid passport issued by the United States government or any other country</li>
 <li>An identification card issued by the armed forces of the United States</li>
 </ul>`;
+
+// the counter photo: real staff and customers, so every use carries the consent note
+const COUNTER_NOTE = '<!-- [CONFIRM WITH CLIENT] the counter photo shows staff and identifiable customers: confirm consent -->';
+
+// A picture tile cut from one of the shop's own photos (develops in as it scrolls into view, like the home bento).
+// --fx / --fy place the crop on what matters in the frame.
+const photoTile = (id, { cls = '', sizes = '100vw', fx = '50%', fy = '50%' } = {}) =>
+  `<figure class="ix-photo ${cls}" style="--fx:${fx};--fy:${fy}">${img(id, { cls: 'ix-photo__img', sizes, attrs: 'data-reveal="develop"' })}</figure>`;
 
 export const FAQS = () => [
   ['Where are you located?', '<p>We are located at 123 E Willow St., Syracuse NY, 13202</p>'],
@@ -41,10 +53,13 @@ ${pageHero({
   art: `<div class="phero__frame">${img('magnifier', { sizes: '(max-width: 900px) 70vw, 460px', cls: 'phero__img' })}${aiTag()}</div>`,
   cls: 'phero--art',
 })}
-<section class="band band--gallery" aria-label="Questions and answers">
-  <div class="container faqpage">
-    <nav class="faqpage__index" aria-label="Questions"><p class="kicker">Jump to</p><ol>${items.map(([q], i) => `<li><a href="#q-${i + 1}">${q}</a></li>`).join('')}</ol></nav>
-    <div>${faqList(items)}</div>
+<!-- the home "Quick answers" language at full size: the jump-to index as one dark bar over the questions (three columns,
+     a swipe strip on phones), the questions in two columns, closed (as on home) so the grid stays even; the open one wears
+     a mint ring -->
+<section class="band band--gallery band--tight fq" aria-label="Questions and answers">
+  <div class="container">
+    <nav class="fq-index" aria-label="Questions"><p class="kicker">Jump to</p><ol>${items.map(([q], i) => `<li><a href="#q-${i + 1}">${q}</a></li>`).join('')}</ol></nav>
+    <div class="fq-list">${faqList(items, { openFirst: false })}</div>
   </div>
 </section>`;
   return {
@@ -76,22 +91,31 @@ ${pageHero({
   kicker: 'Get in touch', title: 'Contact',
   lead: `<p>For more information, please reach out to us at <a href="mailto:${site.email}">${site.email}</a> or use the form below. You can also call us at <a href="tel:${site.phone.tel}">${site.phone.display}</a>.</p>`,
   crumbList: crumb,
+  art: `<div class="phero__frame phero__frame--tilt ct-art">${img('photo-interior', { sizes: '(max-width: 900px) 74vw, 440px', cls: 'phero__img' })}</div>`,
+  cls: 'phero--art',
 })}
-<section class="band band--gallery" aria-label="Contact details">
+<!-- the Location, Phone and Hours cards became the home visit bar (address, live status, the week with today lit,
+     Directions and Call: the same facts); the Mail card and the social links sit right under it -->
+<section class="band band--gallery band--tight ct-details" aria-label="Contact details">
   <div class="container">
-    <ul class="cards4" role="list">
-      <li class="infocard" data-reveal><span class="infocard__ico">${icon('pin')}</span><h2 class="infocard__t">Location</h2><p><a href="${site.directions.google}" rel="noopener" target="_blank">${esc(site.address.long)}<span class="sr-only"> (directions open in a new tab)</span></a></p></li>
-      <li class="infocard" data-reveal style="--i:1"><span class="infocard__ico">${icon('phone')}</span><h2 class="infocard__t">Phone</h2><p><a href="tel:${site.phone.tel}">${site.phone.display}</a></p></li>
-      <li class="infocard" data-reveal style="--i:2"><span class="infocard__ico">${icon('mail')}</span><h2 class="infocard__t">Mail</h2><p><a href="mailto:${site.email}">${site.email}</a></p></li>
-      <li class="infocard" data-reveal style="--i:3"><span class="infocard__ico">${icon('clock')}</span><h2 class="infocard__t">Hours:</h2><ul class="infocard__hours">${site.hoursLines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul></li>
-    </ul>
-    <p class="social-line">Follow us on social media to stay updated on new products, events, and more! ${site.socials.filter((s) => !s.placeholder).map((s) => `<a href="${s.url}" rel="noopener" target="_blank">${esc(s.name)}<span class="sr-only"> (opens in a new tab)</span></a>`).join(' &middot; ')}</p>
+    ${visitBar()}
+    <div class="ct-more">
+      <div class="infocard ct-mail" data-reveal><span class="infocard__ico">${icon('mail')}</span><div><h2 class="infocard__t">Mail</h2><p><a href="mailto:${site.email}">${site.email}</a></p></div></div>
+      <div class="ct-social" data-reveal style="--i:1"><p class="social-line">Follow us on social media to stay updated on new products, events, and more! ${site.socials.filter((s) => !s.placeholder).map((s) => `<a href="${s.url}" rel="noopener" target="_blank">${esc(s.name)}<span class="sr-only"> (opens in a new tab)</span></a>`).join(' &middot; ')}</p></div>
+    </div>
   </div>
 </section>
-<section class="band band--gallery-2" aria-labelledby="cf-t">
-  <div class="container contact__grid">
-    <div>${sectionHead('Send a message', 'We&rsquo;ll get back to you', 'A member of our team will be happy to answer your question as soon as possible.', { id: 'cf-t' })}${messageForm({ id: 'contact-form', subject: 'Question from the website' })}</div>
-    <div>${mapFacade()}</div>
+<!-- the message on a dark band that runs into the footer (brass edge where it meets the light band): the form on a
+     paper card, the map as tall as the card -->
+<section class="band band--ink band--tight ct-form" aria-labelledby="cf-t" data-spot>
+  <span class="brass-rule brass-rule--top" aria-hidden="true"></span>
+  <div class="band__light" aria-hidden="true"></div>
+  <div class="container">
+    ${sectionHead('Send a message', 'We&rsquo;ll get back to you', 'A member of our team will be happy to answer your question as soon as possible.', { id: 'cf-t' })}
+    <div class="ct-form__grid">
+      <div class="ix-formcard" data-reveal>${messageForm({ id: 'contact-form', subject: 'Question from the website' })}</div>
+      ${mapFacade()}
+    </div>
   </div>
 </section>`;
   return {
@@ -111,9 +135,11 @@ ${pageHero({
   kicker: 'Ask us anything', title: 'Connect',
   lead: `<p>Have questions? Reach out to us! A member of our team will be happy to answer your question as soon as possible.</p><p>If you prefer to email us directly you can contact us at <a href="mailto:${site.email}">${site.email}</a></p>`,
   crumbList: crumb,
+  art: `${COUNTER_NOTE}<div class="phero__frame cn-art">${img('photo-counter', { sizes: '(max-width: 900px) 64vw, 400px', cls: 'phero__img' })}</div>`,
+  cls: 'phero--art',
 })}
-<section class="band band--gallery" aria-label="Message form">
-  <div class="container narrow">${messageForm({ id: 'connect-form', subject: 'Message from the Connect page' })}</div>
+<section class="band band--gallery band--tight cn-form" aria-label="Message form">
+  <div class="container narrow"><div class="ix-formcard" data-reveal>${messageForm({ id: 'connect-form', subject: 'Message from the Connect page' })}</div></div>
 </section>`;
   return {
     path: '/connect/',
@@ -127,26 +153,39 @@ ${pageHero({
 
 export function subscribe() {
   const crumb = [['Home', '/'], ['Join the List', '/subscribe/']];
+  const tall = imgMeta('join-sky-tall');
+  const tallSet = tall.files.map((f) => `${u('/' + f.file)} ${f.w}w`).join(', ');
   const main = `
-${pageHero({
-  kicker: 'Unlock Exclusive Offers &amp; More', title: 'Join the List',
-  lead: '<p>Stay connected and get the latest updates!</p><p>Join the list for news on new products, events and in-store promotions from the shop on Willow Street.</p>',
-  crumbList: crumb,
-  art: `<div class="phero__frame phero__frame--tilt">${img('blockparty', { sizes: '(max-width: 900px) 80vw, 520px', cls: 'phero__img' })}${aiTag()}</div>`,
-  cls: 'phero--art',
-})}
-<section class="band band--gallery joinpage" aria-labelledby="perks-t">
-  <div class="container joinpage__grid">
-    <div>
+<!-- the hero over the home Join band's skyline (Lady Liberty), so the list looks the same wherever you meet it: the words
+     on a deep fade at the left, Liberty kept in view on the right; phones get her right-hand crop as a banner on top -->
+<section class="vhero sub-hero" aria-labelledby="sub-t">
+  <div class="vhero__media" data-depth="-0.06"><picture class="vhero__pic">
+    <source media="(max-width: 700px)" srcset="${tallSet}" sizes="100vw" width="${tall.w}" height="${tall.h}">
+    ${img('join-sky', { sizes: '100vw', cls: 'pic__img', priority: true })}
+  </picture></div>
+  <div class="vhero__scrim" aria-hidden="true"></div>
+  <div class="container vhero__in sub-hero__in">
+    ${crumbs(crumb)}
+    ${kicker('Unlock Exclusive Offers &amp; More')}
+    <h1 class="vhero__t sub-hero__t" id="sub-t" data-reveal>Join the List</h1>
+    <div class="sub-hero__lead" data-reveal style="--i:1"><p>Stay connected and get the latest updates!</p><p>Join the list for news on new products, events and in-store promotions from the shop on Willow Street.</p></div>
+  </div>
+</section>
+<!-- what you get as the home picture accordion (stacked, so each title stays on one line): the jars for new products, the
+     block party for events (the picture the hero used before), the shop's own display case for drops and promotions;
+     the form and the three steps beside it -->
+<section class="band band--gallery band--tight sub" aria-labelledby="perks-t">
+  <div class="container sub__grid">
+    <div class="sub__perks">
       ${sectionHead('What you get', 'On the list', '', { id: 'perks-t' })}
-      <ul class="perks" role="list">
-        <li class="perk" data-reveal><span class="perk__ico">${icon('leaf')}</span><div><h3>New products</h3><p>Hear when something new lands on the menu or the Flower Bar.</p></div></li>
-        <li class="perk" data-reveal style="--i:1"><span class="perk__ico">${icon('star')}</span><div><h3>Events and more</h3><p>News about our events, workshops, and rallies, straight from the shop.</p></div></li>
-        <li class="perk" data-reveal style="--i:2"><span class="perk__ico">${icon('cap')}</span><div><h3>Drops and promotions</h3><p>Promotions on non-cannabis items, such as accessories, apparel, and educational materials.</p></div></li>
-      </ul>
-      <ol class="steps3" role="list"><li><strong>Join</strong> with your first name and email.</li><li><strong>Watch your inbox</strong> for news from the shop.</li><li><strong>Come in</strong> and ask the crew about what you read.</li></ol>
+      ${accordion([
+        { img: 'oak-jars', icon: 'leaf', title: 'New products', text: 'Hear when something new lands on the menu or the Flower Bar.' },
+        { img: 'blockparty', icon: 'star', title: 'Events and more', text: 'News about our events, workshops, and rallies, straight from the shop.' },
+        { img: 'photo-display', icon: 'cap', title: 'Drops and promotions', text: 'Promotions on non-cannabis items, such as accessories, apparel, and educational materials.' },
+      ], { cls: 'sub-acc', sizes: '(max-width: 900px) 100vw, 760px' })}
     </div>
-    <div class="joinpage__form">
+    <div class="sub__join">
+      <div class="sub__form" data-reveal style="--i:1">
       <form class="form form--card" id="join-form" action="mailto:${site.email}?subject=${encodeURIComponent('Join the list')}" method="post" enctype="text/plain" data-mailto-form data-subject="Join the list">
         <!-- [CONFIRM WITH CLIENT] email/SMS list provider; until one is chosen the form opens an email to ${site.email} asking to be added. -->
         <h2 class="form__t">Join the List</h2>
@@ -158,6 +197,8 @@ ${pageHero({
         <p class="form__note">Joining opens your email app with a ready-to-send request to the store.</p>
         <p class="form__status" role="status" aria-live="polite" data-form-status></p>
       </form>
+      </div>
+      <ol class="steps3" role="list"><li><strong>Join</strong> with your first name and email.</li><li><strong>Watch your inbox</strong> for news from the shop.</li><li><strong>Come in</strong> and ask the crew about what you read.</li></ol>
     </div>
   </div>
 </section>`;
@@ -173,9 +214,10 @@ ${pageHero({
 
 export function visit() {
   const crumb = [['Home', '/'], ['Visit Us', '/visit/']];
+  const card = (key, ico, title, body, i) => `<article class="vcard vis-card vis-card--${key}" data-reveal style="--i:${i}"><span class="vcard__ico">${icon(ico)}</span><h3>${title}</h3><p>${body}</p></article>`;
   const main = `
 <section class="vhero" aria-labelledby="visit-t">
-  <!-- [CONFIRM WITH CLIENT] AI illustration of a storefront, labelled on the page; replace with a real photo of 123 E Willow St before launch. -->
+  <!-- [CONFIRM WITH CLIENT] AI illustration of a storefront (no longer tagged on the page: the operator removed the visible AI tags, 2026-11-10; the alt text still says AI); replace with a real photo of 123 E Willow St before launch. -->
   <div class="vhero__media" data-depth="-0.06">${storefrontPicture({ cls: 'vhero__pic', priority: true })}</div>
   <div class="vhero__scrim" aria-hidden="true"></div>
   <div class="container vhero__in">
@@ -189,32 +231,41 @@ export function visit() {
   ${aiTag('corner')}
 </section>
 
-<section class="band band--gallery visit" aria-label="Plan your visit">
-  <div class="container visit__grid">
-    <div class="visit__hours" id="hours-block">
+<!-- the hours as the home visit bar (the week as seven chips, today lit, from the same hours data the old 7-row table
+     used, so the hours show once); the section keeps id="hours" for the sticky bar's "Today's Hours" link; under it the
+     map beside the shop's own photo of the floor -->
+<section class="band band--gallery band--tight vis-hours" id="hours" aria-labelledby="hours-t">
+  <div class="container">
+    <div class="vis-hours__head">
       ${sectionHead('Hours', 'Open seven days', '', { id: 'hours-t' })}
-      ${hoursTable({ id: 'hours' })}
       <p class="visit__note">Online pre-orders follow the menu&rsquo;s own ordering hours, shown at checkout.</p>
     </div>
-    <div class="visit__map">${mapFacade()}</div>
-  </div>
-</section>
-
-<section class="band band--gallery-2 visit2" aria-labelledby="bring-t">
-  <div class="container">
-    ${sectionHead('Before you come', 'What to bring, how it works', '', { id: 'bring-t' })}
-    <div class="visit2__grid">
-      <article class="vcard" data-reveal><span class="vcard__ico">${icon('id')}</span><h3>Valid photo ID</h3><p>You must be 21 or older, and we check ID at the door. We accept a government photo ID that shows your age (IDNYC included), a driver&rsquo;s license or non-driver ID, a passport, or a U.S. armed forces ID. <a href="${u('/faqs/')}#q-5">Full list</a>.</p></article>
-      <article class="vcard" data-reveal style="--i:1"><span class="vcard__ico">${icon('card')}</span><h3>Payment</h3><p>We take cash, debit cards, Apple Pay, or Dutchie Pay (ACH). If you prefer to pay in cash, we have an ATM machine in the store.</p></article>
-      <article class="vcard" data-reveal style="--i:2"><span class="vcard__ico">${icon('car')}</span><h3>Parking</h3><p>Yes, you can park directly across the street in our reserved parking slots free of charge. There is also more parking under the bridge.</p></article>
-      <article class="vcard" data-reveal style="--i:3"><span class="vcard__ico">${icon('bag')}</span><h3>Ordering ahead</h3><p>Order on the <a href="${u('/shop/')}">live menu</a>, choose &ldquo;Pick Up In-Store&rdquo;, and bring your ID. Online orders require a $50 minimum purchase, and only the person who ordered can pick up.</p></article>
-      <article class="vcard" data-reveal style="--i:4"><span class="vcard__ico">${icon('lens')}</span><h3>The Flower Bar</h3><p>Ninety strains under glass. Smell the jars and view the trichomes with a magnifying glass. <a href="${u('/the-flower-bar/')}">How it works</a>.</p></article>
-      <article class="vcard" data-reveal style="--i:5"><span class="vcard__ico">${icon('shield')}</span><h3>Check our license</h3><p>New York requires every legal dispensary to post the state&rsquo;s verification QR code near its entrance. <a href="${site.ocm.verify}" rel="noopener" target="_blank">Check our license with the OCM<span class="sr-only"> (opens in a new tab)</span></a>.</p></article>
+    ${visitBar()}
+    <div class="vis-where">
+      ${mapFacade()}
+      ${photoTile('photo-interior', { cls: 'vis-where__photo', sizes: '(max-width: 700px) 100vw, (max-width: 1100px) 42vw, 560px', fx: '36%', fy: '55%' })}
     </div>
   </div>
 </section>
 
-<section class="band band--ink visitcta" aria-labelledby="vcta-t" data-spot>
+<!-- the six cards as a bento like the home "Make The Higher Choice" one: a dark heading tile, the crew at the counter,
+     the cards on paper (a small lift and a brass edge on hover) -->
+<section class="band band--gallery-2 band--tight vis-bring" aria-labelledby="bring-t">
+  ${COUNTER_NOTE}
+  <div class="container vis-bento">
+    <div class="vis-bento__head">${kicker('Before you come')}<h2 class="sect-t" id="bring-t" data-reveal>What to bring, how it works</h2></div>
+    ${card('id', 'id', 'Valid photo ID', `You must be 21 or older, and we check ID at the door. We accept a government photo ID that shows your age (IDNYC included), a driver&rsquo;s license or non-driver ID, a passport, or a U.S. armed forces ID. <a href="${u('/faqs/')}#q-5">Full list</a>.`, 0)}
+    ${photoTile('photo-counter', { cls: 'vis-bento__crew', sizes: '(max-width: 620px) 100vw, (max-width: 900px) 50vw, 440px', fx: '46%', fy: '40%' })}
+    ${card('pay', 'card', 'Payment', 'We take cash, debit cards, Apple Pay, or Dutchie Pay (ACH). If you prefer to pay in cash, we have an ATM machine in the store.', 1)}
+    ${card('park', 'car', 'Parking', 'Yes, you can park directly across the street in our reserved parking slots free of charge. There is also more parking under the bridge.', 2)}
+    ${card('order', 'bag', 'Ordering ahead', `Order on the <a href="${u('/shop/')}">live menu</a>, choose &ldquo;Pick Up In-Store&rdquo;, and bring your ID. Online orders require a $50 minimum purchase, and only the person who ordered can pick up.`, 0)}
+    ${card('bar', 'lens', 'The Flower Bar', `Ninety strains under glass. Smell the jars and view the trichomes with a magnifying glass. <a href="${u('/the-flower-bar/')}">How it works</a>.`, 1)}
+    ${card('lic', 'shield', 'Check our license', `New York requires every legal dispensary to post the state&rsquo;s verification QR code near its entrance. <a href="${site.ocm.verify}" rel="noopener" target="_blank">Check our license with the OCM<span class="sr-only"> (opens in a new tab)</span></a>.`, 2)}
+  </div>
+</section>
+
+<section class="band band--ink band--tight visitcta" aria-labelledby="vcta-t" data-spot>
+  <span class="brass-rule brass-rule--top" aria-hidden="true"></span>
   <div class="band__light" aria-hidden="true"></div>
   <div class="container visitcta__grid">
     <div>

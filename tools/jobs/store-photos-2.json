@@ -1,0 +1,4 @@
+[
+  { "name": "photo-display-up", "endpoint": "fal-ai/topaz/upscale/image",
+    "input": { "image_url": "file:private/photos/display-clean.png", "model": "High Fidelity V2", "upscale_factor": 2, "face_enhancement": false, "output_format": "png" } }
+]

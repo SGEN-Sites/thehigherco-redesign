@@ -4,19 +4,20 @@ import { site, categories, pillars } from '../content/site.mjs';
 
 const IM = readJSON('src/content/images.json');
 
-// <img> from the processed manifest. Every generated asset carries data-ai="generated"; its alt says so.
-export function img(id, { sizes = '100vw', cls = '', alt, decorative = false, priority = false, style = '' } = {}) {
+// <img> from the processed manifest. data-ai comes from the manifest: "generated" (AI art, alt says so) or
+// "enhanced" (the client's own photographs, upscaled and graded, nothing generated).
+export function img(id, { sizes = '100vw', cls = '', alt, decorative = false, priority = false, style = '', attrs = '' } = {}) {
   const m = IM.images[id];
   if (!m) throw new Error('unknown image ' + id);
   const files = m.files;
   const a = decorative ? '' : (alt ?? m.alt);
   const load = priority ? 'fetchpriority="high" loading="eager"' : 'loading="lazy"';
   if (files.length === 1 && files[0].file.endsWith('.svg')) {
-    return `<img class="${cls}" src="${u('/' + files[0].file)}" width="${m.w}" height="${m.h}" alt="${esc(a)}" ${load} decoding="async" data-ai="generated"${style ? ` style="${style}"` : ''}>`;
+    return `<img class="${cls}" src="${u('/' + files[0].file)}" width="${m.w}" height="${m.h}" alt="${esc(a)}" ${load} decoding="async" data-ai="${m.ai || 'generated'}"${style ? ` style="${style}"` : ''}${attrs ? ' ' + attrs : ''}>`;
   }
   const srcset = files.map((f) => `${u('/' + f.file)} ${f.w}w`).join(', ');
   const fallback = (files.find((f) => f.w >= 1200) || files[files.length - 1]).file;
-  return `<img class="${cls}" src="${u('/' + fallback)}" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(a)}" ${load} decoding="async" data-ai="generated"${style ? ` style="${style}"` : ''}>`;
+  return `<img class="${cls}" src="${u('/' + fallback)}" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(a)}" ${load} decoding="async" data-ai="${m.ai || 'generated'}"${style ? ` style="${style}"` : ''}${attrs ? ' ' + attrs : ''}>`;
 }
 export const imgMeta = (id) => IM.images[id];
 export const videoMeta = (id) => IM.videos[id];
@@ -30,8 +31,22 @@ export function storefrontPicture({ cls = '', priority = false } = {}) {
 </picture>`;
 }
 
+// the building (home hero) at golden hour or at night: 16:9 on wide screens, a 9:16 crop for phones
+export function heroPicture(base, { cls = '', priority = false } = {}) {
+  const tall = IM.images[base + '-tall'];
+  const set = tall.files.map((f) => `${u('/' + f.file)} ${f.w}w`).join(', ');
+  return `<picture class="${cls}">
+  <source media="(max-width: 700px)" srcset="${set}" sizes="100vw" width="${tall.w}" height="${tall.h}">
+  ${img(base, { sizes: '100vw', cls: 'pic__img', priority })}
+</picture>`;
+}
+export const goldenPicture = (o) => heroPicture('hero-golden', o);
+
 // Gallery wall label — used for every AI illustration (honest + on concept) and for people without photos.
-export const aiTag = (where = '') => `<span class="ai-tag${where ? ' ai-tag--' + where : ''}">AI illustration</span>`;
+// The visible tag is off site-wide (operator, 2026-11-10: "lets remove these [AI illustration tags] across the site").
+// Disclosure stays in each image's alt text ("AI illustration: ..."), in its IPTC DigitalSourceType metadata and in the
+// footer and terms notes. Call sites are kept, so the tag can come back in one place.
+export const aiTag = () => '';
 export const wallLabel = (title, lines = [], cls = '') => `<div class="wall-label ${cls}"><p class="wall-label__t">${title}</p>${lines.map((l) => `<p class="wall-label__l">${l}</p>`).join('')}</div>`;
 
 export function btn(label, href, { v = 'mint', ico = 'arrow', ext = false, cls = '', size = '', attrs = '' } = {}) {
@@ -66,7 +81,7 @@ export function pageHero({ kicker: k, title, lead = '', actions = '', art = '', 
     </div>
     ${aside ? `<div class="phero__aside">${aside}</div>` : ''}
   </div>
-  ${art ? `<div class="phero__art" data-depth="0.12">${art}</div>` : ''}
+  ${art ? `<div class="phero__art" data-depth="-0.12">${art}</div>` : ''}
 </section>`;
 }
 
@@ -82,20 +97,22 @@ export function categoryShelf({ id = 'shop-cats', title = 'Shop by category', le
       ${lead ? `<p class="sect-lead" data-reveal style="--i:1">${lead}</p>` : ''}
     </div>
     <ul class="shelf__grid" role="list">
-      ${categories.map((c, i) => `<li class="shelf__item" data-reveal style="--i:${i % 3}">
+      ${categories.map((c, i) => {
+        // each product is fitted into a box 70% of the case wide and --obj tall: 15vw on six-across desktops, 24vw at
+        // three across, 40vw at two across (the CSS caps each)
+        const r = IM.images[c.img].ratio;
+        const sizes = `(max-width: 700px) ${Math.max(4, Math.round(Math.min(40 * r, 31)))}vw, (max-width: 1180px) ${Math.max(3, Math.round(Math.min(24 * r, 20)))}vw, ${Math.max(2, Math.round(Math.min(15 * r, 10)))}vw`;
+        return `<li class="shelf__item" data-reveal style="--i:${i % 3}">
         <a class="case" href="${u(`/shop/${c.slug}/`)}" data-tilt>
-          <span class="case__spot" aria-hidden="true"></span>
-          <span class="case__obj">${img(c.img, { sizes: '(max-width: 700px) 46vw, 220px', cls: 'case__img', alt: '', decorative: true })}</span>
-          <span class="case__body">
-            <span class="case__n" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
-            <span class="case__name">${esc(c.name)}</span>
-            <span class="case__line">${esc(c.line)}</span>
-            <span class="case__go">Shop ${esc(c.name.toLowerCase())} ${icon('arrow')}</span>
-          </span>
+          <span class="case__obj">${img(c.img, { sizes, cls: 'case__img', alt: '', decorative: true })}</span>
+          <span class="case__name">${esc(c.name)}</span>
+          <span class="case__line">${esc(c.line)}</span>
+          <span class="case__cart" aria-hidden="true">${icon('bag')}</span>
+          <span class="sr-only">Shop ${esc(c.name.toLowerCase())}</span>
         </a>
-      </li>`).join('')}
+      </li>`;
+      }).join('')}
     </ul>
-    <div class="shelf__ledge" aria-hidden="true"></div>
     <p class="shelf__note">Every category opens the live menu with prices, stock and a cart. Order ahead, then pick up in store with your ID.</p>
   </div>
 </section>`;
@@ -150,8 +167,8 @@ export function hoursTable({ id = 'hours' } = {}) {
 </table>`;
 }
 
-export function faqList(items, { idPrefix = 'q' } = {}) {
-  return `<div class="faq">${items.map(([q, a], i) => `<details class="faq__item" id="${idPrefix}-${i + 1}"${i === 0 ? ' open' : ''}>
+export function faqList(items, { idPrefix = 'q', openFirst = true } = {}) {
+  return `<div class="faq">${items.map(([q, a], i) => `<details class="faq__item" id="${idPrefix}-${i + 1}"${i === 0 && openFirst ? ' open' : ''}>
   <summary class="faq__q"><span>${q}</span><span class="faq__ico" aria-hidden="true">${icon('plus')}</span></summary>
   <div class="faq__a">${a}</div>
 </details>`).join('')}</div>`;
@@ -161,8 +178,17 @@ export function pillarList({ cls = '' } = {}) {
   return `<ol class="pillars ${cls}">${pillars.map((p, i) => `<li class="pillars__item" data-pillar="${i}"><span class="pillars__n">${p.n}</span><span class="pillars__body"><span class="pillars__name">${p.name}</span><span class="pillars__line">${p.line}</span></span></li>`).join('')}</ol>`;
 }
 
+// The Join band over the skyline (operator, 2026-11-10): Lady Liberty on the right stays in view, so the card sits under
+// the heading on the left, over a dark fade; phones get a right-hand crop that keeps her in frame.
 export function joinBand({ title = 'Stay Connected', sub = 'Unlock Exclusive Offers &amp; More', cls = '' } = {}) {
-  return `<section class="band band--brass join ${cls}" aria-labelledby="join-t">
+  const tall = IM.images['join-sky-tall'];
+  const tallSet = tall.files.map((f) => `${u('/' + f.file)} ${f.w}w`).join(', ');
+  return `<section class="band band--ink join join--sky ${cls}" aria-labelledby="join-t">
+  <div class="join__media" aria-hidden="true"><picture>
+    <source media="(max-width: 700px)" srcset="${tallSet}" sizes="120vw" width="${tall.w}" height="${tall.h}">
+    ${img('join-sky', { sizes: '100vw', cls: 'join__img', decorative: true })}
+  </picture></div>
+  <div class="join__scrim" aria-hidden="true"></div>
   <div class="container join__in">
     <div class="join__copy">
       ${kicker('Join the List')}
@@ -175,6 +201,33 @@ export function joinBand({ title = 'Stay Connected', sub = 'Unlock Exclusive Off
     </div>
   </div>
 </section>`;
+}
+
+// The expanding accordion with a picture per panel (home "three promises", operator 2026-11-10): the open panel widens
+// (stacks on phones) and shows its text; hover (fine pointers), focus or tap opens another (site.js [data-acc]; styles
+// .acc in components.css). items: [{ img, icon?, title, text }] (title/text are HTML); pictures are decorative, the words
+// carry the meaning. Panels are dark (picture + deep fade), so it works on light and dark bands alike.
+export function accordion(items, { cls = '', label = '', open = 0, tag = 'h3', sizes = '(max-width: 900px) 100vw, 60vw' } = {}) {
+  return `<ul class="acc${cls ? ' ' + cls : ''}" role="list" data-acc${label ? ` aria-label="${esc(label)}"` : ''}>${items.map((x, i) => `<li class="acc__p${i === open ? ' is-open' : ''}" tabindex="0" data-reveal${i ? ` style="--i:${i}"` : ''}>${img(x.img, { cls: 'acc__img', sizes, alt: '', decorative: true })}<div class="acc__body">${x.icon ? `<span class="placard__ico acc__ico">${icon(x.icon)}</span>` : ''}<${tag} class="acc__t">${x.title}</${tag}><p class="acc__text">${x.text}</p></div></li>`).join('')}</ul>`;
+}
+
+// The visit details as one dark bar (home Quick answers, operator 2026-11-10): name, address and live status; the week as
+// seven chips (site.js lights today, in the store's time zone); Directions and Call.
+export function visitBar() {
+  const fmt = (t) => { const [h, m] = t.split(':').map(Number); const ap = h >= 12 ? 'pm' : 'am'; const hh = h % 12 || 12; return m ? `${hh}:${String(m).padStart(2, '0')}${ap}` : `${hh}${ap}`; };
+  return `<div class="visitbar">
+  <div class="visitbar__who">
+    <p class="kicker">Visit us</p>
+    <p class="store__name">${esc(site.name)}</p>
+    <address class="store__addr">${esc(site.address.long)}</address>
+    <p class="store__now"><span class="status__dot" data-open-dot aria-hidden="true"></span><span data-open-label>Hours</span></p>
+  </div>
+  <ol class="week" role="list" aria-label="Store hours" data-hours-week>${site.hours.map((h) => `<li data-day="${h.day}"><b><span aria-hidden="true">${h.name.slice(0, 3)}</span><span class="sr-only">${h.name}</span></b><span>${fmt(h.open)}<br>&ndash;${fmt(h.close)}</span></li>`).join('')}</ol>
+  <div class="actions">
+    ${btn('Directions', site.directions.google, { v: 'mint', size: 'sm', ext: true })}
+    ${btn('Call ' + site.phone.display, 'tel:' + site.phone.tel, { v: 'ghost', size: 'sm', ico: 'phone' })}
+  </div>
+</div>`;
 }
 
 export function storeCard({ cls = '' } = {}) {

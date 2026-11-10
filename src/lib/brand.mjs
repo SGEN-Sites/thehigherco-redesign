@@ -45,15 +45,4 @@ export function buildSVG(id = 'mb') {
 </svg>`;
 }
 
-// Layered 3D monogram: one <symbol>, N stacked <use> layers pushed back in Z; CSS rotates the stack.
-export function mono3D(layers = 18) {
-  const v = vb(markBox, 8);
-  const sym = `<svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false"><symbol id="m3d-mark" viewBox="${v}"><path fill-rule="evenodd" d="${mono}"/></symbol><symbol id="m3d-leaf" viewBox="${v}"><path fill-rule="evenodd" d="${leaf}"/></symbol></svg>`;
-  let html = '';
-  for (let i = layers - 1; i >= 0; i--) {
-    html += `<svg class="m3d__layer${i === 0 ? ' m3d__layer--front' : ''}" style="--i:${i}" viewBox="${v}" aria-hidden="true" focusable="false"><use href="#m3d-mark"/>${i === 0 ? '<use class="m3d__leaf" href="#m3d-leaf"/>' : ''}</svg>`;
-  }
-  return { sym, html, ratio: (markBox.w / markBox.h).toFixed(4) };
-}
-
 export const logoDims = { mono: bMono, leaf: bLeaf, word: bWord, viewBox: [0, 0, VB_W, VB_H] };

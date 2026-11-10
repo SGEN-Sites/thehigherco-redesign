@@ -1,0 +1,217 @@
+/* inner-story.css: styles for the About, The Crew, The Flower Bar and Lifestyle pages (src/pages/story.mjs); inner-pages update, 2026-11-10. Loads after pages.css. */
+/* Every rule is scoped to its page's body class, so nothing here reaches another page. The home's language carried over
+   (operator, 2026-11-10): compact bands, the shop's own photos, brass rules on the meaningful light/dark breaks, dark
+   bands that touch read as one field, the home's own components doing the moving. */
+
+/* ---------- shared by the four pages ---------- */
+/* a photo in the inner hero's art frame (was the THC logo / monogram): a landscape crop with a brass hairline edge */
+.page-about .phero__frame--photo::after, .page-crew .phero__frame--photo::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px var(--light-brass); }
+.page-about .phero__frame--photo > img, .page-crew .phero__frame--photo > img { aspect-ratio: 4 / 3; }
+/* the hero copy stops short of the frame at every desktop width (the shared .phero__copy:only-child rule lets it run
+   980px wide, under the frame, around 1024px): the space left of the frame, less a 48px gap */
+@media (min-width: 901px) {
+  .page-about .phero__in > .phero__copy { max-width: min(720px, calc(100vw - 2 * max(var(--gutter), (100vw - var(--container)) / 2) - min(40vw, 520px) - 48px)); }
+  .page-crew .phero__in > .phero__copy { max-width: min(720px, calc(100vw - 2 * max(var(--gutter), (100vw - var(--container)) / 2) - min(36vw, 460px) - 48px)); }
+}
+/* the photo drifts inside its frame as the page scrolls (site.js [data-depth] writes --py on the frame: desktop, fine
+   pointers, motion allowed; otherwise it stays put), so it is drawn a touch larger than the frame */
+.page-about .story2__img, .page-flowerbar .footage__img, .page-lifestyle .mood2__img { scale: 1.08; translate: 0 var(--py, 0px); }
+/* a heading with its lead beside it (kicker and heading on the left, the lead on the right, bottoms aligned) */
+.page-about .timeline .sect-head, .page-flowerbar .howbar2 .sect-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: clamp(28px, 5vw, 72px); align-items: end; max-width: none; margin-bottom: clamp(28px, 3.4vw, 44px); }
+.page-about .timeline .sect-head > .kicker, .page-flowerbar .howbar2 .sect-head > .kicker { grid-column: 1; justify-self: start; }
+.page-about .timeline .sect-head > .sect-t, .page-flowerbar .howbar2 .sect-head > .sect-t { grid-column: 1; margin: 0; }
+.page-about .timeline .sect-head > .sect-lead, .page-flowerbar .howbar2 .sect-head > .sect-lead { grid-column: 2; grid-row: 1 / span 2; margin: 0; }
+@media (max-width: 900px) {
+  .page-about .timeline .sect-head, .page-flowerbar .howbar2 .sect-head { grid-template-columns: minmax(0, 1fr); }
+  .page-about .timeline .sect-head > .sect-lead, .page-flowerbar .howbar2 .sect-head > .sect-lead { grid-column: 1; grid-row: auto; margin-top: 14px; }
+}
+/* two dark bands that touch read as one field: the first one's key light fades to plain ink along its bottom edge, the
+   next one's starts from plain ink along its top edge */
+.page-about .timeline .band__light, .page-crew .budtenders2 .band__light { background: linear-gradient(0deg, var(--ink) 0%, var(--clear) 30%), radial-gradient(640px circle at var(--mx) var(--my), var(--light-mint-2), var(--clear) 62%), radial-gradient(90% 60% at 15% 70%, var(--light-brass-2), var(--clear) 60%); }
+/* inside one dark field the two bands' paddings would stack into an empty gap: each side gives half */
+.page-about .timeline, .page-about .ourprod, .page-crew .budtenders2 { padding-bottom: clamp(36px, 4.4vw, 64px); }
+.page-about .pillars2, .page-about .community2 { padding-top: clamp(36px, 4.4vw, 64px); }
+.page-about .pillars2 .band__light, .page-about .community2 .band__light { background: linear-gradient(180deg, var(--ink) 0%, var(--clear) 30%), radial-gradient(640px circle at var(--mx) var(--my), var(--light-mint-2), var(--clear) 62%), radial-gradient(90% 60% at 85% 100%, var(--light-brass-2), var(--clear) 60%); }
+/* phones: the panels stack 132px tall when closed, so the icon tiles take the home stack's 44px size and clear the top */
+@media (max-width: 900px) {
+  .page-crew .budtenders2__acc .acc__ico, .page-flowerbar .howbar2__acc .acc__ico { width: 44px; height: 44px; margin: 0; }
+  .page-crew .budtenders2__acc .acc__ico .ico, .page-flowerbar .howbar2__acc .acc__ico .ico { width: 22px; height: 22px; }
+  .page-crew .budtenders2__acc .acc__body, .page-flowerbar .howbar2__acc .acc__body { gap: 8px; padding: 16px 18px 18px; }
+}
+/* the expanding picture panels on a dark band: a light edge instead of the light-band shadow (focus ring kept) */
+.page-crew .budtenders2 .acc__p { box-shadow: 0 0 0 1px var(--line-dark), 0 30px 60px -30px var(--shade); }
+.page-crew .budtenders2 .acc__p:focus-visible { box-shadow: 0 0 0 3px var(--mint), 0 30px 60px -30px var(--shade); }
+
+/* ================================================================ /about/ */
+@media (min-width: 901px) { .page-about .phero__art { width: min(40vw, 520px); } }
+.page-about .phero__frame--photo > img { aspect-ratio: 3 / 2; object-position: 30% 50%; }
+
+/* the opening and the story in one sheet: heading | welcome, then photo | story and quote */
+.page-about .story2__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 3.6vw, 52px) clamp(28px, 5vw, 72px); align-items: start; }
+.page-about .story2__t { margin: 0; }
+.page-about .story2__lead { margin: 0; }
+.page-about .story2__fig { position: relative; margin: 0; align-self: stretch; }
+.page-about .story2__frame { height: 100%; min-height: 340px; }
+.page-about .story2__img { object-position: 50% 62%; }
+.page-about .story2__copy .sect-t { margin-bottom: .35em; }
+.page-about .story2 .pull { margin-top: 1.5em; }
+@media (max-width: 900px) {
+  .page-about .story2__grid { grid-template-columns: minmax(0, 1fr); }
+  .page-about .story2__frame { height: auto; min-height: 0; aspect-ratio: 4 / 3; }
+}
+
+/* the timeline, tighter, in brass: a lit brass bar, brass rivets, the opening day in mint */
+.page-about .tl__when { color: var(--brass); }
+.page-about .tl__item::before { background: radial-gradient(circle at 34% 30%, var(--brass-hi), var(--brass) 52%, var(--brass-lo)); box-shadow: 0 0 0 4px var(--ink), 0 0 0 5px var(--light-brass); }
+.page-about .tl__item--now::before { background: var(--mint); box-shadow: 0 0 0 4px var(--ink), 0 0 0 10px var(--light-mint-2); }
+@media (min-width: 1001px) {
+  .page-about .tl::before { top: 17px; height: 4px; border-radius: 2px; opacity: 1; background: linear-gradient(90deg, var(--brass-lo) 0%, var(--brass-hi) 30%, var(--brass) 64%, var(--mint) 100%); box-shadow: inset 0 1px 0 var(--shine-2); }
+  .page-about .tl__item { padding-top: 46px; }
+}
+@media (max-width: 1000px) {
+  .page-about .tl::before { left: 7px; width: 4px; border-radius: 2px; opacity: 1; background: linear-gradient(180deg, var(--brass-hi) 0%, var(--brass) 64%, var(--mint) 100%); }
+  .page-about .tl__item { padding-bottom: 22px; }
+}
+
+/* the five pillars: the exhibit large on the left, fully lit (no words over it); the heading and the five rows on the
+   right, the row on show opening its line (one is always open, so the list keeps its height) */
+.page-about .pillars2 .jrot { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "stage head" "stage list"; column-gap: clamp(24px, 3.6vw, 52px); row-gap: 0; margin: 0; }
+.page-about .pillars2 .sect-head { grid-area: head; margin-bottom: clamp(20px, 2.4vw, 28px); }
+.page-about .pillars2 .jrot__stage { grid-area: stage; min-height: 420px; box-shadow: 0 0 0 1px var(--line-dark), 0 40px 80px -40px var(--shade); }
+.page-about .pillars2 .jrot__feat::after { display: none; }
+.page-about .pillars2 .jrot__img { object-position: 50% var(--oy, 50%); }
+.page-about .pillars2 .jrot__list { grid-area: list; grid-template-rows: none; align-content: start; gap: 8px; }
+.page-about .pillars2 .jrot__row { grid-template-columns: 40px minmax(0, 1fr); align-items: start; gap: 0 12px; padding: 15px 18px 19px; background: var(--ink-2); color: var(--on-dark); box-shadow: inset 0 0 0 1px var(--line-dark); }
+.page-about .pillars2 .jrot__row:hover { background: var(--ink-3); box-shadow: inset 0 0 0 1px var(--light-brass); }
+.page-about .pillars2 .jrot__row.is-on { background: var(--ink-3); box-shadow: inset 0 0 0 1px var(--brass), 0 0 0 3px var(--light-brass-2); }
+.page-about .pillars2 .jrot__row:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
+.page-about .pillars2 .jrot__n { grid-row: 1 / span 2; color: var(--brass); line-height: 1.1; }
+.page-about .pillars2 .jrot__rt { grid-column: 2; font: 800 clamp(.95rem, 1.15vw, 1.06rem)/1.25 var(--f-display); font-stretch: var(--wdth-wide); text-transform: uppercase; letter-spacing: .01em; }
+/* the line of the row on show; the others fold away (still read by screen readers: no visibility or display change) */
+.page-about .pillars2__line { grid-column: 2; max-height: 0; margin: 0; overflow: hidden; opacity: 0; font-size: .95rem; line-height: 1.5; color: var(--on-dark-2); transition: max-height .5s var(--ease), opacity .4s var(--ease), margin .5s var(--ease); }
+.page-about .pillars2 .jrot__row.is-on .pillars2__line { max-height: 9em; margin-top: 6px; opacity: 1; }   /* room for six lines: the longest line on a 320px phone */
+.page-about .pillars2 .jrot__bar { left: 18px; right: 18px; bottom: 8px; background: var(--line-dark); }
+.page-about .pillars2 .jrot__bar i { background: var(--brass); }
+@media (prefers-reduced-motion: reduce) { .page-about .pillars2__line { transition: none; } }
+@media (max-width: 900px) {
+  .page-about .pillars2 .jrot { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-template-areas: "head" "stage" "list"; row-gap: 14px; }
+  .page-about .pillars2 .sect-head { margin-bottom: 6px; }
+  .page-about .pillars2 .jrot__stage { min-height: 0; }
+  .page-about .pillars2 .jrot__media { aspect-ratio: 4 / 3; }
+}
+
+/* the mission beside its four values, stacked picture panels (the home's three promises beside the address) */
+.page-about .mission3__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.page-about .mission3__copy .sect-t { margin-bottom: .35em; }
+.page-about .mission3 .acc--stack { flex-direction: column; height: auto; min-height: 470px; gap: 10px; }
+.page-about .mission3 .acc--stack .acc__p { flex: 1 1 0; min-height: 0; }
+.page-about .mission3 .acc--stack .acc__p.is-open { flex-grow: 2.6; }
+.page-about .mission3 .acc--stack .acc__body { padding: clamp(16px, 1.8vw, 24px) clamp(18px, 2vw, 26px); gap: 6px; }
+/* each value's name stays a <strong> as on the old list (no new headings), drawn like the home panels' titles */
+.page-about .mission3 .acc__t { display: block; font-family: var(--f-display); font-weight: 820; font-stretch: var(--wdth-wide); line-height: var(--lh-head); letter-spacing: -.012em; }
+/* the counter photo (Community): framed on the people, not their shirts */
+.page-about .mission3 .acc__p:nth-child(4) .acc__img { object-position: 50% 34%; }
+@media (max-width: 900px) {
+  .page-about .mission3__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .page-about .mission3 .acc--stack { min-height: 0; }
+  .page-about .mission3 .acc--stack .acc__p { flex: none; height: 104px; }
+  .page-about .mission3 .acc--stack .acc__p.is-open { height: 270px; }
+}
+
+/* Our Products: the glass cases (components.css .shelf/.case) with this page's list words */
+.page-about .ourprod .sect-head { margin-bottom: clamp(10px, 1.4vw, 18px); }
+/* Topicals: no picture and no shop page, so a plain case: the jar icon in the brass light, no sheen, no bag button */
+.page-about .case--plain { cursor: default; }
+.page-about .case--plain::after { display: none; }
+.page-about .case__obj--ico { top: 0; height: calc(var(--obj) - var(--rise)); display: grid; place-items: center; color: var(--brass-hi); }
+.page-about .case__obj--ico .ico { width: 58px; height: 58px; stroke-width: 1.3; filter: drop-shadow(0 0 16px var(--light-brass)); }
+
+/* Community Engagement: the words on plain ink, the block-party illustration on the right half fading in behind the stamp */
+.page-about .community2 { overflow: clip; }
+.page-about .community2__media { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; z-index: -2; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 40%); mask-image: linear-gradient(90deg, transparent 0%, #000 40%); }
+.page-about .community2__img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+.page-about .community2__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14, 14, 14, .55) 0%, rgba(14, 14, 14, .2) 70%, rgba(14, 14, 14, .3) 100%); }
+.page-about .community2__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; min-height: clamp(340px, 30vw, 440px); }
+.page-about .community2__copy { max-width: 600px; }
+.page-about .community2__copy p { color: var(--on-dark-2); }
+@media (max-width: 800px) {
+  /* phones: the picture is a banner across the top, fading into the ink the words sit on; the stamp rides on it */
+  .page-about .community2 { padding-top: calc(min(62vw, 340px) - 24px); }
+  .page-about .community2__media { left: 0; width: auto; bottom: auto; height: min(62vw, 340px); -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent 100%); mask-image: linear-gradient(180deg, #000 45%, transparent 100%); }
+  .page-about .community2__grid { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .page-about .community2__stamp { position: absolute; top: 18px; right: var(--gutter); }
+  .page-about .community2 .stamp { width: 136px; padding: 18px; font-size: .95rem; box-shadow: 0 0 0 7px var(--ink), 0 0 0 9px var(--light-brass); }
+}
+
+/* ================================================================ /about/the-crew/ */
+@media (min-width: 901px) { .page-crew .phero__art { width: min(36vw, 460px); } }
+/* framed on the crew and the counter (the wall sign above them is left out rather than cut in half) */
+.page-crew .phero__frame--photo > img { object-position: 50% 64%; }
+
+/* the founders: the engraved hands across the sheet, then the heading beside the two wall labels */
+.page-crew .founders { padding-top: clamp(24px, 3.4vw, 56px); padding-bottom: var(--band-y-tight); }
+.page-crew .founders__banner { margin: 0 0 clamp(16px, 2.4vw, 32px); }
+.page-crew .founders__in { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px clamp(28px, 5vw, 72px); align-items: center; }
+.page-crew .founders .sect-head { margin: 0; }
+.page-crew .founders__people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.page-crew .founder { display: grid; }
+.page-crew .founder__label { display: block; max-width: none; padding: 22px 24px 24px; box-shadow: inset 0 3px 0 var(--brass), var(--shadow-light); }
+.page-crew .founder__label .wall-label__t { font-size: clamp(1.6rem, 2.2vw, 2rem); margin-bottom: 8px; }
+.page-crew .founder__label .wall-label__l:nth-child(2) { margin-bottom: 8px; font: 600 var(--fs-kicker)/1.3 var(--f-body); letter-spacing: .16em; text-transform: uppercase; color: var(--brass-ink); }
+.page-crew .founder__label .wall-label__l { font-size: .95rem; color: var(--on-light-2); }
+@media (max-width: 900px) { .page-crew .founders__in { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) { .page-crew .founders__people { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
+
+/* Joint Masters: the heading beside the lead, then the three picture panels across the band */
+.page-crew .budtenders2__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 14px clamp(28px, 5vw, 72px); align-items: end; margin-bottom: clamp(24px, 3vw, 40px); }
+.page-crew .budtenders2__head .sect-head { margin: 0; }
+.page-crew .budtenders2__head .sect-t { margin: 0; }
+.page-crew .budtenders2__head .lead { margin: 0; color: var(--on-dark-2); }
+@media (min-width: 901px) { .page-crew .budtenders2__acc { height: clamp(340px, 30vw, 420px); } }
+/* the shop-floor photo (Before you buy): the cases and the menu screen rather than the counter's logo */
+.page-crew .budtenders2__acc .acc__p:nth-child(2) .acc__img { object-position: 74% 50%; }
+@media (max-width: 900px) { .page-crew .budtenders2__head { grid-template-columns: minmax(0, 1fr); } }
+
+/* Come say hi: the close of the same dark field, straight into the footer */
+.page-crew .crewcta2 { padding-top: clamp(28px, 3.4vw, 48px); }
+.page-crew .crewcta2 p { color: var(--on-dark-2); }
+
+/* ================================================================ /the-flower-bar/ */
+/* the stats row hands over to the light band with a brass rule, not a hairline */
+.page-flowerbar .fbstats { border-bottom: 0; }
+/* the four steps as picture panels: number and icon, the step in poster capitals, its line when open */
+@media (min-width: 901px) { .page-flowerbar .howbar2__acc { height: clamp(340px, 30vw, 420px); } }
+.page-flowerbar .howbar2 .acc__meta { display: flex; align-items: center; gap: 14px; }
+.page-flowerbar .howbar2 .acc__n { font: italic 400 1.4rem/1 var(--f-serif); color: var(--mint-soft); text-shadow: 0 1px 14px rgba(0, 0, 0, .65); }
+.page-flowerbar .howbar2 .acc__t { font-stretch: var(--wdth-poster); text-transform: uppercase; letter-spacing: -.01em; }
+/* the lens band: a 4:3 picture instead of a square (a shorter band); the lens still follows the pointer over all of it */
+.page-flowerbar .lensband__img { aspect-ratio: 4 / 3; }
+/* See the real thing: the shop's own photo beside the shop's own video, the same height */
+.page-flowerbar .footage__pair { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; align-items: stretch; }
+.page-flowerbar .footage__jars { position: relative; margin: 0; max-width: none; }
+.page-flowerbar .footage__jars .frame { height: 100%; }
+.page-flowerbar .footage__img { aspect-ratio: auto; object-position: 32% 50%; }
+@media (max-width: 900px) {
+  .page-flowerbar .footage__pair { grid-template-columns: minmax(0, 1fr); }
+  .page-flowerbar .footage__jars { display: block; }
+  .page-flowerbar .footage__jars .frame { height: auto; aspect-ratio: 16 / 10; }
+}
+
+/* ================================================================ /lifestyle/ */
+/* the drops, a little shorter */
+.page-lifestyle .drop__stage { min-height: 310px; padding: 32px 20px 18px; }
+.page-lifestyle .drop__img { max-height: 268px; }
+/* the brass grinder from the home's glass cases, floating under its warm spot (no shelf, no reflection: operator,
+   2026-11-10, "do not use this shelf across whole site") */
+.page-lifestyle .accshelf__fig { padding-top: 28px; }
+.page-lifestyle .accshelf__img { width: min(290px, 62%); }
+@media (max-width: 900px) { .page-lifestyle .accshelf__img { width: min(230px, 52%); } }
+/* the mood band, dark: the shop's display case beside the line, straight into the footer */
+.page-lifestyle .mood2__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.page-lifestyle .mood2__fig { position: relative; margin: 0; }
+.page-lifestyle .mood2__frame { aspect-ratio: 4 / 3; box-shadow: 0 0 0 1px var(--line-dark), var(--shadow-float); }
+.page-lifestyle .mood2__img { object-position: 50% 58%; }
+.page-lifestyle .mood2 .mood__big { color: var(--on-dark) !important; }
+.page-lifestyle .mood2 .mood__big em { color: var(--mint); }
+.page-lifestyle .mood2__copy p:not(.mood__big):not(.kicker) { color: var(--on-dark-2); }
+@media (max-width: 900px) { .page-lifestyle .mood2__grid { grid-template-columns: minmax(0, 1fr); } }

@@ -1,0 +1,284 @@
+{
+  "stubs": [
+    "/alpha-classics-artists-named-polar-music-prize-winners/",
+    "/arcana-wins-the-choral-award-at-the-2022-icmas/",
+    "/author/admin/",
+    "/category/uncategorized/",
+    "/delivery/",
+    "/gallery/",
+    "/media/",
+    "/music-for-lovers-our-valentines-day-promotion/",
+    "/outhere-music-receives-four-award-nominations/",
+    "/retail-space/",
+    "/sample-page-2/",
+    "/services/beauty-treatments/",
+    "/services/body-recovery/",
+    "/services/cosmetics-and-care/",
+    "/services/eyelash-extensions/",
+    "/services/flowers-in-your-eyes/",
+    "/services/makeup/",
+    "/services/moon-swing/",
+    "/services/new-cats-turbo/",
+    "/services/our-little-big/",
+    "/services/rocky-mountain/",
+    "/services/skin-care/",
+    "/services/streetball-with-guys/"
+  ],
+  "generated": "2026-11-10T15:12:14.799Z",
+  "method": "p95/p5 background luminance under each text line, text hidden, reduced motion",
+  "checked": 6251,
+  "fails": [],
+  "worst": [
+    {
+      "page": "/lifestyle/",
+      "vp": "390x844",
+      "scene": "band.band--gallery.band--tight",
+      "el": "p.kicker",
+      "text": "The accessories shelf",
+      "ratio": 4.68,
+      "need": 4.5,
+      "medianRatio": 5.29
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 4.72,
+      "need": 4.5,
+      "medianRatio": 5.25
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 4.73,
+      "need": 4.5,
+      "medianRatio": 5.26
+    },
+    {
+      "page": "/the-flower-bar/",
+      "vp": "1440x900",
+      "scene": "fbhero",
+      "el": "h1.fbhero__t",
+      "text": "The Flower Bar",
+      "ratio": 3.16,
+      "need": 3,
+      "medianRatio": 13.6
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "390x844",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 4.74,
+      "need": 4.5,
+      "medianRatio": 5.2
+    },
+    {
+      "page": "/journal/first-visit-guide/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.8,
+      "need": 4.5,
+      "medianRatio": 5.3
+    },
+    {
+      "page": "/journal/indica-sativa-hybrid/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.85,
+      "need": 4.5,
+      "medianRatio": 5.29
+    },
+    {
+      "page": "/journal/what-are-trichomes/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.85,
+      "need": 4.5,
+      "medianRatio": 5.33
+    },
+    {
+      "page": "/journal/first-visit-guide/",
+      "vp": "390x844",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.85,
+      "need": 4.5,
+      "medianRatio": 5.35
+    },
+    {
+      "page": "/journal/what-are-trichomes/",
+      "vp": "390x844",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.89,
+      "need": 4.5,
+      "medianRatio": 5.35
+    },
+    {
+      "page": "/journal/what-are-trichomes/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.9,
+      "need": 4.5,
+      "medianRatio": 5.3
+    },
+    {
+      "page": "/journal/first-visit-guide/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.9,
+      "need": 4.5,
+      "medianRatio": 5.35
+    },
+    {
+      "page": "/journal/indica-sativa-hybrid/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.91,
+      "need": 4.5,
+      "medianRatio": 5.34
+    },
+    {
+      "page": "/journal/indica-sativa-hybrid/",
+      "vp": "390x844",
+      "scene": "band.band--gallery.art",
+      "el": "p.sources__note",
+      "text": "General information for adults 21+. Last",
+      "ratio": 4.98,
+      "need": 4.5,
+      "medianRatio": 5.4
+    },
+    {
+      "page": "/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery-2.faqprev",
+      "el": "p.kicker",
+      "text": "«‎Got Questions?»",
+      "ratio": 5.09,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.kicker",
+      "text": "On the live menu now",
+      "ratio": 5.09,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/",
+      "vp": "390x844",
+      "scene": "band.band--gallery-2.faqprev",
+      "el": "p.kicker",
+      "text": "«‎Got Questions?»",
+      "ratio": 5.09,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "390x844",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.kicker",
+      "text": "On the live menu now",
+      "ratio": 5.09,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery-2.faqprev",
+      "el": "p.kicker",
+      "text": "«‎Got Questions?»",
+      "ratio": 5.11,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.kicker",
+      "text": "On the live menu now",
+      "ratio": 5.11,
+      "need": 4.5,
+      "medianRatio": 5.41
+    },
+    {
+      "page": "/about/the-crew/",
+      "vp": "1440x900",
+      "scene": "band.band--gallery.founders",
+      "el": "p.kicker",
+      "text": "The founders",
+      "ratio": 5.12,
+      "need": 4.5,
+      "medianRatio": 5.81
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "390x844",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 5.12,
+      "need": 4.5,
+      "medianRatio": 5.6
+    },
+    {
+      "page": "/",
+      "vp": "1024x768",
+      "scene": "night",
+      "el": "h3.acc__t",
+      "text": "Mind-Blowing Selection",
+      "ratio": 5.15,
+      "need": 4.5,
+      "medianRatio": 7.07
+    },
+    {
+      "page": "/lifestyle/",
+      "vp": "390x844",
+      "scene": "band.band--gallery-2.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 5.17,
+      "need": 4.5,
+      "medianRatio": 5.61
+    },
+    {
+      "page": "/shop/",
+      "vp": "1024x768",
+      "scene": "band.band--gallery.band--tight",
+      "el": "p.shopnote",
+      "text": "Prices and stock come straight from the ",
+      "ratio": 5.2,
+      "need": 4.5,
+      "medianRatio": 5.8
+    }
+  ],
+  "verdict": "PASS"
+}

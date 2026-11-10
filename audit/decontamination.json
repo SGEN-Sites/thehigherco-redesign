@@ -1,9 +1,9 @@
 {
   "schema": "site-reforge/decontamination@1",
-  "generated": "2026-11-10T01:50:56.561Z",
+  "generated": "2026-11-10T15:08:53.657Z",
   "target": "/Users/carlcelino/OSOFT/Code/thehigherco-redesign/dist",
-  "filesFound": 58,
-  "filesScanned": 58,
+  "filesFound": 60,
+  "filesScanned": 60,
   "filesSkipped": 0,
   "counts": {},
   "clean": true,

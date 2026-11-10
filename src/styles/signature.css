@@ -4,35 +4,82 @@
 
 /* ---------- HOME HERO ---------- */
 .hero { position: relative; isolation: isolate; display: flex; align-items: center; min-height: max(640px, min(calc(100svh - var(--header-h) - var(--utility-h)), 940px)); padding: 48px 0 140px; overflow: clip; background: var(--ink); }
-.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(560px circle at var(--mx) var(--my), var(--light-mint-2), var(--clear) 62%); }
-.hero__ground { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
-.hero__glow { position: absolute; inset: 0; background-repeat: no-repeat; background-size: 140% 140%; }
-.hero__glow--a { background-image: radial-gradient(40vmax 40vmax at 78% 12%, var(--light-mint), var(--clear) 72%); animation: glow-a 24s var(--ease-io) infinite alternate; }
-.hero__glow--b { background-image: radial-gradient(36vmax 36vmax at 14% 92%, var(--light-brass), var(--clear) 72%); animation: glow-b 28s var(--ease-io) infinite alternate; }
-.hero__beam { position: absolute; inset: 0; background: linear-gradient(112deg, var(--clear) 40%, var(--light-warm-2) 50%, var(--clear) 60%); background-size: 260% 100%; mix-blend-mode: screen; animation: beam 16s var(--ease-io) infinite alternate; }
-/* drift by moving the paint, never the box: the layers stay inside the hero at every width */
-@keyframes glow-a { from { background-position: 0% 0%; } to { background-position: 100% 70%; } }
-@keyframes glow-b { from { background-position: 100% 100%; } to { background-position: 0% 30%; } }
-@keyframes beam { from { background-position: 0% 0; opacity: .5; } to { background-position: 100% 0; opacity: 1; } }
-.hero__art { position: absolute; z-index: 0; mix-blend-mode: screen; right: max(0px, calc((100vw - var(--container)) / 2 - 40px)); bottom: -2px; height: 108%; aspect-ratio: 1509 / 2048; translate: 0 var(--py, 0px); pointer-events: none; }
-.hero__liberty-wrap { position: relative; height: 100%; }
-.hero__liberty { height: 100%; width: auto; max-width: none; filter: drop-shadow(0 0 28px var(--light-mint-2)); }
-html.js .hero__liberty { animation: liberty-in 2.4s var(--ease) both; }
-@keyframes liberty-in { from { opacity: 0; translate: 0 40px; filter: drop-shadow(0 0 0 var(--clear)) brightness(.4); } to { opacity: 1; translate: 0 0; } }
-.hero__torch { position: absolute; left: 6%; top: -1%; width: 26%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(closest-side, var(--light-warm), var(--light-mint-2) 55%, var(--clear)); mix-blend-mode: screen; animation: flicker 3.6s var(--ease-io) infinite; }
-@keyframes flicker { 0%, 100% { opacity: .75; scale: 1; } 30% { opacity: 1; scale: 1.08; } 55% { opacity: .82; scale: .97; } 75% { opacity: .95; scale: 1.04; } }
-.hero__float { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
-.float { position: absolute; display: block; translate: 0 var(--py, 0px); }
-.float__svg { width: 100%; height: auto; fill: var(--brass); filter: drop-shadow(0 12px 18px var(--shade)); animation: bob 9s var(--ease-io) infinite; }
-.float--leaf.f1 { left: 46%; top: 14%; width: 70px; rotate: -18deg; }
-.float--leaf.f5 { left: 6%; bottom: 20%; width: 46px; rotate: 22deg; opacity: .7; }
-.float--leaf.f5 .float__svg { animation-duration: 11s; animation-delay: -3s; }
-.float--dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint-soft); box-shadow: 0 0 14px var(--mint); }
-.f2 { left: 38%; top: 72%; } .f3 { left: 62%; top: 36%; width: 5px; height: 5px; } .f4 { left: 18%; top: 30%; width: 6px; height: 6px; }
-@keyframes bob { 50% { transform: translateY(-14px) rotate(6deg); } }
+/* warm key light that follows the pointer (desktop; [data-spot] writes --mx/--my) */
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(560px circle at var(--mx) var(--my), var(--light-warm-2), var(--clear) 62%); mix-blend-mode: screen; }
+/* the golden-hour photograph: opens from dark like a film's first shot, then a slow push-in; scrolling dollies in.
+   .hero__stage IS the photograph's box (exactly what object-fit: cover would draw), so the life layers inside it are
+   placed in the photo's own pixels: --px is one source pixel, --x0 the left edge of the phone crop. */
+.hero__photo { position: absolute; inset: 0; z-index: -3; overflow: hidden; container-type: size; scale: calc(1 + var(--hp, 0) * .06); transform-origin: 66% 40%; }
+.hero__stage { --sw: 5504; --sh: 3072; --x0: 0; --ox: .64; --oy: .14; position: absolute; inset: 0; transform-origin: 66% 44%; }
+@supports (width: 1cqw) {
+  .hero__stage { --w: max(100cqw, calc(100cqh * var(--sw) / var(--sh))); inset: auto; width: var(--w); height: calc(var(--w) * var(--sh) / var(--sw)); left: calc((100cqw - var(--w)) * var(--ox)); top: calc((100cqh - var(--w) * var(--sh) / var(--sw)) * var(--oy)); container-type: inline-size; }
+}
+html.js .hero__stage { animation: hero-open 2.6s var(--ease) both, hero-push 36s var(--ease-io) 2.6s infinite alternate; }
+.hero__pic, .hero__pic .pic__img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero__pic .pic__img { object-fit: cover; object-position: 64% 14%; }
+@keyframes hero-open { from { scale: 1.07; filter: brightness(.3) saturate(.6); } to { scale: 1; filter: none; } }
+@keyframes hero-push { from { scale: 1; } to { scale: 1.07; } }
+
+/* the hero's life: traffic above the elevated highway deck, bird shadows on the sunlit side wall, birds behind the
+   gables. Masks are cut from the photo itself (tools/process-images.py hero_masks): cars only where open sky shows
+   above the deck (the rail and deck stay in front), shadows only where the low sun lights a surface. */
+.hero__life { --px: calc(100cqw / var(--sw)); position: absolute; inset: 0; pointer-events: none; }
+.hero__life.is-paused *, .hero__life.is-paused *::before { animation-play-state: paused !important; }
+.hero__defs { position: absolute; width: 0; height: 0; }
+.hero__traffic { position: absolute; left: calc((4540 - var(--x0)) * var(--px)); top: calc(1940 * var(--px)); width: calc(460 * var(--px)); height: calc(140 * var(--px)); -webkit-mask: url("../img/gen/hero-traffic-mask.webp") 0 0 / 100% 100% no-repeat; mask: url("../img/gen/hero-traffic-mask.webp") 0 0 / 100% 100% no-repeat; }
+.hero__road { position: absolute; left: -60%; width: 220%; top: 86.9%; height: 0; rotate: -4.85deg; }
+.car { position: absolute; left: 0; bottom: 0; width: calc(var(--l) * var(--px)); height: calc(var(--h) * var(--px)); color: var(--c); filter: saturate(.85) brightness(.94); animation: drive-r var(--dur) linear var(--delay) infinite both; }
+.car svg { display: block; width: 100%; height: 100%; }
+.car--l { animation-name: drive-l; }
+.car--l svg { scale: -1 1; }
+.car--far { bottom: calc(6 * var(--px)); scale: .9; filter: saturate(.7) brightness(.86); z-index: -1; }
+@keyframes drive-r { 0% { translate: calc(-220 * var(--px)) 0; } 7%, 100% { translate: calc(1060 * var(--px)) 0; } }
+@keyframes drive-l { 0% { translate: calc(1060 * var(--px)) 0; } 7%, 100% { translate: calc(-220 * var(--px)) 0; } }
+.hero__shade { position: absolute; inset: 0; mix-blend-mode: multiply; -webkit-mask: url("../img/gen/hero-sun-mask.webp") 0 0 / 100% 100% no-repeat; mask: url("../img/gen/hero-sun-mask.webp") 0 0 / 100% 100% no-repeat; }
+.flock { position: absolute; left: calc((var(--fx) - var(--x0)) * var(--px)); top: calc(var(--fy) * var(--px)); width: 0; height: 0; opacity: 0; animation: sweep-a var(--dur) linear var(--delay) infinite; }
+.flock--b { animation-name: sweep-b; }
+.bshadow { position: absolute; left: calc(var(--dx) * var(--px)); top: calc(var(--dy) * var(--px)); width: calc(var(--s) * var(--px)); height: calc(var(--s) * .4 * var(--px)); color: var(--bird-shadow); rotate: -14deg; filter: blur(calc(var(--b) * var(--px))); }
+.bshadow svg, .skybird svg { display: block; width: 100%; height: 100%; transform-origin: 50% 55%; animation: flap var(--flap) ease-in-out infinite alternate; }
+@keyframes flap { from { scale: 1 1; } to { scale: 1 .55; } }
+@keyframes sweep-a { 0% { translate: 0 0; scale: .72; opacity: 0; } .6% { opacity: 1; } 14% { translate: calc(1320 * var(--px)) calc(-340 * var(--px)); scale: 1.12; opacity: 1; } 14.6%, 100% { translate: calc(1320 * var(--px)) calc(-340 * var(--px)); scale: 1.12; opacity: 0; } }
+@keyframes sweep-b { 0% { translate: 0 0; scale: .8; opacity: 0; } .5% { opacity: .85; } 11% { translate: calc(1480 * var(--px)) calc(-430 * var(--px)); scale: 1.18; opacity: .85; } 11.5%, 100% { translate: calc(1480 * var(--px)) calc(-430 * var(--px)); scale: 1.18; opacity: 0; } }
+.hero__birds { position: absolute; inset: 0; -webkit-mask: url("../img/gen/hero-sky-mask.webp") 0 0 / 100% 100% no-repeat; mask: url("../img/gen/hero-sky-mask.webp") 0 0 / 100% 100% no-repeat; }
+.skyflock { position: absolute; left: calc((-300 - var(--x0)) * var(--px)); top: calc(900 * var(--px)); width: 0; height: 0; animation: sky-cross 23s linear 4s infinite both; }
+.skybird { position: absolute; left: calc(var(--dx) * var(--px)); top: calc(var(--dy) * var(--px)); width: calc(var(--s) * var(--px)); height: calc(var(--s) * .4 * var(--px)); color: var(--bird); }
+@keyframes sky-cross { 0% { translate: 0 0; } 42% { translate: calc(6300 * var(--px)) calc(-820 * var(--px)); } 42.01%, 100% { translate: calc(6300 * var(--px)) calc(-820 * var(--px)); } }
+
+/* ---------- the hero at night (HERO_TIME = 'night' in src/pages/home.mjs) ----------
+   The sun's leak becomes the sodium streetlights out of frame on the left; the highway carries headlights and
+   taillights (the lamps sit just below the barrier; their glow, centred at the barrier line, shows above it); now and then a car's headlights sweep the
+   facade (masked to the lit world, never the sky); mist drifts low along the street. */
+.hero--night .hero__leak { background: radial-gradient(40vmax 30vmax at 5% 90%, var(--light-sodium), var(--clear) 70%) no-repeat; background-size: 130% 130%; }
+.hero--night .car { filter: none; }
+.hero--night .car::before, .hero--night .car::after { content: ""; position: absolute; pointer-events: none; border-radius: 50%; }
+.hero--night .car::before { bottom: 16%; width: 170%; height: 115%; background: radial-gradient(closest-side, var(--headlight), var(--headlight-2) 45%, var(--clear-light)); }
+.hero--night .car::after { bottom: 30%; width: 42%; height: 62%; background: radial-gradient(closest-side, var(--taillight), var(--clear-light)); }
+.hero--night .car--r::before { left: 70%; } .hero--night .car--r::after { right: 86%; }
+.hero--night .car--l::before { right: 70%; } .hero--night .car--l::after { left: 86%; }
+.hero__sweep { position: absolute; inset: 0; overflow: hidden; mix-blend-mode: screen; -webkit-mask: url("../img/gen/hero-ground-mask.webp") 0 0 / 100% 100% no-repeat; mask: url("../img/gen/hero-ground-mask.webp") 0 0 / 100% 100% no-repeat; }
+.hero__sweep::before { content: ""; position: absolute; top: 16%; bottom: 0; left: 0; width: calc(1500 * var(--px)); background: linear-gradient(100deg, var(--clear-light) 0%, var(--sweep) 40%, var(--sweep-core) 50%, var(--sweep) 60%, var(--clear-light) 100%); filter: blur(calc(70 * var(--px))); translate: calc(-1700 * var(--px)) 0; animation: sweep 17s var(--ease-io) 5s infinite; }
+@keyframes sweep { 0% { translate: calc(-1700 * var(--px)) 0; opacity: 0; } 2% { opacity: 1; } 13% { translate: calc(6200 * var(--px)) 0; opacity: .9; } 14%, 100% { translate: calc(6200 * var(--px)) 0; opacity: 0; } }
+.hero__mist { position: absolute; left: 0; right: 0; bottom: 0; height: 54%; pointer-events: none; mix-blend-mode: screen; opacity: .5; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1376' height='420'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.0032 .011' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .78 0 0 0 0 .84 0 0 0 0 .95 0 0 0 1.7 -.66'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") 0 0 / calc(2752 * var(--px)) 100% repeat-x; -webkit-mask-image: linear-gradient(0deg, #000 0%, #000 24%, transparent 100%); mask-image: linear-gradient(0deg, #000 0%, #000 24%, transparent 100%); animation: mist 90s linear infinite; }
+@keyframes mist { to { background-position: calc(2752 * var(--px)) 0; } }
+/* a warm light leak breathing where the low sun sits, under the grade so it never lifts the text's backing */
+.hero__leak { position: absolute; inset: 0; z-index: -3; pointer-events: none; background: radial-gradient(48vmax 34vmax at 10% 74%, var(--light-sun), var(--clear) 70%) no-repeat; background-size: 130% 130%; mix-blend-mode: screen; animation: leak 19s var(--ease-io) infinite alternate; }
+@keyframes leak { from { background-position: 0% 100%; opacity: .55; } to { background-position: 24% 70%; opacity: 1; } }
+/* the grade: text-side scrim, a floor that hands over to the next band, and a lens vignette */
+.hero__grade { position: absolute; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--scrim-deep) 0%, var(--scrim) 30%, var(--scrim-soft) 52%, var(--clear) 74%),
+    linear-gradient(0deg, var(--ink) 0%, var(--scrim-soft) 16%, var(--clear) 40%),
+    radial-gradient(130% 115% at 64% 38%, var(--clear) 52%, var(--vignette) 100%); }
 .hero__in { position: relative; z-index: 2; translate: 0 calc(var(--hp, 0) * -70px); opacity: calc(1 - var(--hp, 0) * 1.1); }
-.hero__kicker { margin-bottom: 22px; }
-.hero__t { margin: 0 0 .22em; font-size: clamp(3.1rem, 9.4vw, 9.6rem); font-weight: 900; font-stretch: var(--wdth-poster); line-height: .86; letter-spacing: -.035em; text-transform: uppercase; max-width: 9ch; }
+/* eyebrows and breadcrumbs over photographs get their own dark glass, so they read at every size */
+.hero__kicker, .fbhero .kicker, .lshero .kicker, .vhero .kicker { width: fit-content; margin-bottom: 22px; padding: 7px 12px; border-radius: var(--radius-sm); background: var(--glass-dark-2); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: inset 0 0 0 1px var(--glass-edge); }
+.fbhero .crumbs ol, .lshero .crumbs ol, .vhero .crumbs ol { width: fit-content; padding: 0 12px; border-radius: var(--radius-sm); background: var(--glass-dark-2); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: inset 0 0 0 1px var(--glass-edge); }
+/* sized so the headline ends left of the building's front corner at every desktop shape, with the push-in at its
+   widest (operator, 2026-11-10: "adjust H1 size to not overlap the storefront"); "HIGHER Co." measures 6.33em */
+.hero__t { margin: 0 0 .22em; font-size: clamp(3.1rem, 6.4vw, 6.25rem); font-weight: 900; font-stretch: var(--wdth-poster); line-height: .86; letter-spacing: -.035em; text-transform: uppercase; max-width: 9ch; }
 .hero__t-a { display: inline; }
 .hero__t-b { display: inline-block; font-family: var(--f-serif); font-style: italic; font-weight: 400; font-stretch: normal; text-transform: none; color: var(--mint); letter-spacing: -.02em; font-size: 1.04em; line-height: .8; text-shadow: 0 0 40px var(--light-mint); }
 .hero__sub { max-width: 30ch; margin: 0; font: 400 clamp(1.15rem, 1.7vw, 1.5rem)/1.45 var(--f-body); font-stretch: normal; letter-spacing: 0; text-wrap: pretty; color: var(--on-dark); }
@@ -41,24 +88,108 @@ html.js .hero__liberty { animation: liberty-in 2.4s var(--ease) both; }
 .hero__cue { position: absolute; left: 50%; bottom: 46px; z-index: 2; display: grid; place-items: center; width: 44px; height: 64px; translate: -50% 0; }
 .hero__cue-line { width: 2px; height: 46px; background: linear-gradient(var(--mint), var(--clear)); animation: cue 2.2s var(--ease-io) infinite; transform-origin: top; }
 @keyframes cue { 0% { scale: 1 0; } 50% { scale: 1 1; } 100% { scale: 1 1; opacity: 0; } }
+@media (min-width: 901px) and (max-aspect-ratio: 5 / 4) { .hero__t { font-size: clamp(3.1rem, 5.4vw, 6.25rem); } }
 @media (max-width: 900px) {
   .hero { align-items: flex-end; padding: 32px 0 120px; min-height: max(620px, calc(100svh - var(--header-h) - var(--utility-h))); }
-  .hero__art { right: 0; height: 88%; opacity: .34; }
   .hero__t { font-size: clamp(3.1rem, 15.5vw, 6.4rem); }
-  .float--leaf.f1 { left: 70%; top: 8%; width: 50px; }
-  .ai-tag--hero { bottom: 96px; }
+  .ai-tag--hero { bottom: auto; top: 12px; }
+  /* phones: the building stands above the words, the grade rises from the floor */
+  .hero__grade { background: linear-gradient(180deg, var(--scrim-soft) 0%, var(--clear) 30%), linear-gradient(0deg, var(--ink) 0%, var(--scrim-deep) 36%, var(--scrim) 62%, var(--scrim-soft) 78%, var(--clear) 92%), radial-gradient(140% 100% at 50% 30%, var(--clear) 55%, var(--vignette) 100%); }
+  .hero__stage { --ox: .62; --oy: 0; }
+  .hero__pic .pic__img { object-position: 62% 0%; }
+}
+@media (max-width: 700px) {
+  /* the phone crop (tools/process-images.py: x 2436-4164 of the 5504 px frame) */
+  .hero__stage { --sw: 1728; --x0: 2436; --ox: .5; }
+  .hero__pic .pic__img { object-position: 50% 0%; }
+  .hero__traffic { display: none; }
+  .hero__shade { -webkit-mask-image: url("../img/gen/hero-sun-mask-tall.webp"); mask-image: url("../img/gen/hero-sun-mask-tall.webp"); }
+  .hero__birds { -webkit-mask-image: url("../img/gen/hero-sky-mask-tall.webp"); mask-image: url("../img/gen/hero-sky-mask-tall.webp"); }
+  .hero__sweep { -webkit-mask-image: url("../img/gen/hero-ground-mask-tall.webp"); mask-image: url("../img/gen/hero-ground-mask-tall.webp"); }
 }
 
-/* ---------- FOUNDERS (mission) ---------- */
-.mission__in { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
-.mission__t { font-size: var(--fs-h1); font-weight: 900; font-stretch: var(--wdth-poster); text-transform: uppercase; line-height: .94; letter-spacing: -.02em; }
+/* ---------- FOUNDERS (mission): two hands reaching across the band ----------
+   The engraving bleeds off both edges; "The Founders" sits BEHIND it as light script (operator, 2026-11-10: "the
+   script 'The Founders' writing can be at the back of the illustration in lighter text to make this section more
+   compact"). Decorative, so aria-hidden: the section's kicker, heading and copy carry the meaning. */
+.mission--banner { padding-block: clamp(28px, 4vw, 64px) var(--band-y-tight); }
+.mission__t { font-size: var(--fs-h1); font-weight: 900; font-stretch: var(--wdth-poster); text-transform: uppercase; line-height: .94; letter-spacing: -.02em; margin: 0; }
 .mission__t em { color: var(--brick); text-transform: none; }
-.mission__piece { margin: 0; display: grid; justify-items: center; }
-.mission__piece .frame { width: min(420px, 100%); }
-.mission__mark { width: 100%; height: auto; }
-.mission__mark .mark__mono { fill: var(--ink); }
-.mission__cap { justify-self: start; margin: -34px 0 0 18px; position: relative; }
-@media (max-width: 900px) { .mission__in { grid-template-columns: 1fr; } .mission__piece { max-width: 380px; } }
+.mbanner { position: relative; overflow: clip; margin: 0 0 clamp(24px, 3.4vw, 48px); }
+/* the stage is the engraving's own box: the word and both hand layers share it */
+.mbanner__stage { position: relative; isolation: isolate; }
+/* "The Founders" sits behind the hands; each hand layer is opaque inside its outline (tools/process-images.py), so
+   the word is covered by a hand wherever that hand is, and never shows through it */
+.mbanner__word { position: absolute; inset: 0; z-index: -1; display: grid; justify-items: center; align-items: start; margin: 0; font: italic 400 clamp(4.2rem, 13vw, 13rem)/1 var(--f-serif); letter-spacing: -.01em; white-space: nowrap; color: var(--money); opacity: .18; pointer-events: none; user-select: none; -webkit-user-select: none; }
+.mbanner__word > span { display: block; translate: 0 -.08em; }
+/* the hands travel in from the edges as the banner scrolls into view and meet: site.js writes --meet from 0 (apart)
+   to 1 (fingertips touching). No JS or reduced motion: they are shown met. --touch is half the drawn gap between
+   the fingertips (59 px of 6336, measured by process-images.py) */
+.mbanner__stage { --meet: 1; --apart: 16%; --touch: .47%; }
+.mbanner__hand { display: block; width: 100%; height: auto; will-change: translate; }
+.mbanner__hand--l { translate: calc((1 - var(--meet)) * -1 * var(--apart) + var(--meet) * var(--touch)) 0; }
+.mbanner__hand--r { position: absolute; inset: 0; translate: calc((1 - var(--meet)) * var(--apart) - var(--meet) * var(--touch)) 0; }
+.mbanner .ai-tag { right: var(--gutter); bottom: 4px; }
+.mbanner__in { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(28px, 5vw, 88px); align-items: start; }
+/* the heading group stays with the reader while the story scrolls past (operator, 2026-11-10) */
+.mbanner__head { position: sticky; top: calc(var(--header-h) + 28px); }
+.mbanner__body .lead { margin-top: 0; }
+/* the story starts a step lower than the heading (editorial stagger), which gives the pinned heading room to follow */
+.mbanner__body { padding-top: clamp(32px, 11vh, 132px); }
+@media (max-width: 900px) {
+  .mbanner__body { padding-top: 0; }
+  .mbanner__stage { width: 136%; margin-left: -18%; --apart: 22%; }
+  .mbanner__word { font-size: clamp(3.2rem, 16vw, 6.6rem); }
+  .mbanner__in { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .mbanner__head { position: static; }
+}
+
+/* ---------- FIVE PILLARS: a gallery walk (operator, 2026-11-10: P2, "make cards less chunky") ----------
+   The section pins under the nav; vertical scroll walks the row of exhibits sideways (site.js sets the section
+   height from the track width and writes --walk / --p / per-card --focus). The card nearest the middle takes the
+   spotlight. Phones, no JS and reduced motion: a swipe row, nothing pinned. */
+.walk { position: relative; background: var(--ink); color: var(--on-dark); }
+.walk__sticky { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(22px, 3.2vh, 40px); padding: var(--band-y-tight) 0; overflow: hidden; }   /* minmax(0,1fr): the wide row must not size the column */
+.walk__t { margin: 0; font-size: var(--fs-h1); font-weight: 900; font-stretch: var(--wdth-poster); text-transform: uppercase; line-height: .94; letter-spacing: -.02em; }
+.walk__t em { font-family: var(--f-serif); font-style: italic; font-weight: 400; font-stretch: normal; text-transform: none; color: var(--mint); letter-spacing: -.01em; }
+.walk__viewport { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
+.walk__viewport::-webkit-scrollbar { display: none; }
+.walk__track { display: flex; gap: clamp(18px, 4vw, 64px); width: max-content; margin: 0; padding: 0 var(--gutter) 6px; list-style: none; }
+.walk__card { width: clamp(220px, 19vw, 300px); scroll-snap-align: center; }
+.walk__media { position: relative; margin: 0 0 16px; aspect-ratio: 3 / 4; border-radius: var(--radius); overflow: hidden; background: var(--ink-2); box-shadow: 0 0 0 1px var(--line-dark), 0 34px 60px -34px var(--shade); }
+.walk__img { width: 100%; height: 100%; object-fit: cover; }
+.walk__n { margin: 0 0 6px; font: italic 400 1.15rem/1 var(--f-serif); color: var(--brass); }
+.walk__name { margin: 0 0 6px; font: 900 clamp(1rem, 1.3vw, 1.2rem)/1.15 var(--f-display); font-stretch: var(--wdth-poster); text-transform: uppercase; color: var(--mint); }
+.walk__line { margin: 0; max-width: 30ch; font-size: .95rem; line-height: 1.5; color: var(--on-dark-2); }
+.walk__caption { display: none; }
+/* pinned only where it fits (operator, 2026-11-10: the bottom bar covered the caption): the bar's room is kept clear
+   at the bottom, room above the heading so it never sits against the band before (operator: "reduce size of these
+   images so these texts are not sitting too close to the section before"), and the cards size to the height left over
+   (heading ~145px, caption ~100px, gaps); below 760px tall the strip stays a swipe row (site.js uses the same test) */
+@media (min-width: 901px) and (min-height: 760px) and (prefers-reduced-motion: no-preference) {
+  html.js .walk.is-live { --cw: clamp(240px, min(24vw, calc((100vh - 560px) / .95)), 440px); }
+  html.js .walk.is-live .walk__sticky { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); align-content: center; padding: clamp(48px, 7vh, 88px) 0 var(--bar-clear); gap: clamp(14px, 2.6vh, 30px); }
+  /* the curved strip (operator, 2026-11-10: "use this style to present these cards"): cards on an arc that wraps
+     toward the viewer, outer edges forward, each with a soft reflection; site.js writes every card's transform
+     from its distance to the active pillar; the ends of the strip dissolve into the dark */
+  /* the side fade is a mask, and a mask cuts off whatever lies outside its box: the outer cards tilt toward the viewer
+     and stand taller than the track, so the box reaches above them (padding) without moving them (margin) */
+  html.js .walk.is-live .walk__viewport { overflow: visible; perspective: 1500px; padding-top: calc(var(--cw) * .1); margin-top: calc(var(--cw) * -.1); padding-bottom: calc(var(--cw) * .2); -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 13%, #000 87%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 13%, #000 87%, transparent 100%); }
+  html.js .walk.is-live .walk__track { position: relative; width: 100%; height: calc(var(--cw) * .75); padding: 0; transform-style: preserve-3d; }
+  html.js .walk.is-live .walk__card { position: absolute; left: calc(50% - var(--cw) / 2); top: 0; width: var(--cw); will-change: transform, opacity; }
+  html.js .walk.is-live .walk__media { aspect-ratio: 4 / 3; margin: 0; box-shadow: 0 0 0 1px var(--line-dark), 0 30px 60px -30px var(--shade); -webkit-box-reflect: below 10px linear-gradient(transparent 64%, rgba(255, 255, 255, .2)); }
+  html.js .walk.is-live .walk__img { object-position: 50% var(--oy, 50%); }
+  /* the words live in the caption under the strip; each card keeps its own for screen readers */
+  html.js .walk.is-live .walk__text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  html.js .walk.is-live .walk__card .ai-tag { display: none; }
+  html.js .walk.is-live .walk__caption { position: relative; display: grid; justify-items: center; gap: 6px; text-align: center; }
+  html.js .walk.is-live .walk__caption .walk__name { font-size: clamp(1.3rem, 2vw, 1.9rem); margin: 0; }
+  html.js .walk.is-live .walk__caption .walk__line { max-width: 46ch; font-size: 1rem; }
+  html.js .walk.is-live .walk__caption.is-in > p { animation: walk-cap .5s var(--ease) both; }
+  html.js .walk.is-live .ai-tag--strip { position: absolute; top: 0; right: var(--gutter); bottom: auto; }
+}
+@keyframes walk-cap { from { opacity: 0; translate: 0 8px; } }
+@media (max-width: 900px) { .walk__card { width: 66vw; } }
 
 /* ---------- SCROLL-BUILT MONOGRAM (pinned only when site.js marks it live) ---------- */
 .mbuild { position: relative; background: var(--ink); color: var(--on-dark); padding: var(--band-y) 0; }
@@ -96,32 +227,77 @@ html.js .hero__liberty { animation: liberty-in 2.4s var(--ease) both; }
 }
 @media (max-width: 900px) and (max-height: 700px) { .mbuild.is-live .pillars__item { padding: 5px 0; } .mbuild__stage { width: min(56vw, 260px); } }
 
-/* ---------- WELCOME (image breaks out of its band into the one above) ---------- */
-.choice__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 88px); align-items: center; }
-.choice__h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); margin-top: 1.4em; }
-.choice__fig { position: relative; margin: calc(var(--band-y) * -1.7) 0 0; z-index: 3; }
-.choice__frame { border-radius: var(--r-frame); overflow: hidden; box-shadow: var(--shadow-float); translate: 0 var(--py, 0px); }
-.choice__img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
-@media (max-width: 900px) { .choice__grid { grid-template-columns: 1fr; } .choice__fig { margin: 0; order: -1; } .choice__img { aspect-ratio: 4 / 3; } }
+/* ---------- WELCOME: a magazine bento (operator, 2026-11-10) ----------
+   The heading, both paragraphs, the shop's own three photos and the 137 fact, each in its own tile. Row heights come from
+   the copy and from the detail tile's ratio; the photos are absolutely placed, so they never size a row themselves. */
+/* shorter (operator, 2026-11-10: "is there a way we can still reduce height of this section?"): a tighter band, a smaller
+   heading in its tile, tighter text tiles and a wider crop of the display case; same layout */
+.choice { padding-block: var(--band-y-tight); }
+.choice__bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.choice__t { position: relative; margin: 0; border-radius: var(--radius); overflow: hidden; }
+.choice__t--head { grid-column: 1 / 4; display: grid; align-content: end; padding: clamp(20px, 2.4vw, 32px); background: var(--ink); }
+.choice .choice__t--head .sect-t { margin: 0; font-size: clamp(1.9rem, 3.2vw, 2.9rem); color: var(--on-dark); }
+.choice .choice__t--head .kicker { color: var(--mint); }
+.choice__t--wide { grid-column: 4 / 7; grid-row: span 2; min-height: 340px; }
+.choice__t--p1, .choice__t--p2 { padding: clamp(18px, 2.2vw, 28px); background: var(--paper); box-shadow: var(--shadow-light); }
+.choice__t--p1 p, .choice__t--p2 p { font-size: .96rem; line-height: 1.6; }
+.choice__t--p1 { grid-column: 1 / 4; }
+.choice__t--p1 p, .choice__t--p2 p { margin: 0; }
+.choice__t--crew { grid-column: 1 / 3; grid-row: span 2; min-height: 340px; }
+.choice__t--p2 { grid-column: 3 / 6; }
+.choice__h3 { font-size: clamp(1.2rem, 1.7vw, 1.5rem); margin: 0 0 .45em; }
+.choice__t--fact { grid-column: 6 / 7; display: grid; align-content: end; gap: 8px; padding: 18px; background: var(--ink); }
+.choice__t--fact b { font: 900 clamp(2.2rem, 3.6vw, 3.4rem)/.9 var(--f-display); font-stretch: var(--wdth-poster); color: var(--mint); }
+.choice__t--fact span { color: var(--on-dark-2); font-size: .88rem; line-height: 1.4; }
+.choice__t--detail { grid-column: 3 / 7; aspect-ratio: 5 / 2; }
+/* a photo tile: cover-cropped at a focal point (--fx / --fy) with an optional zoom (--z); it develops in on scroll */
+.choice__crop { background: var(--ink); box-shadow: var(--shadow-light); }
+.choice__crop .choice__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--fx, 50%) var(--fy, 50%); scale: var(--z, 1); transform-origin: var(--fx, 50%) var(--fy, 50%); }
+.choice__cap { position: absolute; left: 12px; bottom: 12px; z-index: 1; margin: 0; padding: 6px 10px; border-radius: var(--radius-sm); background: var(--glass-dark-2); color: var(--on-dark); font: 500 .82rem/1 var(--f-body); }
+/* tablet: six columns get narrow, so the second paragraph takes the fact's column (the fact repeats the first paragraph
+   and is hidden from assistive tech already) and the crew tile stays a readable portrait */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .choice__t--p2 { grid-column: 3 / 7; }
+  .choice__t--fact { display: none; }
+}
+/* phone: two columns, packed densely so the fact sits beside the crew photo instead of leaving holes */
+@media (max-width: 900px) {
+  .choice__bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-flow: row dense; gap: 10px; }
+  .choice__t--head, .choice__t--wide, .choice__t--p1, .choice__t--p2, .choice__t--detail { grid-column: 1 / -1; }
+  .choice__t--head { min-height: 0; }
+  .choice__t--wide { grid-row: auto; min-height: 0; aspect-ratio: 16 / 10; }
+  .choice__t--crew { grid-column: 1 / 2; grid-row: auto; min-height: 0; aspect-ratio: 1 / 1; }
+  .choice__t--fact { grid-column: 2 / 3; }
+  .choice__t--detail { aspect-ratio: 16 / 10; }
+}
 
 /* seams: light bands slide over the dark section before them */
-.mbuild + .band--gallery, .fbar + .band--gallery-2, .display + .band--gallery, .night + .band, .phero + .band--gallery, .phero + .band--gallery-2, .shophero + .band--gallery, .fbhero + .band, .vhero + .band, .lshero + .tape + .band { margin-top: -40px; border-radius: 40px 40px 0 0; box-shadow: 0 -30px 60px -40px var(--shade); z-index: 2; }
+.mbuild + .band--gallery, .fbar + .band--gallery-2, .display + .band--gallery, .night + .band, .phero + .band--gallery, .phero + .band--gallery-2, .shophero + .band--gallery, .fbhero + .band, .vhero + .band, .lshero + .tape + .band { margin-top: -40px; border-radius: var(--radius-sheet) var(--radius-sheet) 0 0; box-shadow: 0 -30px 60px -40px var(--shade); z-index: 2; }
 .tape + .band--gallery { padding-top: calc(var(--band-y) + 20px); }
 
 /* ---------- FLOWER BAR feature (home) ---------- */
 .fbar { padding: 0; overflow: clip; }
-.fbar__media { position: absolute; inset: 0; z-index: -1; }
-.fbar__img { width: 100%; height: 100%; object-fit: cover; }
-.fbar::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(90deg, var(--clear) 30%, var(--scrim-soft) 60%, var(--scrim) 100%), linear-gradient(0deg, var(--ink) 0%, var(--clear) 25%); }
-.fbar__in { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr minmax(0, 520px); gap: 32px; align-items: center; min-height: max(640px, 92svh); padding-block: var(--band-y); pointer-events: none; }
+/* the ball pit: a dark display with a soft light from above; the buds are drawn on the canvas by site.js */
+/* the top starts as plain ink, so the band above runs into it without a seam (operator: "these 2 sections should have
+   seamless transition") */
+.fbar__media { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, var(--ink) 0%, var(--clear) 24%), radial-gradient(60% 50% at 32% 45%, var(--light-mint-2), var(--clear) 70%), radial-gradient(55% 45% at 72% 100%, var(--light-brass-2), var(--clear) 70%), var(--ink); }
+/* the buds fade in below the top edge and out above the bottom, so no bud is cut by the band edges */
+.fbar__pit { position: absolute; inset: 0; display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 88%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 88%, transparent 100%); }
+.fbar__media .lens canvas { display: block; width: 100%; height: 100%; border-radius: 50%; }
+.fbar::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(90deg, var(--scrim-soft) 0%, var(--clear) 55%); }
+/* the card on the left, compact, and a shorter band (operator, 2026-11-10: "place this on the left side make it more
+   compact and shorter so we wouldnt have such a long section") */
+.fbar__in { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 430px) 1fr; gap: 32px; align-items: center; min-height: clamp(480px, 62svh, 600px); padding-block: clamp(40px, 5vw, 72px); pointer-events: none; }
 .fbar__in > * { pointer-events: auto; }
-.fbar__num { margin: 0; align-self: end; font: 900 clamp(9rem, 27vw, 25rem)/.78 var(--f-display); font-stretch: var(--wdth-poster); letter-spacing: -.06em; color: var(--mint); mix-blend-mode: screen; opacity: .92; pointer-events: none !important; }
-.fbar__copy { padding: clamp(24px, 3vw, 40px); }
-@media (max-width: 900px) { .fbar__in { grid-template-columns: 1fr; align-content: end; } .fbar__num { font-size: 38vw; align-self: start; } .fbar::before { background: linear-gradient(0deg, var(--ink) 0%, var(--scrim) 45%, var(--clear) 85%); } }
+.fbar__copy { grid-column: 1; padding: clamp(20px, 2.2vw, 30px); }
+.fbar__copy .sect-t { font-size: clamp(1.9rem, 3vw, 2.75rem); }
+.fbar__copy p { font-size: .98rem; }
+/* phones: the copy at the top, so the pile of buds shows below it */
+@media (max-width: 900px) { .fbar__in { grid-template-columns: 1fr; align-content: start; min-height: 0; padding-block: var(--band-y-tight) calc(var(--band-y-tight) + 170px); } .fbar__copy { grid-column: 1; } .fbar::before { background: none; } }
 
 /* magnifier lens */
 .lensband__media { position: relative; }
-.lens { position: absolute; left: 0; top: 0; z-index: 3; width: 170px; height: 170px; border-radius: 50%; pointer-events: none; opacity: 0; translate: -50% -50%; background-image: var(--lens-img); background-repeat: no-repeat; box-shadow: 0 0 0 6px var(--brass), 0 0 0 8px var(--ink), 0 0 0 9px var(--light-brass), 0 30px 60px -10px var(--shade); transition: opacity .3s var(--ease); }
+.lens { position: absolute; left: 0; top: 0; z-index: 3; width: 170px; height: 170px; border-radius: 50%; pointer-events: none; opacity: 0; translate: -50% -50%; background-repeat: no-repeat; box-shadow: 0 0 0 6px var(--brass), 0 0 0 8px var(--ink), 0 0 0 9px var(--light-brass), 0 30px 60px -10px var(--shade); transition: opacity .3s var(--ease); }
 .lens.is-on { opacity: 1; }
 .lens--big { width: 210px; height: 210px; }
 
@@ -132,46 +308,86 @@ html.js .hero__liberty { animation: liberty-in 2.4s var(--ease) both; }
 .night__pic, .night__pic .pic__img, .night__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .night__video { opacity: 0; transition: opacity 1.4s var(--ease); }
 .night__video.is-playing { opacity: 1; }
-.night__scrim { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--scrim) 0%, var(--scrim-soft) 40%, var(--clear) 72%), linear-gradient(0deg, var(--ink) 0%, var(--clear) 26%), linear-gradient(180deg, var(--ink) 0%, var(--clear) 16%); }
+/* dark on the left behind the address, and (operator, 2026-11-10: "lay a dark gradient on the right side of the
+   background so the accordion can pop even more") dark from the right edge behind the promise cards; the two overlap
+   across the middle, so the storefront mainly shows at the top */
+.night__scrim { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--scrim) 0%, var(--scrim-soft) 40%, var(--clear) 72%), linear-gradient(270deg, var(--scrim-deep) 0%, var(--scrim) 26%, var(--clear) 62%), linear-gradient(0deg, var(--ink) 0%, var(--clear) 26%), linear-gradient(180deg, var(--ink) 0%, var(--clear) 16%); }
 .night__plate { max-width: 520px; padding: clamp(24px, 3vw, 40px); }
+/* the address plate and the three promises side by side (operator, 2026-11-10: the two sections merged); the promises
+   stack in the right column, as tall as the plate */
+.night__in { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: clamp(20px, 2.4vw, 32px); align-items: stretch; }
+.night__plate { max-width: none; }
+/* on a dark glass backing like the address plate, so the storefront behind does not show between the cards (operator:
+   "these cards are now hard to see since the background is also colored"); each card keeps a light edge, and the
+   closed cards' pictures are a little brighter than before so they stand off the glass */
+.night .acc--stack { flex-direction: column; height: auto; min-height: 460px; gap: 10px; padding: 10px; border-radius: var(--radius); background: var(--glass-dark-2); -webkit-backdrop-filter: blur(18px) saturate(140%); backdrop-filter: blur(18px) saturate(140%); box-shadow: inset 0 1px 0 var(--glass-edge), 0 0 0 1px var(--line-dark), var(--shadow-float); }
+.night .acc--stack .acc__p { flex: 1 1 0; min-height: 0; border-radius: var(--radius-sm); box-shadow: 0 0 0 1px rgba(246, 244, 239, .14), 0 14px 30px -18px rgba(0, 0, 0, .8); }
+.night .acc--stack .acc__img { filter: brightness(.84) saturate(.95); }
+.night .acc--stack .acc__p:hover .acc__img, .night .acc--stack .acc__p.is-open .acc__img { filter: brightness(1) saturate(1.05); }
+.night .acc--stack .acc__p.is-open { flex-grow: 2.4; }
+.night .acc--stack .acc__img { object-position: 50% 55%; }
+.night .acc--stack .acc__body { padding: clamp(16px, 1.8vw, 24px); gap: 8px; }
+.night .acc--stack .acc__ico { width: 44px; height: 44px; }
+.night .acc--stack .acc__ico .ico { width: 22px; height: 22px; }
 .night__t { font-size: var(--fs-h2); font-weight: 900; font-stretch: var(--wdth-poster); text-transform: uppercase; line-height: .95; }
 .night__addr { font-size: 1.15rem; font-weight: 600; color: var(--on-dark); }
 .night__now, .vhero__now { display: flex; align-items: center; gap: 10px; color: var(--on-dark-2); }
 .night .ticks { margin-top: 18px; }
-.vidctl { position: absolute; left: var(--gutter); bottom: 18px; z-index: 3; display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--glass-dark); color: var(--on-dark); box-shadow: inset 0 0 0 1px var(--glass-edge); }
+/* the pause control for the looping film (WCAG 2.2.2: motion that runs over 5 s must be pausable); kept clear of the
+   light band that slides 40px over the film's bottom edge (operator asked why it sat there) */
+.vidctl { position: absolute; right: var(--gutter); bottom: 58px; z-index: 3; display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: var(--radius); background: var(--glass-dark); color: var(--on-dark); box-shadow: inset 0 0 0 1px var(--glass-edge); }
 .vidctl[hidden] { display: none; }
+@media (max-width: 900px) {
+  .night__in { grid-template-columns: 1fr; }
+  .night .acc--stack { min-height: 0; }
+  .night .acc--stack .acc__p { flex: none; height: 132px; }
+  .night .acc--stack .acc__p.is-open { height: 340px; }
+}
 @media (max-width: 700px) {
   .night { align-items: flex-end; }
   .night__scrim { background: linear-gradient(0deg, var(--ink) 0%, var(--scrim) 48%, var(--clear) 85%); }
 }
 
-/* ---------- 3D MONOGRAM on the plinth ---------- */
+/* ---------- lifestyle drops on the plinth (operator, 2026-11-10) ----------
+   The chosen drop stands on the plinth (a soft float), the other waits out of sight; the rows below are the switch,
+   with a brass outline on the one shown. */
+.dropshow { position: relative; width: min(420px, 70vw); aspect-ratio: 1.2; }
+.dropshow__item { position: absolute; inset: 0; display: grid; place-items: end center; margin: 0; opacity: 0; translate: 0 22px; scale: .95; pointer-events: none; transition: opacity .5s var(--ease), translate .7s var(--ease), scale .7s var(--ease); }
+.dropshow__item.is-on { opacity: 1; translate: none; scale: 1; }
+.dropshow__img { max-width: 100%; max-height: 100%; width: auto; height: auto; filter: drop-shadow(0 26px 24px rgba(0, 0, 0, .5)); }
+.dropshow__item.is-on .dropshow__img { animation: drop-float 5.5s ease-in-out infinite; }
+@keyframes drop-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -9px; } }
+/* the type poster (not shown now; kept as the fallback if the client's compliance review rules the tee out) */
+.dropshow__poster { place-content: center; justify-items: center; gap: 12px; inset: 8% 6% 4%; padding: 28px; border-radius: var(--radius); background: radial-gradient(80% 70% at 50% 25%, var(--light-mint-2), var(--clear) 70%), var(--ink-2); box-shadow: inset 0 0 0 1px var(--light-mint), 0 30px 60px -30px var(--shade); }
+.dropshow__word { margin: 0; font: 900 clamp(2.2rem, 4.4vw, 3.4rem)/.92 var(--f-display); font-stretch: var(--wdth-poster); text-transform: uppercase; text-align: center; color: var(--mint); }
+.dropshow__sub { margin: 0; font: italic 400 1.15rem/1.25 var(--f-serif); text-align: center; color: var(--oak); }
+.dropshow__shadow { position: absolute; left: 18%; right: 18%; bottom: -14px; height: 26px; pointer-events: none; background: radial-gradient(closest-side, var(--shade), rgba(0, 0, 0, 0)); }
+.droplist__b { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; width: 100%; padding: 14px 18px; border: 0; border-radius: var(--radius); background: var(--ink-2); color: inherit; font: inherit; text-align: left; cursor: pointer; box-shadow: inset 0 0 0 1px var(--line-dark); transition: background var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), translate var(--t-fast) var(--ease); }
+.droplist__b:hover { background: var(--ink-3); translate: 4px 0; }
+.droplist__b.is-on { background: var(--ink-3); box-shadow: inset 0 0 0 1px var(--brass), 0 0 0 3px var(--light-brass-2); }
+.droplist__b:focus-visible { outline: 2px solid var(--mint); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .dropshow__item { transition: none; } .dropshow__item.is-on .dropshow__img { animation: none; } }
+/* ---------- the drops on the plinth (home) ---------- */
 .display { overflow: clip; }
 .display__bg { position: absolute; inset: 0 auto 0 0; width: 58%; z-index: -1; -webkit-mask-image: linear-gradient(90deg, black 55%, transparent); mask-image: linear-gradient(90deg, black 55%, transparent); }
 .display__plinth { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
 .display__in { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; min-height: 80svh; }
 .display__stage { display: grid; justify-items: center; align-self: end; padding-bottom: 6vh; }
-.display__hint { display: inline-flex; align-items: center; gap: 8px; margin: 34px 0 0; font-size: 13px; color: var(--on-dark-2); }
-.display__hint .ico { width: 18px; height: 18px; color: var(--mint); }
 .droplist { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; }
-.droplist li { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; padding: 14px 18px; border-radius: 12px; background: var(--ink-2); box-shadow: inset 0 0 0 1px var(--line-dark); }
+.droplist li { display: block; }   /* each row is a button now (.droplist__b) */
 .droplist__n { font: 900 .85rem/1 var(--f-display); font-stretch: var(--wdth-poster); text-transform: uppercase; letter-spacing: .06em; color: var(--oak); }
 .droplist__t { font-weight: 700; color: var(--on-dark); }
 .droplist__s { font-size: 13px; color: var(--mint); }
 @media (max-width: 900px) {
-  .display__bg { width: 100%; height: 60%; -webkit-mask-image: linear-gradient(180deg, black 60%, transparent); mask-image: linear-gradient(180deg, black 60%, transparent); }
+  /* the plinth's top face (75% down the photo) meets the drop's shadow, and the photo fades into the ink before the
+     words start: they used to sit on the bright plinth (1.7-2.9:1 at 390px, the contrast gate on dark bands) */
+  .display { --yb: calc(var(--band-y) + 4vh + min(420px, 70vw) / 1.2); }   /* where the drop stands: the stage's bottom */
+  .display__bg { width: 100%; height: calc(var(--yb) + 80px); -webkit-mask-image: linear-gradient(180deg, black calc(100% - 56px), transparent); mask-image: linear-gradient(180deg, black calc(100% - 56px), transparent); }
+  .display__plinth { height: calc((var(--yb) + 8px) / 0.752); object-position: 50% 0; }
   .display__in { grid-template-columns: 1fr; }
   .display__stage { padding: 4vh 0 0; }
+  .display__copy { margin-top: 40px; }
 }
-.m3d { position: relative; width: min(360px, 66vw); aspect-ratio: var(--ratio); perspective: 1000px; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; border-radius: 12px; }
-.m3d:active { cursor: grabbing; }
-.m3d:focus-visible { outline-offset: 14px; }
-.m3d__spin { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--rx, 6deg)) rotateY(var(--ry, -24deg)); }
-.m3d__layer { position: absolute; inset: 0; width: 100%; height: 100%; transform: translateZ(calc(var(--i) * -1.4px)); fill: color-mix(in oklab, var(--oak-3), var(--ink) calc(var(--i) * 3.2%)); }
-.m3d__layer--front { fill: var(--gallery); }
-.m3d__leaf { fill: var(--brass); }
-.m3d__shadow { position: absolute; left: 12%; right: 12%; bottom: -16%; height: 14%; border-radius: 50%; background: radial-gradient(closest-side, var(--shade), var(--clear)); filter: blur(6px); }
-.m3d--drop { width: min(300px, 62vw); }
 
 /* ---------- FLOWER BAR page hero ---------- */
 .fbhero, .lshero, .vhero { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: max(560px, 88svh); padding: 56px 0 clamp(80px, 10vw, 140px); overflow: clip; background: var(--ink); }
@@ -181,23 +397,25 @@ html.js .hero__liberty { animation: liberty-in 2.4s var(--ease) both; }
 @media (min-width: 701px) { .fbhero__img--wide { display: block; } .fbhero__img--tall { display: none; } }
 .fbhero__video { opacity: 0; transition: opacity 1.4s var(--ease); }
 .fbhero__video.is-playing { opacity: 1; }
-.fbhero__scrim, .lshero__scrim, .vhero__scrim { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--scrim) 0%, var(--scrim-soft) 45%, var(--clear) 75%), linear-gradient(0deg, var(--ink) 0%, var(--clear) 40%); }
+.fbhero__scrim, .lshero__scrim, .vhero__scrim { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--scrim-deep) 0%, var(--scrim) 34%, var(--scrim-soft) 58%, var(--clear) 82%), linear-gradient(0deg, var(--ink) 0%, var(--scrim) 30%, var(--clear) 62%); }
 .fbhero__in, .lshero__in, .vhero__in { position: relative; z-index: 1; }
 .fbhero__t, .lshero__t, .vhero__t { font-size: var(--fs-display); font-weight: 900; font-stretch: var(--wdth-poster); text-transform: uppercase; line-height: .9; letter-spacing: -.03em; margin-bottom: .2em; }
 .lshero__t em { text-transform: none; }
 .fbhero__lead, .lshero__lead { max-width: 560px; font-size: var(--fs-lead); color: var(--on-dark); }
 .vhero__addr { font-size: var(--fs-lead); font-weight: 600; margin-bottom: 6px; }
-@media (max-width: 700px) { .fbhero__scrim, .lshero__scrim, .vhero__scrim { background: linear-gradient(0deg, var(--ink) 0%, var(--scrim) 50%, var(--clear) 88%); } }
+@media (max-width: 700px) { .fbhero__scrim, .lshero__scrim, .vhero__scrim { background: linear-gradient(180deg, var(--scrim-soft) 0%, var(--clear) 30%), linear-gradient(0deg, var(--ink) 0%, var(--scrim-deep) 40%, var(--scrim) 62%, var(--scrim-soft) 80%, var(--clear) 96%); } }
 
 /* ---------- reduced motion + phones ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .hero__glow, .hero__beam, .hero__torch, .float__svg, .hero__cue-line, .shophero__obj--solo, .map__face::after, html.js .hero__liberty { animation: none !important; }
+  .hero__leak, .hero__cue-line, .shophero__obj--solo, .map__face::after, html.js .hero__stage { animation: none !important; }
   .hero__in { translate: none; opacity: 1; }
+  .hero__photo { scale: none; }
+  .hero__life { display: none; }
   .night__media { clip-path: none; }
   [data-tilt] { transform: none !important; }
 }
 @media (max-width: 700px) {
   .glass { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--glass-dark-2); }
-  .hero__beam { display: none; }
+  .hero__leak { display: none; }
 }
 @media (hover: none), (pointer: coarse) { .hero::before, .band__light, .phero__light { background-position: 0 0; } }

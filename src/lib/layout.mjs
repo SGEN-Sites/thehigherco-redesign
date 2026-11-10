@@ -2,7 +2,7 @@
 // mobile drawer, footer with the NY OCM compliance block, the sticky quick-action bar and the 21+ gate.
 import { esc, u, icon, getPage } from './html.mjs';
 import { site, nav, footerCols, categories, REQUIRED_WARNING, ROTATING_WARNINGS } from '../content/site.mjs';
-import { markSVG, wordSVG, logoSVG } from './brand.mjs';
+import { wordSVG, logoSVG } from './brand.mjs';
 import { img } from './parts.mjs';
 
 const OPTS = { preview: false, base: '/' };
@@ -48,7 +48,7 @@ function utility() {
   return `<div class="utility" data-utility>
   <div class="container utility__in">
     <p class="utility__l"><span class="utility__dot" aria-hidden="true"></span>NYS adult-use license <span class="utility__lic">${site.license}</span> <span class="utility__sep" aria-hidden="true">/</span> Adults 21+ with valid ID</p>
-    <p class="utility__r"><a href="${u('/visit/')}">${icon('pin')}${esc(site.address.street)}, ${esc(site.address.city)}</a><span class="utility__sep" aria-hidden="true">/</span><span data-hours-today>${esc(site.hoursLines[1])}</span></p>
+    <p class="utility__r"><a href="${u('/visit/')}">${icon('pin')}<span>${esc(site.address.street)}<span class="utility__city">, ${esc(site.address.city)}</span></span></a><span class="utility__sep" aria-hidden="true">/</span><span data-hours-today>${esc(site.hoursLines[1])}</span></p>
   </div>
 </div>`;
 }
@@ -91,7 +91,7 @@ function header(current) {
   }).join('');
   return `<header class="hdr" data-header>
   <div class="hdr__in container">
-    <a class="hdr__brand" href="${u('/')}" aria-label="The Higher Co. home">${markSVG('hdr__mark')}${wordSVG('hdr__word')}</a>
+    <a class="hdr__brand" href="${u('/')}" aria-label="The Higher Co. home">${wordSVG('hdr__word')}</a>
     <nav class="nav" aria-label="Main"><ul class="nav__list">${items}</ul></nav>
     <div class="hdr__actions">
       <a class="status" href="${u('/visit/')}" data-status><span class="status__dot" data-open-dot aria-hidden="true"></span><span data-open-label>Hours</span></a>
@@ -102,7 +102,7 @@ function header(current) {
 </header>
 <div class="drawer" id="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <div class="drawer__panel">
-    <div class="drawer__top"><a class="hdr__brand" href="${u('/')}" aria-label="The Higher Co. home">${markSVG('hdr__mark')}${wordSVG('hdr__word')}</a><button class="drawer__x" type="button" data-drawer-close>${icon('close')}<span class="sr-only">Close the menu</span></button></div>
+    <div class="drawer__top"><a class="hdr__brand" href="${u('/')}" aria-label="The Higher Co. home">${wordSVG('hdr__word')}</a><button class="drawer__x" type="button" data-drawer-close>${icon('close')}<span class="sr-only">Close the menu</span></button></div>
     <nav class="drawer__nav" aria-label="Mobile">
       <details class="drawer__group" open><summary>Shop Cannabis ${icon('chev')}</summary><ul>
         <li><a href="${u('/shop/')}">All products</a></li>${categories.map((c) => `<li><a href="${u(`/shop/${c.slug}/`)}">${esc(c.name)}</a></li>`).join('')}
@@ -163,7 +163,7 @@ function footer(rot) {
   <div class="container">${ocmBlock(rot)}</div>
   <div class="container ftr__bottom">
     <p>&copy; 2026 ${esc(site.legal)}. All rights reserved.</p>
-    <p>Images marked &ldquo;AI illustration&rdquo; are generated artwork, not photos of our store, staff or products.</p>
+    <p>Some images on this site are AI-generated artwork, not photos of our store, staff or products.</p>
     ${OPTS.preview ? '<p class="ftr__preview">Design concept preview, not the live website. Menu links open the store&rsquo;s real online menu.</p>' : ''}
   </div>
 </footer>`;

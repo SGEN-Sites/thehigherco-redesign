@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/seo-changes@1",
-  "generated": "2026-11-10T01:42:12.209Z",
+  "generated": "2026-11-10T15:01:52.843Z",
   "note": "Every field written into the build by sr-seo --apply. Each carries where its value came from. A field the source already filled is never rewritten here.",
   "siteUrl": "https://www.thehigherco420.com",
   "siteName": "The Higher Company",
@@ -172,21 +172,21 @@
       "page": "https://www.thehigherco420.com/about/index.html",
       "field": "alt",
       "from": null,
-      "to": "8 images",
+      "to": "24 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/about/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "8 images",
+      "to": "24 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/about/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "8 images",
+      "to": "24 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -298,21 +298,21 @@
       "page": "https://www.thehigherco420.com/about/the-crew/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "13 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/about/the-crew/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "13 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/about/the-crew/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "13 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -816,21 +816,21 @@
       "page": "https://www.thehigherco420.com/connect/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/connect/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/connect/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -942,21 +942,21 @@
       "page": "https://www.thehigherco420.com/contact/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/contact/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/contact/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -1383,21 +1383,21 @@
       "page": "https://www.thehigherco420.com/",
       "field": "alt",
       "from": null,
-      "to": "22 images",
+      "to": "36 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/",
       "field": "img-dimensions",
       "from": null,
-      "to": "22 images",
+      "to": "36 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/",
       "field": "img-lazy",
       "from": null,
-      "to": "22 images",
+      "to": "36 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2090,21 +2090,21 @@
       "page": "https://www.thehigherco420.com/legal/accessibility/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/accessibility/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/accessibility/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2342,21 +2342,21 @@
       "page": "https://www.thehigherco420.com/legal/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2468,21 +2468,21 @@
       "page": "https://www.thehigherco420.com/legal/privacy/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/privacy/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/privacy/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2594,21 +2594,21 @@
       "page": "https://www.thehigherco420.com/legal/terms/index.html",
       "field": "alt",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/terms/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/legal/terms/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "7 images",
+      "to": "8 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -2720,21 +2720,21 @@
       "page": "https://www.thehigherco420.com/lifestyle/index.html",
       "field": "alt",
       "from": null,
-      "to": "10 images",
+      "to": "12 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/lifestyle/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "10 images",
+      "to": "12 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/lifestyle/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "10 images",
+      "to": "12 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -4512,21 +4512,21 @@
       "page": "https://www.thehigherco420.com/shop/accessories/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/accessories/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/accessories/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -4638,21 +4638,21 @@
       "page": "https://www.thehigherco420.com/shop/concentrates/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/concentrates/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/concentrates/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -4764,21 +4764,21 @@
       "page": "https://www.thehigherco420.com/shop/edibles/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/edibles/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/edibles/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -4890,21 +4890,21 @@
       "page": "https://www.thehigherco420.com/shop/flower/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/flower/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/flower/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5016,21 +5016,21 @@
       "page": "https://www.thehigherco420.com/shop/index.html",
       "field": "alt",
       "from": null,
-      "to": "15 images",
+      "to": "18 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "15 images",
+      "to": "18 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "15 images",
+      "to": "18 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5142,21 +5142,21 @@
       "page": "https://www.thehigherco420.com/shop/pre-rolls/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/pre-rolls/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/pre-rolls/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5268,21 +5268,21 @@
       "page": "https://www.thehigherco420.com/shop/vaporizers/index.html",
       "field": "alt",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/vaporizers/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/shop/vaporizers/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "13 images",
+      "to": "15 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5394,21 +5394,21 @@
       "page": "https://www.thehigherco420.com/subscribe/index.html",
       "field": "alt",
       "from": null,
-      "to": "8 images",
+      "to": "11 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/subscribe/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "8 images",
+      "to": "11 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/subscribe/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "8 images",
+      "to": "11 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5520,21 +5520,21 @@
       "page": "https://www.thehigherco420.com/the-flower-bar/index.html",
       "field": "alt",
       "from": null,
-      "to": "12 images",
+      "to": "16 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/the-flower-bar/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "12 images",
+      "to": "16 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/the-flower-bar/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "12 images",
+      "to": "16 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
@@ -5646,21 +5646,21 @@
       "page": "https://www.thehigherco420.com/visit/index.html",
       "field": "alt",
       "from": null,
-      "to": "8 images",
+      "to": "10 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/visit/index.html",
       "field": "img-dimensions",
       "from": null,
-      "to": "8 images",
+      "to": "10 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {
       "page": "https://www.thehigherco420.com/visit/index.html",
       "field": "img-lazy",
       "from": null,
-      "to": "8 images",
+      "to": "10 images",
       "source": "present-from-an-earlier-seo-pass"
     },
     {

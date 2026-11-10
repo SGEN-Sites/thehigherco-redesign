@@ -1,0 +1,14 @@
+[
+  {
+    "name": "hero-night-a",
+    "endpoint": "fal-ai/nano-banana-pro/edit",
+    "input": {
+      "image_urls": ["file:private/vid-src/hero-golden-input-2752.jpg"],
+      "prompt": "Relight this exact photograph as a cinematic night scene. Keep the camera position, the framing, the perspective and every architectural detail exactly as they are; change only the time of day and the light.\n\nTime: about an hour after sunset. The sky is a deep, rich electric blue, darker toward the top, with a faint glow low on the horizon at the left. No stars, no moon.\n\nLight: the ground-floor shop windows glow warm and bright from the lights inside and spill warm light onto the sidewalk. A few of the upper-floor arched windows are lit warm from inside; most stay dark. Old sodium streetlights out of frame on the left wash the lower brick with soft orange light. The upper facade, the pale stone trim, the two gables and the cupola catch cool light from the night sky and stand out crisply against it. The long side wall falls into deep shadow with a little cool rim light along its edges.\n\nAtmosphere: the street is wet from recent rain, so the asphalt and the sidewalk reflect the warm window glow and the streetlights. A thin mist hangs low over the street in the distance on the left, where a few distant street lights glow softly.\n\nKeep the colour of every surface: red-orange brick, pale gray stone trim and banding, dark green-black window frames and shopfront, slate-gray cupola roof, the gray and brick neighbouring buildings.\n\nLook: shot on a cinema camera at night, cinematic teal-and-amber colour grade, deep blue shadows, glowing warm highlights, subtle halation around the light sources, fine film grain, high dynamic range, sharp detail in the brickwork.\n\nNo people, no cars, no signs, no neon, no lettering, no logos, no numbers, no text anywhere, no watermark.",
+      "aspect_ratio": "16:9",
+      "resolution": "4K",
+      "output_format": "png",
+      "num_images": 2
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+ {
+  "name": "cat-flower-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-flower-b#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "cat-vapes-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-vapes-b#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "cat-concentrates-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-concentrates-b#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "cat-edibles-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-edibles-b#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "cat-accessories-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-accessories-b#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "cat-prerolls-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:cat-prerolls-k#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ }
+]

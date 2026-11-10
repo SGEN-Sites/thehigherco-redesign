@@ -1,0 +1,145 @@
+[
+ {
+  "name": "cat-flower-a",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with dense green cannabis flower buds with orange hairs and white frost, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 424242,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-flower-b",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with dense green cannabis flower buds with orange hairs and white frost, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 7,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-vapes-a",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a slim matte black vape pen battery with a clear glass cartridge of golden amber oil screwed on top and a black ceramic mouthpiece, unbranded, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole vape pen in frame with generous empty space all around it, on a solid seamless warm off-white cream backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the golden oil clearly visible through the clear glass cartridge, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 424242,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-vapes-b",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a slim matte black vape pen battery with a clear glass cartridge of golden amber oil screwed on top and a black ceramic mouthpiece, unbranded, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole vape pen in frame with generous empty space all around it, on a solid seamless warm off-white cream backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the golden oil clearly visible through the clear glass cartridge, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 7,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-concentrates-a",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a small round clear glass jar filled to the brim with golden-amber cannabis budder, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless pale soft mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 424242,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-concentrates-b",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a small round clear glass jar filled to the brim with golden-amber cannabis budder, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless pale soft mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 7,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-edibles-a",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with sugar-coated fruit gummy cubes in red, orange and yellow (plain cubes: no bear, worm or cartoon shapes), closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 424242,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-edibles-b",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with sugar-coated fruit gummy cubes in red, orange and yellow (plain cubes: no bear, worm or cartoon shapes), closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 7,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-accessories-a",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a polished antique-brass four-piece herb grinder with a finely knurled rim, closed, unbranded, standing perfectly upright in the centre of the frame, seen from slightly above at a three-quarter view, so its round lid and its knurled sides both show, the whole grinder in frame with generous empty space all around it, on a solid seamless medium jade mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 424242,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-accessories-b",
+  "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+  "input": {
+   "prompt": "Studio product photograph: a polished antique-brass four-piece herb grinder with a finely knurled rim, closed, unbranded, standing perfectly upright in the centre of the frame, seen from slightly above at a three-quarter view, so its round lid and its knurled sides both show, the whole grinder in frame with generous empty space all around it, on a solid seamless medium jade mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people.",
+   "aspect_ratio": "2:3",
+   "seed": 7,
+   "num_images": 1,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "raw": false
+  }
+ },
+ {
+  "name": "cat-prerolls-k",
+  "endpoint": "fal-ai/flux-pro/kontext",
+  "input": {
+   "image_url": "file:private/photos/preroll/preroll-on-mint.png",
+   "prompt": "Re-photograph this exact pre-roll as a premium studio product photograph: keep its cone shape, the paper with the ground flower showing through it, the twisted top and the kraft paper filter tip exactly as they are. It stands upright at a slight slant in the centre of the frame, the whole pre-roll in frame, on the same solid seamless medium jade mint green backdrop, evenly lit and the same colour everywhere, soft diffused frontal studio light, crisp focus, photorealistic. No text, no labels, no logos, no hands, no smoke.",
+   "num_images": 2,
+   "seed": 424242,
+   "output_format": "png",
+   "safety_tolerance": "5",
+   "guidance_scale": 3.5
+  }
+ }
+]

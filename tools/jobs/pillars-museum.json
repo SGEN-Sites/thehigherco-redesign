@@ -1,0 +1,42 @@
+[
+  {
+    "name": "pillar-01-megaphone",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A well-worn vintage red handheld megaphone, scuffed and loved from years of street rallies, displayed on a clean white museum plinth as if it were a priceless artifact. A velvet rope on two polished brass stanchions stands in front of the plinth. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above pooling on the megaphone, soft long shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signage, no labels, no plaques, no watermark.",
+      "aspect_ratio": "3:4", "resolution": "2K", "output_format": "png", "num_images": 1
+    }
+  },
+  {
+    "name": "pillar-02-jewel",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A single perfect cured cannabis flower bud presented like a rare gemstone: it rests on a small black velvet jewellery cushion inside a glass display case, the kind used for crown jewels, under a tight jeweller's spotlight that makes its frosty trichomes sparkle like tiny diamonds. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight, soft reflections on the glass, rich cinematic colour, shallow depth of field, photorealistic, crisp macro detail on the bud. Playful and witty, but elegant. No people, no smoke, no text, no letters, no numbers, no logos, no labels, no price tags, no watermark.",
+      "aspect_ratio": "3:4", "resolution": "2K", "output_format": "png", "num_images": 1
+    }
+  },
+  {
+    "name": "pillar-03-snowglobe",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A glass snow globe on a clean white museum plinth. Inside the globe stands a tiny, beautifully detailed old red-brick downtown corner building with tall round-arched windows, pale stone trim, two pointed gables and a small cupola on the roof; its tiny ground-floor shop windows glow warm, and snow swirls through the water around it, piling on the miniature street. A nod to a famously snowy northern city. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above, glints on the glass, rich cinematic colour, shallow depth of field, photorealistic, crisp detail. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signs, no labels, no plaques, no watermark.",
+      "aspect_ratio": "3:4", "resolution": "2K", "output_format": "png", "num_images": 1
+    }
+  },
+  {
+    "name": "pillar-04-sommelier",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A budtender presents a clear glass jar of cannabis flower the way a sommelier presents a fine bottle of wine: only the forearm and hand are in frame, in a crisp white cotton glove, a folded white linen napkin draped over the forearm, the black shirt sleeve neatly cuffed, the jar held up and tilted gently toward the camera with the label side turned away. Anatomically correct hand with exactly five fingers. Photographed like a fine-art editorial still for a premium campaign: a dark gallery room with a deep charcoal wall, one warm spotlight, soft shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail on the glove and the glass. Playful and witty, but elegant. No face, no smoke, no text, no letters, no numbers, no logos, no labels, no watermark.",
+      "aspect_ratio": "3:4", "resolution": "2K", "output_format": "png", "num_images": 1
+    }
+  },
+  {
+    "name": "pillar-05-crown",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A mint-green foam Statue of Liberty souvenir crown, the cheerful kind sold to tourists in New York City, displayed on a clean white museum plinth under a warm spotlight with a velvet rope on polished brass stanchions in front, as solemnly as if it were a royal crown jewel. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above, soft long shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail on the foam texture. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signage, no labels, no plaques, no watermark.",
+      "aspect_ratio": "3:4", "resolution": "2K", "output_format": "png", "num_images": 1
+    }
+  }
+]

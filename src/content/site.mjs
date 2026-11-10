@@ -70,12 +70,12 @@ export const ROTATING_WARNINGS = [
 // The six categories the online menu carries (verified on the live menu 2026-11-10). Topicals appear in the
 // live About copy but not on the menu, so they get no shop page. [CONFIRM WITH CLIENT]
 export const categories = [
-  { slug: 'flower', name: 'Flower', dutchie: 'flower', img: 'cut-flower', line: 'Premium sativas, indicas, and hybrids.', more: 'Ninety strains wait under glass at the Flower Bar in store. Here is what is on the menu right now, ready to order ahead for pickup.' },
-  { slug: 'pre-rolls', name: 'Pre-Rolls', dutchie: 'pre-rolls', img: 'cut-prerolls', line: 'Convenient and ready-to-use pre-rolled joints.', more: 'Singles, packs and infused options, straight from today\'s menu.' },
-  { slug: 'vaporizers', name: 'Vaporizers', dutchie: 'vaporizers', img: 'cut-vapes', line: 'Cartridges and more, straight from today\'s menu.', more: 'Browse what is in stock, add it to your cart and pick it up at the counter.' },
-  { slug: 'concentrates', name: 'Concentrates', dutchie: 'concentrates', img: 'cut-concentrates', line: 'Pure extracts like wax, shatter, and oils.', more: 'Live rosin and other extracts, as listed on the menu today.' },
-  { slug: 'edibles', name: 'Edibles', dutchie: 'edibles', img: 'cut-edibles', line: 'Gummies, chocolates, drinks and more.', more: 'Start low and take your time: edibles can take up to two hours to kick in.' },
-  { slug: 'accessories', name: 'Accessories', dutchie: 'accessories', img: 'cut-accessories', line: 'Everything you need to enhance your cannabis experience.', more: 'Glassware, grinders, papers and rolling supplies, lighters, batteries and cleaning gear.' },
+  { slug: 'flower', name: 'Flower', dutchie: 'flower', img: 'cat-flower', line: 'Premium sativas, indicas, and hybrids.', more: 'Ninety strains wait under glass at the Flower Bar in store. Here is what is on the menu right now, ready to order ahead for pickup.' },
+  { slug: 'pre-rolls', name: 'Pre-Rolls', dutchie: 'pre-rolls', img: 'cat-prerolls', line: 'Convenient and ready-to-use pre-rolled joints.', more: 'Singles, packs and infused options, straight from today\'s menu.' },
+  { slug: 'vaporizers', name: 'Vaporizers', dutchie: 'vaporizers', img: 'cat-vapes', line: 'Cartridges and more, straight from today\'s menu.', more: 'Browse what is in stock, add it to your cart and pick it up at the counter.' },
+  { slug: 'concentrates', name: 'Concentrates', dutchie: 'concentrates', img: 'cat-concentrates', line: 'Pure extracts like wax, shatter, and oils.', more: 'Live rosin and other extracts, as listed on the menu today.' },
+  { slug: 'edibles', name: 'Edibles', dutchie: 'edibles', img: 'cat-edibles', line: 'Gummies, chocolates, drinks and more.', more: 'Start low and take your time: edibles can take up to two hours to kick in.' },
+  { slug: 'accessories', name: 'Accessories', dutchie: 'accessories', img: 'cat-accessories', line: 'Everything you need to enhance your cannabis experience.', more: 'Glassware, grinders, papers and rolling supplies, lighters, batteries and cleaning gear.' },
 ];
 
 // The five pillars (operator brief). Each line is built from declared facts only.

@@ -1,5 +1,5 @@
 {
- "note": "Every asset in this file was generated with AI (fal). None of them shows the real store, staff, customers or products. Real photos should replace the place images before launch.",
+ "note": "Every asset in this file was generated with AI (fal). Only hero-golden(-tall) and hero-night(-tall) depict the real building (123 E Willow St): golden hour re-imagined from a Street View frame used as an architectural reference only, and night relit from that golden-hour image. None of them shows the real interior, staff, customers or products. Real photos should replace the place images before launch.",
  "images": {
   "storefront": {
    "w": 3136,
@@ -475,6 +475,564 @@
     }
    ]
   },
+  "hero-golden": {
+   "w": 5504,
+   "h": 3072,
+   "ratio": 1.7917,
+   "alt": "AI illustration of the red-brick building at 123 E Willow St at golden hour: arched windows, twin gables and a small cupola, the ground-floor shop windows glowing warm over an empty street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 714,
+     "file": "assets/img/gen/hero-golden-1280.webp",
+     "bytes": 80980
+    },
+    {
+     "w": 1920,
+     "h": 1072,
+     "file": "assets/img/gen/hero-golden-1920.webp",
+     "bytes": 156768
+    },
+    {
+     "w": 2560,
+     "h": 1429,
+     "file": "assets/img/gen/hero-golden-2560.webp",
+     "bytes": 238840
+    },
+    {
+     "w": 3200,
+     "h": 1786,
+     "file": "assets/img/gen/hero-golden-3200.webp",
+     "bytes": 325776
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "hero-golden-b",
+     "endpoint": "fal-ai/nano-banana-pro/edit",
+     "request_id": "01a1c34a-699d-77e0-b624-330b56f3ca19",
+     "prompt": "Use the building in the attached photo only as an architectural reference and create a brand-new photograph of that same building, re-shot by a professional photographer at golden hour for a cinematic film still.\n\nCamera and framing: full-frame cinema camera with a 35mm lens at f/2.8, low camera height across the street, vertical lines kept straight, no fisheye or panoramic distortion. The building stands in the right two-thirds of a wide frame, seen slightly from the left so its front and a sliver of its left side catch the light; the full height of the building, up to the two gables and the small louvered cupola, is in frame. On the left, the street recedes into soft golden haze past low older buildings that are gently out of focus.\n\nThe building: a three-story red-brick commercial block from the 1880s with tall round-arched windows trimmed in pale gray stone, bands of decorative brickwork between the floors, two steep pointed gables at the top with a small louvered cupola between them, carved stone finials on the corners, and pale stone piers at street level framing a modern ground-floor shopfront with tall dark-framed display windows and a glass door.\n\nLight: the last minutes of golden hour, the sun very low on the left, warm amber light skimming the brick and glowing on the stone trim, the upper floors and gables lit while the sidewalk is already in soft warm shade, long shadows, a subtle anamorphic lens flare. Warm interior light glows behind the clean shop glass. The sky fades from deep blue overhead to amber and peach near the rooftops.\n\nScene: an empty, clean downtown street at the end of the day. No people, no cars, no bicycles, no traffic cones, no sidewalk signs, no flags, no banners, no posters, no stickers, no street signs. No text, lettering, numbers or logos anywhere; the shop windows are plain glass. No watermark.\n\nLook: photorealistic film still, cinematic color grade with deep teal-tinted shadows and warm amber highlights, natural fine film grain, high dynamic range, crisp brick texture."
+    },
+    {
+     "job": "hero-golden-b-clean",
+     "endpoint": "local: tools/process-images.py clean_hero (OpenCV)",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "hero-golden-tall": {
+   "w": 1728,
+   "h": 3072,
+   "ratio": 0.5625,
+   "alt": "AI illustration of the red-brick building at 123 E Willow St at golden hour: arched windows, twin gables and a small cupola, the ground-floor shop windows glowing warm over an empty street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 720,
+     "h": 1280,
+     "file": "assets/img/gen/hero-golden-tall-720.webp",
+     "bytes": 108238
+    },
+    {
+     "w": 1080,
+     "h": 1920,
+     "file": "assets/img/gen/hero-golden-tall-1080.webp",
+     "bytes": 185198
+    },
+    {
+     "w": 1440,
+     "h": 2560,
+     "file": "assets/img/gen/hero-golden-tall-1440.webp",
+     "bytes": 262078
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "hero-golden-b",
+     "endpoint": "fal-ai/nano-banana-pro/edit",
+     "request_id": "01a1c34a-699d-77e0-b624-330b56f3ca19",
+     "prompt": "Use the building in the attached photo only as an architectural reference and create a brand-new photograph of that same building, re-shot by a professional photographer at golden hour for a cinematic film still.\n\nCamera and framing: full-frame cinema camera with a 35mm lens at f/2.8, low camera height across the street, vertical lines kept straight, no fisheye or panoramic distortion. The building stands in the right two-thirds of a wide frame, seen slightly from the left so its front and a sliver of its left side catch the light; the full height of the building, up to the two gables and the small louvered cupola, is in frame. On the left, the street recedes into soft golden haze past low older buildings that are gently out of focus.\n\nThe building: a three-story red-brick commercial block from the 1880s with tall round-arched windows trimmed in pale gray stone, bands of decorative brickwork between the floors, two steep pointed gables at the top with a small louvered cupola between them, carved stone finials on the corners, and pale stone piers at street level framing a modern ground-floor shopfront with tall dark-framed display windows and a glass door.\n\nLight: the last minutes of golden hour, the sun very low on the left, warm amber light skimming the brick and glowing on the stone trim, the upper floors and gables lit while the sidewalk is already in soft warm shade, long shadows, a subtle anamorphic lens flare. Warm interior light glows behind the clean shop glass. The sky fades from deep blue overhead to amber and peach near the rooftops.\n\nScene: an empty, clean downtown street at the end of the day. No people, no cars, no bicycles, no traffic cones, no sidewalk signs, no flags, no banners, no posters, no stickers, no street signs. No text, lettering, numbers or logos anywhere; the shop windows are plain glass. No watermark.\n\nLook: photorealistic film still, cinematic color grade with deep teal-tinted shadows and warm amber highlights, natural fine film grain, high dynamic range, crisp brick texture."
+    },
+    {
+     "job": "hero-golden-b-clean",
+     "endpoint": "local: tools/process-images.py clean_hero (OpenCV)",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "hero-night": {
+   "w": 5504,
+   "h": 3072,
+   "ratio": 1.7917,
+   "alt": "AI illustration of the red-brick building at 123 E Willow St at night: arched windows, twin gables and a small cupola against a deep blue sky, the ground-floor shop windows glowing warm over a wet street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1280,
+     "h": 714,
+     "file": "assets/img/gen/hero-night-1280.webp",
+     "bytes": 75162
+    },
+    {
+     "w": 1920,
+     "h": 1072,
+     "file": "assets/img/gen/hero-night-1920.webp",
+     "bytes": 143002
+    },
+    {
+     "w": 2560,
+     "h": 1429,
+     "file": "assets/img/gen/hero-night-2560.webp",
+     "bytes": 217470
+    },
+    {
+     "w": 3200,
+     "h": 1786,
+     "file": "assets/img/gen/hero-night-3200.webp",
+     "bytes": 292190
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "hero-night-a",
+     "endpoint": "fal-ai/nano-banana-pro/edit",
+     "request_id": "01a1c3b8-1a98-7812-a6f8-d9e4911fa5f0",
+     "prompt": "Relight this exact photograph as a cinematic night scene. Keep the camera position, the framing, the perspective and every architectural detail exactly as they are; change only the time of day and the light.\n\nTime: about an hour after sunset. The sky is a deep, rich electric blue, darker toward the top, with a faint glow low on the horizon at the left. No stars, no moon.\n\nLight: the ground-floor shop windows glow warm and bright from the lights inside and spill warm light onto the sidewalk. A few of the upper-floor arched windows are lit warm from inside; most stay dark. Old sodium streetlights out of frame on the left wash the lower brick with soft orange light. The upper facade, the pale stone trim, the two gables and the cupola catch cool light from the night sky and stand out crisply against it. The long side wall falls into deep shadow with a little cool rim light along its edges.\n\nAtmosphere: the street is wet from recent rain, so the asphalt and the sidewalk reflect the warm window glow and the streetlights. A thin mist hangs low over the street in the distance on the left, where a few distant street lights glow softly.\n\nKeep the colour of every surface: red-orange brick, pale gray stone trim and banding, dark green-black window frames and shopfront, slate-gray cupola roof, the gray and brick neighbouring buildings.\n\nLook: shot on a cinema camera at night, cinematic teal-and-amber colour grade, deep blue shadows, glowing warm highlights, subtle halation around the light sources, fine film grain, high dynamic range, sharp detail in the brickwork.\n\nNo people, no cars, no signs, no neon, no lettering, no logos, no numbers, no text anywhere, no watermark."
+    },
+    {
+     "job": "hero-night-a-clean",
+     "endpoint": "local: tools/process-images.py (OpenCV inpaint)",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "hero-night-tall": {
+   "w": 1728,
+   "h": 3072,
+   "ratio": 0.5625,
+   "alt": "AI illustration of the red-brick building at 123 E Willow St at night: arched windows, twin gables and a small cupola against a deep blue sky, the ground-floor shop windows glowing warm over a wet street",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 720,
+     "h": 1280,
+     "file": "assets/img/gen/hero-night-tall-720.webp",
+     "bytes": 96624
+    },
+    {
+     "w": 1080,
+     "h": 1920,
+     "file": "assets/img/gen/hero-night-tall-1080.webp",
+     "bytes": 163314
+    },
+    {
+     "w": 1440,
+     "h": 2560,
+     "file": "assets/img/gen/hero-night-tall-1440.webp",
+     "bytes": 226002
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "hero-night-a",
+     "endpoint": "fal-ai/nano-banana-pro/edit",
+     "request_id": "01a1c3b8-1a98-7812-a6f8-d9e4911fa5f0",
+     "prompt": "Relight this exact photograph as a cinematic night scene. Keep the camera position, the framing, the perspective and every architectural detail exactly as they are; change only the time of day and the light.\n\nTime: about an hour after sunset. The sky is a deep, rich electric blue, darker toward the top, with a faint glow low on the horizon at the left. No stars, no moon.\n\nLight: the ground-floor shop windows glow warm and bright from the lights inside and spill warm light onto the sidewalk. A few of the upper-floor arched windows are lit warm from inside; most stay dark. Old sodium streetlights out of frame on the left wash the lower brick with soft orange light. The upper facade, the pale stone trim, the two gables and the cupola catch cool light from the night sky and stand out crisply against it. The long side wall falls into deep shadow with a little cool rim light along its edges.\n\nAtmosphere: the street is wet from recent rain, so the asphalt and the sidewalk reflect the warm window glow and the streetlights. A thin mist hangs low over the street in the distance on the left, where a few distant street lights glow softly.\n\nKeep the colour of every surface: red-orange brick, pale gray stone trim and banding, dark green-black window frames and shopfront, slate-gray cupola roof, the gray and brick neighbouring buildings.\n\nLook: shot on a cinema camera at night, cinematic teal-and-amber colour grade, deep blue shadows, glowing warm highlights, subtle halation around the light sources, fine film grain, high dynamic range, sharp detail in the brickwork.\n\nNo people, no cars, no signs, no neon, no lettering, no logos, no numbers, no text anywhere, no watermark."
+    },
+    {
+     "job": "hero-night-a-clean",
+     "endpoint": "local: tools/process-images.py (OpenCV inpaint)",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "hands-l": {
+   "w": 6336,
+   "h": 1640,
+   "ratio": 3.8634,
+   "alt": "AI illustration: two hands in rolled-up work-shirt sleeves, one denim and one flannel, reach toward each other, fingertips almost touching, drawn in fine banknote-style lines",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1400,
+     "h": 362,
+     "file": "assets/img/gen/hands-l-1400.webp",
+     "bytes": 63384
+    },
+    {
+     "w": 2400,
+     "h": 621,
+     "file": "assets/img/gen/hands-l-2400.webp",
+     "bytes": 138518
+    },
+    {
+     "w": 3200,
+     "h": 828,
+     "file": "assets/img/gen/hands-l-3200.webp",
+     "bytes": 195406
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "hands-engraving-b",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c38b-b40c-7f41-9f66-9cba9d707a2a",
+     "prompt": "A symbolic intaglio banknote-style engraving: two hands reach toward each other from opposite edges of a wide frame, their extended index fingers almost touching at the exact centre. This is an original, modern take on the idea of two outstretched hands meeting, not a copy of any painting: the two hands are equals, held level at the same height, both open and reaching with the index finger extended and the other fingers relaxed, palms turned slightly down. The forearms are bare and strong, and each one wears the sleeve of a work shirt rolled up to just below the elbow: on the left a rolled denim cuff, on the right a rolled flannel cuff, both cut off by the edges of the frame. In the small gap between the fingertips, fine engraved rays radiate outward like the sunburst on an old bank note, fading into the paper. Rendered exactly the way the portraits on paper currency are engraved: fine parallel engraved lines that follow the form, cross-hatching in the shadows, stipple dots for soft modelling of knuckles and fingertips, crisp burin line work with tapering line ends, deep green-black ink on plain off-white paper. Wide horizontal composition with the hands in the middle band and only a little empty paper above and below. Anatomically correct hands with exactly five fingers each. No border, no frame, no oval, no background pattern, no text, no letters, no numbers, no seals, no signatures, no money, no banknote layout."
+    }
+   ]
+  },
+  "hands-r": {
+   "w": 6336,
+   "h": 1640,
+   "ratio": 3.8634,
+   "alt": "",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 1400,
+     "h": 362,
+     "file": "assets/img/gen/hands-r-1400.webp",
+     "bytes": 57140
+    },
+    {
+     "w": 2400,
+     "h": 621,
+     "file": "assets/img/gen/hands-r-2400.webp",
+     "bytes": 123124
+    },
+    {
+     "w": 3200,
+     "h": 828,
+     "file": "assets/img/gen/hands-r-3200.webp",
+     "bytes": 173748
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "hands-engraving-b",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c38b-b40c-7f41-9f66-9cba9d707a2a",
+     "prompt": "A symbolic intaglio banknote-style engraving: two hands reach toward each other from opposite edges of a wide frame, their extended index fingers almost touching at the exact centre. This is an original, modern take on the idea of two outstretched hands meeting, not a copy of any painting: the two hands are equals, held level at the same height, both open and reaching with the index finger extended and the other fingers relaxed, palms turned slightly down. The forearms are bare and strong, and each one wears the sleeve of a work shirt rolled up to just below the elbow: on the left a rolled denim cuff, on the right a rolled flannel cuff, both cut off by the edges of the frame. In the small gap between the fingertips, fine engraved rays radiate outward like the sunburst on an old bank note, fading into the paper. Rendered exactly the way the portraits on paper currency are engraved: fine parallel engraved lines that follow the form, cross-hatching in the shadows, stipple dots for soft modelling of knuckles and fingertips, crisp burin line work with tapering line ends, deep green-black ink on plain off-white paper. Wide horizontal composition with the hands in the middle band and only a little empty paper above and below. Anatomically correct hands with exactly five fingers each. No border, no frame, no oval, no background pattern, no text, no letters, no numbers, no seals, no signatures, no money, no banknote layout."
+    }
+   ]
+  },
+  "pillar-megaphone": {
+   "w": 1792,
+   "h": 2400,
+   "ratio": 0.7467,
+   "alt": "AI illustration: a scuffed vintage red megaphone displayed on a white museum plinth behind a velvet rope",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 400,
+     "h": 536,
+     "file": "assets/img/gen/pillar-megaphone-400.webp",
+     "bytes": 7584
+    },
+    {
+     "w": 600,
+     "h": 804,
+     "file": "assets/img/gen/pillar-megaphone-600.webp",
+     "bytes": 12356
+    },
+    {
+     "w": 900,
+     "h": 1205,
+     "file": "assets/img/gen/pillar-megaphone-900.webp",
+     "bytes": 20986
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "pillar-01-megaphone",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c3e2-2d54-7fa0-be88-142428fd9373",
+     "prompt": "A well-worn vintage red handheld megaphone, scuffed and loved from years of street rallies, displayed on a clean white museum plinth as if it were a priceless artifact. A velvet rope on two polished brass stanchions stands in front of the plinth. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above pooling on the megaphone, soft long shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signage, no labels, no plaques, no watermark."
+    }
+   ]
+  },
+  "pillar-jewel": {
+   "w": 1792,
+   "h": 2400,
+   "ratio": 0.7467,
+   "alt": "AI illustration: a single frosty cannabis bud on a black velvet cushion in a glass display case, lit like a gemstone",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 400,
+     "h": 536,
+     "file": "assets/img/gen/pillar-jewel-400.webp",
+     "bytes": 7370
+    },
+    {
+     "w": 600,
+     "h": 804,
+     "file": "assets/img/gen/pillar-jewel-600.webp",
+     "bytes": 13254
+    },
+    {
+     "w": 900,
+     "h": 1205,
+     "file": "assets/img/gen/pillar-jewel-900.webp",
+     "bytes": 25450
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "pillar-02-jewel",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c3e2-2d4f-7ab2-998a-43ecb0e7845b",
+     "prompt": "A single perfect cured cannabis flower bud presented like a rare gemstone: it rests on a small black velvet jewellery cushion inside a glass display case, the kind used for crown jewels, under a tight jeweller's spotlight that makes its frosty trichomes sparkle like tiny diamonds. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight, soft reflections on the glass, rich cinematic colour, shallow depth of field, photorealistic, crisp macro detail on the bud. Playful and witty, but elegant. No people, no smoke, no text, no letters, no numbers, no logos, no labels, no price tags, no watermark."
+    }
+   ]
+  },
+  "pillar-snowglobe": {
+   "w": 1792,
+   "h": 2400,
+   "ratio": 0.7467,
+   "alt": "AI illustration: a snow globe holding a tiny red-brick building with arched windows, twin gables and a cupola, on a museum plinth",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 400,
+     "h": 536,
+     "file": "assets/img/gen/pillar-snowglobe-400.webp",
+     "bytes": 17084
+    },
+    {
+     "w": 600,
+     "h": 804,
+     "file": "assets/img/gen/pillar-snowglobe-600.webp",
+     "bytes": 31256
+    },
+    {
+     "w": 900,
+     "h": 1205,
+     "file": "assets/img/gen/pillar-snowglobe-900.webp",
+     "bytes": 56842
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "pillar-03-snowglobe",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c3e2-2d55-7141-ae2a-7337daa75485",
+     "prompt": "A glass snow globe on a clean white museum plinth. Inside the globe stands a tiny, beautifully detailed old red-brick downtown corner building with tall round-arched windows, pale stone trim, two pointed gables and a small cupola on the roof; its tiny ground-floor shop windows glow warm, and snow swirls through the water around it, piling on the miniature street. A nod to a famously snowy northern city. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above, glints on the glass, rich cinematic colour, shallow depth of field, photorealistic, crisp detail. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signs, no labels, no plaques, no watermark."
+    }
+   ]
+  },
+  "pillar-sommelier": {
+   "w": 1792,
+   "h": 2400,
+   "ratio": 0.7467,
+   "alt": "AI illustration: a white-gloved hand presenting a glass jar of cannabis flower like a sommelier, a napkin over the forearm",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 400,
+     "h": 536,
+     "file": "assets/img/gen/pillar-sommelier-400.webp",
+     "bytes": 10712
+    },
+    {
+     "w": 600,
+     "h": 804,
+     "file": "assets/img/gen/pillar-sommelier-600.webp",
+     "bytes": 19244
+    },
+    {
+     "w": 900,
+     "h": 1205,
+     "file": "assets/img/gen/pillar-sommelier-900.webp",
+     "bytes": 40580
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "pillar-04-sommelier",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c3e2-9de9-7270-a1a8-9423a90472bc",
+     "prompt": "A budtender presents a clear glass jar of cannabis flower the way a sommelier presents a fine bottle of wine: only the forearm and hand are in frame, in a crisp white cotton glove, a folded white linen napkin draped over the forearm, the black shirt sleeve neatly cuffed, the jar held up and tilted gently toward the camera with the label side turned away. Anatomically correct hand with exactly five fingers. Photographed like a fine-art editorial still for a premium campaign: a dark gallery room with a deep charcoal wall, one warm spotlight, soft shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail on the glove and the glass. Playful and witty, but elegant. No face, no smoke, no text, no letters, no numbers, no logos, no labels, no watermark."
+    }
+   ]
+  },
+  "pillar-crown": {
+   "w": 1792,
+   "h": 2400,
+   "ratio": 0.7467,
+   "alt": "AI illustration: a mint-green foam Statue of Liberty souvenir crown on a museum plinth behind a red velvet rope",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 400,
+     "h": 536,
+     "file": "assets/img/gen/pillar-crown-400.webp",
+     "bytes": 11136
+    },
+    {
+     "w": 600,
+     "h": 804,
+     "file": "assets/img/gen/pillar-crown-600.webp",
+     "bytes": 17870
+    },
+    {
+     "w": 900,
+     "h": 1205,
+     "file": "assets/img/gen/pillar-crown-900.webp",
+     "bytes": 29474
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "pillar-05-crown",
+     "endpoint": "fal-ai/nano-banana-pro",
+     "request_id": "01a1c3e2-9e0b-7351-bd04-f517c01beb35",
+     "prompt": "A mint-green foam Statue of Liberty souvenir crown, the cheerful kind sold to tourists in New York City, displayed on a clean white museum plinth under a warm spotlight with a velvet rope on polished brass stanchions in front, as solemnly as if it were a royal crown jewel. Photographed like a fine-art museum exhibit for a premium editorial campaign: a dark gallery room with a deep charcoal wall, one warm spotlight from above, soft long shadows, rich cinematic colour, shallow depth of field, photorealistic, crisp detail on the foam texture. Playful and witty, but elegant. No people, no text, no letters, no numbers, no logos, no signage, no labels, no plaques, no watermark."
+    }
+   ]
+  },
+  "photo-interior": {
+   "w": 2720,
+   "h": 1270,
+   "ratio": 2.1417,
+   "alt": "Inside The Higher Co. at 123 E Willow St: the light-oak counter with the THC logo, glass display cases lit along both walls, black cast-iron columns and ring lights overhead",
+   "ai": "enhanced",
+   "files": [
+    {
+     "w": 1280,
+     "h": 598,
+     "file": "assets/img/gen/photo-interior-1280.webp",
+     "bytes": 127524
+    },
+    {
+     "w": 1920,
+     "h": 896,
+     "file": "assets/img/gen/photo-interior-1920.webp",
+     "bytes": 252824
+    },
+    {
+     "w": 2720,
+     "h": 1270,
+     "file": "assets/img/gen/photo-interior-2720.webp",
+     "bytes": 475040
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "photo-interior-up",
+     "endpoint": "fal-ai/topaz/upscale/image",
+     "request_id": "01a1c3f8-0a65-7b41-ac76-4fe87d8579c6",
+     "prompt": null
+    },
+    {
+     "job": "photo-interior-light",
+     "endpoint": "local: tools/process-images.py indoor_light()",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "photo-counter": {
+   "w": 1656,
+   "h": 1936,
+   "ratio": 0.8554,
+   "alt": "Budtenders in black The Higher Co. shirts helping customers at the light-oak checkout counter, the lit THC sign on the wall behind them",
+   "ai": "enhanced",
+   "files": [
+    {
+     "w": 800,
+     "h": 935,
+     "file": "assets/img/gen/photo-counter-800.webp",
+     "bytes": 84164
+    },
+    {
+     "w": 1200,
+     "h": 1403,
+     "file": "assets/img/gen/photo-counter-1200.webp",
+     "bytes": 159978
+    },
+    {
+     "w": 1656,
+     "h": 1936,
+     "file": "assets/img/gen/photo-counter-1656.webp",
+     "bytes": 275652
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "photo-counter-up",
+     "endpoint": "fal-ai/topaz/upscale/image",
+     "request_id": "01a1c3f8-022e-7fb2-a62b-e1b18236e80e",
+     "prompt": null
+    },
+    {
+     "job": "photo-counter-light",
+     "endpoint": "local: tools/process-images.py indoor_light()",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
+  "photo-display": {
+   "w": 1920,
+   "h": 1440,
+   "ratio": 1.3333,
+   "alt": "A glass display case at The Higher Co. lined with gold velvet: a black THC snapback cap in the middle among edibles, tins and packs, gold hand sculptures, and the lit THC sign over glassware shelves on the back wall",
+   "ai": "enhanced",
+   "files": [
+    {
+     "w": 800,
+     "h": 600,
+     "file": "assets/img/gen/photo-display-800.webp",
+     "bytes": 66354
+    },
+    {
+     "w": 1200,
+     "h": 900,
+     "file": "assets/img/gen/photo-display-1200.webp",
+     "bytes": 121576
+    },
+    {
+     "w": 1920,
+     "h": 1440,
+     "file": "assets/img/gen/photo-display-1920.webp",
+     "bytes": 253296
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "photo-display-up",
+     "endpoint": "fal-ai/topaz/upscale/image",
+     "request_id": "01a1c418-bdbb-7b82-a7b3-8a0cae37d805",
+     "prompt": null
+    },
+    {
+     "job": "photo-display-light",
+     "endpoint": "local: tools/process-images.py indoor_light()",
+     "request_id": null,
+     "prompt": null
+    }
+   ]
+  },
   "cut-flower": {
    "w": 630,
    "h": 900,
@@ -706,6 +1264,438 @@
      "endpoint": "fal-ai/flux-pro/v1.1-ultra",
      "request_id": "01a1c2c4-98e1-7dc1-9cb6-41ac4a72bf5a",
      "prompt": "Studio still life of a brushed brass herb grinder beside a minimalist clear glass hand pipe, isolated on a pure black background, soft key light from the upper left, subtle cool mint rim light, crisp reflections, no text, no logos, no smoke"
+    }
+   ]
+  },
+  "cat-flower": {
+   "w": 939,
+   "h": 1704,
+   "ratio": 0.5511,
+   "alt": "AI illustration: a clear glass jar with a brass lid, filled to the brim with green cannabis buds",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 132,
+     "h": 240,
+     "file": "assets/img/gen/cat-flower-132.webp",
+     "bytes": 21598
+    },
+    {
+     "w": 220,
+     "h": 399,
+     "file": "assets/img/gen/cat-flower-220.webp",
+     "bytes": 51024
+    },
+    {
+     "w": 397,
+     "h": 720,
+     "file": "assets/img/gen/cat-flower-397.webp",
+     "bytes": 143170
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-flower-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c442-f511-7b80-9bb5-d1322f10d249",
+     "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with dense green cannabis flower buds with orange hairs and white frost, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people."
+    },
+    {
+     "job": "cat-flower-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a265-7972-bcd0-a08b5e2c94d4",
+     "prompt": null
+    }
+   ]
+  },
+  "cat-prerolls": {
+   "w": 309,
+   "h": 989,
+   "ratio": 0.3124,
+   "alt": "AI illustration: a single cone pre-roll with a kraft paper tip, standing at a slant",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 75,
+     "h": 240,
+     "file": "assets/img/gen/cat-prerolls-75.webp",
+     "bytes": 6686
+    },
+    {
+     "w": 125,
+     "h": 400,
+     "file": "assets/img/gen/cat-prerolls-125.webp",
+     "bytes": 13130
+    },
+    {
+     "w": 225,
+     "h": 720,
+     "file": "assets/img/gen/cat-prerolls-225.webp",
+     "bytes": 31428
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-prerolls-k",
+     "endpoint": "fal-ai/flux-pro/kontext",
+     "request_id": "01a1c443-6190-7352-918f-33117a5807d3",
+     "prompt": "Re-photograph this exact pre-roll as a premium studio product photograph: keep its cone shape, the paper with the ground flower showing through it, the twisted top and the kraft paper filter tip exactly as they are. It stands upright at a slight slant in the centre of the frame, the whole pre-roll in frame, on the same solid seamless medium jade mint green backdrop, evenly lit and the same colour everywhere, soft diffused frontal studio light, crisp focus, photorealistic. No text, no labels, no logos, no hands, no smoke."
+    },
+    {
+     "job": "cat-prerolls-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a265-7132-b15a-7bac01ce2c89",
+     "prompt": null
+    }
+   ]
+  },
+  "cat-vapes": {
+   "w": 220,
+   "h": 1815,
+   "ratio": 0.1212,
+   "alt": "AI illustration: a slim black vape pen with a clear cartridge of golden oil",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 29,
+     "h": 239,
+     "file": "assets/img/gen/cat-vapes-29.webp",
+     "bytes": 3274
+    },
+    {
+     "w": 48,
+     "h": 396,
+     "file": "assets/img/gen/cat-vapes-48.webp",
+     "bytes": 5064
+    },
+    {
+     "w": 87,
+     "h": 718,
+     "file": "assets/img/gen/cat-vapes-87.webp",
+     "bytes": 10940
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-vapes-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c442-f511-7bf3-ba1e-79162257ee50",
+     "prompt": "Studio product photograph: a slim matte black vape pen battery with a clear glass cartridge of golden amber oil screwed on top and a black ceramic mouthpiece, unbranded, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole vape pen in frame with generous empty space all around it, on a solid seamless warm off-white cream backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the golden oil clearly visible through the clear glass cartridge, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people."
+    },
+    {
+     "job": "cat-vapes-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a266-7c93-ada5-ab233fbfa8ee",
+     "prompt": null
+    }
+   ]
+  },
+  "cat-concentrates": {
+   "w": 730,
+   "h": 927,
+   "ratio": 0.7875,
+   "alt": "AI illustration: a small glass jar with a brass lid, filled with golden cannabis budder",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 189,
+     "h": 240,
+     "file": "assets/img/gen/cat-concentrates-189.webp",
+     "bytes": 24428
+    },
+    {
+     "w": 315,
+     "h": 400,
+     "file": "assets/img/gen/cat-concentrates-315.webp",
+     "bytes": 55266
+    },
+    {
+     "w": 567,
+     "h": 720,
+     "file": "assets/img/gen/cat-concentrates-567.webp",
+     "bytes": 127512
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-concentrates-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c443-2255-7702-b8ca-b74e3ade17c8",
+     "prompt": "Studio product photograph: a small round clear glass jar filled to the brim with golden-amber cannabis budder, closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless pale soft mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people."
+    },
+    {
+     "job": "cat-concentrates-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a25e-7782-b874-a46240d41f59",
+     "prompt": null
+    }
+   ]
+  },
+  "cat-edibles": {
+   "w": 877,
+   "h": 1455,
+   "ratio": 0.6027,
+   "alt": "AI illustration: a clear glass jar with a brass lid, filled with sugar-coated fruit gummies",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 145,
+     "h": 241,
+     "file": "assets/img/gen/cat-edibles-145.webp",
+     "bytes": 17790
+    },
+    {
+     "w": 241,
+     "h": 400,
+     "file": "assets/img/gen/cat-edibles-241.webp",
+     "bytes": 40514
+    },
+    {
+     "w": 434,
+     "h": 720,
+     "file": "assets/img/gen/cat-edibles-434.webp",
+     "bytes": 109380
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-edibles-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c443-3247-7930-9dd3-4be9951e50f5",
+     "prompt": "Studio product photograph: a clear glass deli jar filled to the brim with sugar-coated fruit gummy cubes in red, orange and yellow (plain cubes: no bear, worm or cartoon shapes), closed with a brushed antique-brass screw-top lid, standing perfectly upright in the centre of the frame, seen straight on at eye level, the whole jar in frame with generous empty space all around it, on a solid seamless warm muted antique brass gold backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, the contents fully and clearly visible through crystal clear glass, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people."
+    },
+    {
+     "job": "cat-edibles-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a265-76d3-b036-368bf9565ab2",
+     "prompt": null
+    }
+   ]
+  },
+  "cat-accessories": {
+   "w": 736,
+   "h": 788,
+   "ratio": 0.934,
+   "alt": "AI illustration: a polished brass herb grinder with a knurled rim",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 224,
+     "h": 240,
+     "file": "assets/img/gen/cat-accessories-224.webp",
+     "bytes": 17064
+    },
+    {
+     "w": 374,
+     "h": 400,
+     "file": "assets/img/gen/cat-accessories-374.webp",
+     "bytes": 34172
+    },
+    {
+     "w": 672,
+     "h": 719,
+     "file": "assets/img/gen/cat-accessories-672.webp",
+     "bytes": 73070
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "cat-accessories-b",
+     "endpoint": "fal-ai/flux-pro/v1.1-ultra",
+     "request_id": "01a1c443-4e6a-7f62-95dd-033ea04f904e",
+     "prompt": "Studio product photograph: a polished antique-brass four-piece herb grinder with a finely knurled rim, closed, unbranded, standing perfectly upright in the centre of the frame, seen from slightly above at a three-quarter view, so its round lid and its knurled sides both show, the whole grinder in frame with generous empty space all around it, on a solid seamless medium jade mint green backdrop that is evenly lit and the same colour everywhere, soft diffused frontal studio light with no glare and no harsh reflections, crisp focus, clean, modern, minimal, photorealistic. No text, no labels, no logos, no stickers, no hands, no people."
+    },
+    {
+     "job": "cat-accessories-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c444-a266-70c3-8285-9efca34380ea",
+     "prompt": null
+    }
+   ]
+  },
+  "drop-cap": {
+   "w": 765,
+   "h": 680,
+   "ratio": 1.125,
+   "alt": "AI illustration of the THC Monogram Snapback: a black snapback with the white THC monogram and a gold-bordered The Higher Co. patch",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 320,
+     "file": "assets/img/gen/drop-cap-360.webp",
+     "bytes": 19098
+    },
+    {
+     "w": 560,
+     "h": 498,
+     "file": "assets/img/gen/drop-cap-560.webp",
+     "bytes": 43302
+    },
+    {
+     "w": 765,
+     "h": 680,
+     "file": "assets/img/gen/drop-cap-765.webp",
+     "bytes": 68376
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "drop-cap-k",
+     "endpoint": "fal-ai/flux-pro/kontext",
+     "request_id": "01a1c4ae-be48-7210-9b19-bdcc573375cf",
+     "prompt": "Re-photograph this exact black snapback cap as a clean studio product photo: keep its shape, the flat brim, the black fabric, the large white THC monogram on the front panel and the black patch below it with a thin gold border that reads exactly THE HIGHER CO. in gold capital letters, and the oval sticker on the brim. Remove the glass reflections and everything behind the cap. The cap faces the camera, centred, the whole cap in frame, on a plain seamless dark charcoal backdrop, soft diffused studio light, crisp focus, photorealistic. No other text, no hands, no people."
+    },
+    {
+     "job": "drop-cap-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c4af-a89b-7240-8c8b-59b3c2db498d",
+     "prompt": null
+    }
+   ]
+  },
+  "drop-tee": {
+   "w": 800,
+   "h": 791,
+   "ratio": 1.0114,
+   "alt": "AI illustration of the Lady Liberty Graphic tee: a folded black T-shirt printed with Lady Liberty in mint, crowned with cannabis leaves, raising an open hand in a wave",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 360,
+     "h": 356,
+     "file": "assets/img/gen/drop-tee-360.webp",
+     "bytes": 27386
+    },
+    {
+     "w": 560,
+     "h": 554,
+     "file": "assets/img/gen/drop-tee-560.webp",
+     "bytes": 61780
+    },
+    {
+     "w": 800,
+     "h": 791,
+     "file": "assets/img/gen/drop-tee-800.webp",
+     "bytes": 125402
+    }
+   ],
+   "alpha": true,
+   "provenance": [
+    {
+     "job": "operator-supplied",
+     "endpoint": "operator mockup (chat image, 2026-11-10), origin unconfirmed",
+     "request_id": null,
+     "prompt": null
+    },
+    {
+     "job": "drop-tee-b",
+     "endpoint": "fal-ai/flux-pro/kontext",
+     "request_id": "01a1c522-42f0-7c53-98ff-ba70dd661b7d",
+     "prompt": "Remove the rolled joint from Lady Liberty's hand and remove all of the grey smoke clouds from the embroidered graphic, so Lady Liberty with her crown of cannabis leaves sits directly on the plain black shirt. Her hand stays in the same place, now an open relaxed hand raised in a calm wave, holding nothing. Keep everything else exactly the same: the folded black T-shirt, its collar and folds, the embroidered stitch texture, Lady Liberty's face and crown of cannabis leaves, the colours, the white marble surface, the framing and the lighting."
+    },
+    {
+     "job": "drop-tee-b1-cut",
+     "endpoint": "fal-ai/birefnet/v2",
+     "request_id": "01a1c525-0c46-7443-9b0b-902cd025460d",
+     "prompt": null
+    }
+   ]
+  },
+  "join-sky": {
+   "w": 4000,
+   "h": 1412,
+   "ratio": 2.8329,
+   "alt": "AI illustration: the Statue of Liberty flashing a peace sign beside the Lower Manhattan skyline at sunset",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 960,
+     "h": 339,
+     "file": "assets/img/gen/join-sky-960.webp",
+     "bytes": 48054
+    },
+    {
+     "w": 1440,
+     "h": 508,
+     "file": "assets/img/gen/join-sky-1440.webp",
+     "bytes": 88078
+    },
+    {
+     "w": 1920,
+     "h": 678,
+     "file": "assets/img/gen/join-sky-1920.webp",
+     "bytes": 134668
+    },
+    {
+     "w": 2880,
+     "h": 1017,
+     "file": "assets/img/gen/join-sky-2880.webp",
+     "bytes": 233010
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "operator-supplied",
+     "endpoint": "operator image (chat, 2026-11-10), origin unconfirmed",
+     "request_id": null,
+     "prompt": null
+    },
+    {
+     "job": "join-sky-up",
+     "endpoint": "fal-ai/topaz/upscale/image",
+     "request_id": "01a1c52d-999a-70a0-af62-eca06778adfd",
+     "prompt": null
+    }
+   ]
+  },
+  "join-sky-tall": {
+   "w": 1760,
+   "h": 1412,
+   "ratio": 1.2465,
+   "alt": "AI illustration: the Statue of Liberty flashing a peace sign beside the Lower Manhattan skyline at sunset",
+   "ai": "generated",
+   "files": [
+    {
+     "w": 700,
+     "h": 562,
+     "file": "assets/img/gen/join-sky-tall-700.webp",
+     "bytes": 62242
+    },
+    {
+     "w": 1100,
+     "h": 882,
+     "file": "assets/img/gen/join-sky-tall-1100.webp",
+     "bytes": 117768
+    },
+    {
+     "w": 1600,
+     "h": 1284,
+     "file": "assets/img/gen/join-sky-tall-1600.webp",
+     "bytes": 190418
+    }
+   ],
+   "alpha": false,
+   "provenance": [
+    {
+     "job": "operator-supplied",
+     "endpoint": "operator image (chat, 2026-11-10), origin unconfirmed",
+     "request_id": null,
+     "prompt": null
+    },
+    {
+     "job": "join-sky-up",
+     "endpoint": "fal-ai/topaz/upscale/image",
+     "request_id": "01a1c52d-999a-70a0-af62-eca06778adfd",
+     "prompt": null
     }
    ]
   },

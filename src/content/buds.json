@@ -1,0 +1,207 @@
+{
+ "note": "Flower Bar ball pit sprite atlas (AI illustrations; tools/process-images.py).",
+ "cols": 10,
+ "n": 90,
+ "files": {
+  "hi": {
+   "file": "assets/img/gen/buds-atlas-224.webp",
+   "cell": 224,
+   "w": 2240,
+   "h": 2016,
+   "bytes": 1061128
+  },
+  "lo": {
+   "file": "assets/img/gen/buds-atlas-112.webp",
+   "cell": 112,
+   "w": 1120,
+   "h": 1008,
+   "bytes": 372070
+  }
+ },
+ "r": [
+  0.718,
+  0.689,
+  0.697,
+  0.687,
+  0.716,
+  0.688,
+  0.716,
+  0.695,
+  0.686,
+  0.704,
+  0.709,
+  0.735,
+  0.712,
+  0.715,
+  0.71,
+  0.731,
+  0.702,
+  0.723,
+  0.668,
+  0.733,
+  0.708,
+  0.703,
+  0.781,
+  0.706,
+  0.73,
+  0.727,
+  0.732,
+  0.746,
+  0.686,
+  0.724,
+  0.732,
+  0.718,
+  0.745,
+  0.751,
+  0.673,
+  0.708,
+  0.7,
+  0.688,
+  0.719,
+  0.735,
+  0.678,
+  0.732,
+  0.73,
+  0.692,
+  0.735,
+  0.713,
+  0.734,
+  0.517,
+  0.56,
+  0.697,
+  0.605,
+  0.631,
+  0.672,
+  0.666,
+  0.647,
+  0.689,
+  0.644,
+  0.716,
+  0.68,
+  0.69,
+  0.705,
+  0.677,
+  0.838,
+  0.7,
+  0.731,
+  0.741,
+  0.711,
+  0.744,
+  0.704,
+  0.756,
+  0.735,
+  0.718,
+  0.751,
+  0.721,
+  0.705,
+  0.675,
+  0.745,
+  0.705,
+  0.677,
+  0.685,
+  0.704,
+  0.692,
+  0.698,
+  0.678,
+  0.708,
+  0.701,
+  0.703,
+  0.689,
+  0.708,
+  0.706
+ ],
+ "sheets": [
+  "greens",
+  "purples",
+  "frosty",
+  "sativas",
+  "indicas",
+  "exotics"
+ ],
+ "provenance": [
+  [
+   {
+    "job": "buds-greens",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b3d-7041-b71c-422c398075f7",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: lime green, olive green, deep forest green, chartreuse, emerald, pale sage and mint-green buds, some with bright orange pistils, some with rust-red or cream pistils. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-greens-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-95e4-7ac2-a8e2-6565b0a90836",
+    "prompt": null
+   }
+  ],
+  [
+   {
+    "job": "buds-purples",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b3c-7a42-a2fd-f95124b2bbe0",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: lavender, violet, plum, deep purple, purple with green tips, almost black purple and pink-purple buds, with orange, white or rust pistils. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-purples-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-9590-75c0-96ea-6adffef26120",
+    "prompt": null
+   }
+  ],
+  [
+   {
+    "job": "buds-frosty",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b3c-75b1-b0e2-0e3fecf20092",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: heavily frosted buds so covered in trichomes they look sugar-coated, silvery green, near white, icy mint and pale gold, with fine orange or cream pistils. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-frosty-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-95ed-74e3-838d-714b6d7ca69d",
+    "prompt": null
+   }
+  ],
+  [
+   {
+    "job": "buds-sativas",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b49-7ca1-abb1-a9d93f69826f",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: long airy foxtail sativa spears, tall tapering colas and loose fluffy buds in light green, yellow-green and gold, with many long orange pistils. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-sativas-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-95ed-7aa1-aaa5-7f3aeed341a1",
+    "prompt": null
+   }
+  ],
+  [
+   {
+    "job": "buds-indicas",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b49-7ca1-abb1-a9ae46b1f585",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: dense round compact indica nugs, golf-ball shaped and chunky, in dark green, blue-green and green with purple patches, short rust pistils. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-indicas-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-95ed-7250-bffb-788232bc785a",
+    "prompt": null
+   }
+  ],
+  [
+   {
+    "job": "buds-exotics",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "request_id": "01a1c473-9b44-7df3-9095-8683e5eaa2aa",
+    "prompt": "A sprite sheet for a cannabis dispensary website: a neat 4 by 4 grid of 16 different whole cannabis flower buds, each one isolated and centred in its own cell with generous empty pure black space around it, no bud touching or overlapping another, on a flat pure black background. Every bud is a different strain and clearly different in shape, size and colour: unusual buds: golden-orange, amber-tinged, red-haired fiery ones, two-tone green and purple, blue-tinted, champagne and bronze, each a distinct shape. Each bud seen whole, from the side, filling about two thirds of its cell. Macro studio product photography, soft even light, crisp focus, sparkling trichome frost, realistic. No text, no labels, no numbers, no grid lines, no borders, no shadows, no loose leaves, no smoke, no hands."
+   },
+   {
+    "job": "buds-exotics-cut",
+    "endpoint": "fal-ai/birefnet/v2",
+    "request_id": "01a1c474-95ee-7941-9cbc-bfb36ef74009",
+    "prompt": null
+   }
+  ]
+ ]
+}

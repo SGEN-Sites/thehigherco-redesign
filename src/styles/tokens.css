@@ -136,6 +136,8 @@
   /* brand accents */
   --brass: var(--c-8);       /* #b79b65, measured on the live site — on ink 7.25:1; rules/large type on light only */
   --brass-ink: #6E5732;      /* brass for text on gallery — 6.22:1 */
+  --brass-hi: #D3B984;       /* lit edge of a brass part (accents: the category cards' bag buttons) */
+  --brass-lo: #8E7547;       /* shaded edge of a brass part */
   --oak: #D9B98A;            /* light oak (brief) — on ink 10.35:1 */
   --oak-2: #C6A272;          /* oak shade for shelves */
   --oak-3: #A8865A;          /* oak edge / shadow */
@@ -144,6 +146,7 @@
   --mint-soft: #9FE0CF;      /* mint tint for highlights on dark */
   --brick: #9E3B2A;          /* brick red, used rarely (brief) — gallery on brick 6.14:1 */
   --brick-2: #7A2C1F;
+  --money: #3B5B46;          /* banknote engraving green: the guilloché line work on light bands, always faint */
 
   /* text */
   --on-dark: #F6F4EF;        /* 17.56:1 on ink */
@@ -166,12 +169,26 @@
   --line-light: rgba(14, 14, 14, .12);
   --scrim: rgba(14, 14, 14, .78);
   --scrim-soft: rgba(14, 14, 14, .45);
+  --scrim-deep: rgba(10, 9, 8, .86);     /* hero text side, over the golden-hour photograph */
+  --vignette: rgba(0, 0, 0, .42);        /* lens fall-off at the hero's edges */
+  --light-sun: rgba(255, 176, 92, .42);  /* the low sun's light leak */
+  --bird-shadow: #5266A8;    /* MULTIPLIED over sunlit brick: takes the direct sun out, leaves cool skylight */
+  --bird: #2A2220;           /* birds against the evening sky */
+  /* the night hero */
+  --light-sodium: rgba(255, 150, 64, .30);   /* sodium streetlights out of frame, left */
+  --headlight: rgba(255, 246, 226, .95);
+  --headlight-2: rgba(255, 238, 205, .35);
+  --taillight: rgba(255, 48, 38, .9);
+  --sweep: rgba(255, 232, 196, .10);         /* a car's headlights crossing the facade */
+  --sweep-core: rgba(255, 240, 214, .24);
+  --clear-light: rgba(255, 240, 214, 0);
   --clear: rgba(14, 14, 14, 0);
   --clear-gallery: rgba(246, 244, 239, 0);
   --light-mint: rgba(63, 191, 160, .30);
   --light-mint-2: rgba(63, 191, 160, .14);
   --light-brass: rgba(183, 155, 101, .34);
   --light-brass-2: rgba(183, 155, 101, .14);
+  --light-brass-3: rgba(183, 155, 101, .22);   /* the brass key light that follows the pointer (category cards band) */
   --light-warm: rgba(255, 214, 160, .30);
   --light-warm-2: rgba(255, 214, 160, .10);
   --shade: rgba(0, 0, 0, .55);
@@ -208,13 +225,19 @@
   --band-y: clamp(80px, 11vw, 168px);
   --band-y-tight: clamp(56px, 7vw, 104px);
   --header-h: 76px;
+  --bar-clear: 92px;         /* room the fixed bottom action bar takes (66px tall, 14px up) plus a margin */
   --utility-h: 34px;
   --bottom-stack: 0px;
 
-  /* shape */
-  --r-frame: 4px;            /* gallery frames and cards */
-  --r-soft: 14px;
-  --r-pill: 999px;
+  /* shape — ONE corner for the whole site (operator, 2026-11-10: "make all corners consistent, with a bit of
+     roundness"). Every box, button, field, image, card and icon tile uses --radius. Small tags (< 40px tall) and
+     anything nested inside a padded box use --radius-sm, so inner corners stay concentric with the outer ones.
+     Only true circles stay round: status dots, markers, glows, the magnifier lens, the stamp and the spinner. */
+  --radius: 12px;
+  --radius-sm: 6px;
+  --cta-w: 16.75rem;         /* every button in a group is this wide (the site's longest label, 263px, fits) */
+  --cta-w-sm: 12.75rem;      /* the same for small buttons (longest small label 196px) */
+  --radius-sheet: 28px;      /* the top corners of a light band sliding over the dark one before it (operator: "a bit more rounded") */
   --shadow-lift: 0 30px 60px -28px var(--shade), 0 12px 24px -16px var(--shade-2);
   --shadow-float: 0 40px 80px -30px var(--shade), 0 0 0 1px var(--line-dark);
   --shadow-light: 0 24px 48px -30px rgba(14, 14, 14, .35), 0 2px 6px -2px rgba(14, 14, 14, .12);

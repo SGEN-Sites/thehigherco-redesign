@@ -1,7 +1,7 @@
 {
   "schema": "site-reforge/change-control@1",
   "generated": "2026-11-09T23:52:04.111Z",
-  "updated": "2026-11-10T00:20:19.202Z",
+  "updated": "2026-11-10T14:39:47.878Z",
   "legend": {
     "PRESERVE": "kept as-is; content and function unchanged",
     "IMPROVE": "same content and meaning, better structure/hierarchy/design",
@@ -142,7 +142,7 @@
       "sourceTag": "section",
       "sourceClass": "l-section wpb_row height_huge",
       "decision": "IMPROVE",
-      "why": "About copy kept on the same URL as Our Story; founders, The Higher Calling and Stop the Stigma added from declared facts; \"Potent\" and the quote's well-being sentence trimmed (9 NYCRR 129.2(b)(9),(13)) [CONFIRM WITH CLIENT].",
+      "why": "About copy kept on the same URL as Our Story; 'Pioneering a New Era in Cannabis' and 'Our Story' now share one band (both headings and every sentence kept); founders, The Higher Calling and Stop the Stigma added from declared facts; \"Potent\" and the quote's well-being sentence trimmed (9 NYCRR 129.2(b)(9),(13)) [CONFIRM WITH CLIENT].",
       "narrativeSlot": "trust-positioning",
       "presetId": "feature-split",
       "rebuiltAs": ""
@@ -506,7 +506,7 @@
       "sourceTag": "section",
       "sourceClass": "l-section wpb_row us_custom_0e1e04c8 height_medium",
       "decision": "IMPROVE",
-      "why": "Location / phone / mail / hours cards kept; the Leaflet map becomes a click-to-load map plus directions links.",
+      "why": "The location, phone and hours cards are merged into one visit bar (same address, the same Google directions link, Call 315-870-7140, live open/closed status and the week's hours); the mail and social cards kept; the Leaflet map becomes a click-to-load map plus directions links.",
       "narrativeSlot": "strategic-cta",
       "presetId": "card-grid",
       "rebuiltAs": ""
@@ -562,7 +562,7 @@
       "sourceTag": "section",
       "sourceClass": "l-section wpb_row height_huge",
       "decision": "IMPROVE",
-      "why": "Every live question and answer kept verbatim as an accessible accordion; FAQPage JSON-LD.",
+      "why": "Every live question and answer kept verbatim as an accessible accordion (all start closed), with a jump-to index of the questions; FAQPage JSON-LD.",
       "narrativeSlot": "objection-handling",
       "presetId": "accordion-faq",
       "rebuiltAs": ""

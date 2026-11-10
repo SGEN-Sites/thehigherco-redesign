@@ -33,7 +33,7 @@ fs.mkdirSync(OUT, { recursive: true });
 // Rewrite any root-relative URL still present (content strings written as "/shop/") relative to the page.
 function rebase(html) {
   const fix = (v) => (v.startsWith('/') && !v.startsWith('//') ? rel(v) : v);
-  html = html.replace(/\b(href|src|poster|data-src|action)="([^"]*)"/g, (m, a, v) => `${a}="${fix(v)}"`);
+  html = html.replace(/\b(href|src|poster|data-src|data-atlas-lo|data-atlas|action)="([^"]*)"/g, (m, a, v) => `${a}="${fix(v)}"`);   // data-atlas*: the ball pit's sprites
   html = html.replace(/\bsrcset="([^"]*)"/g, (m, v) => `srcset="${v.split(',').map((c) => { const [p, ...r] = c.trim().split(/\s+/); return [fix(p), ...r].join(' '); }).join(', ')}"`);
   html = html.replace(/url\('(\/[^']*)'\)/g, (m, v) => `url('${fix(v)}')`);
   return html;
@@ -104,7 +104,8 @@ copyDir(path.join(ROOT, 'src/assets/video'), path.join(OUT, 'assets/video'));
 
 // CSS: fonts + tokens + the authored sheets, in cascade order. (src/styles/motion.css is the measured motion
 // inventory of the OLD site, kept as the record; the redesign's motion lives in signature.css.)
-const SHEETS = ['fonts.css', 'tokens.css', 'base.css', 'chrome.css', 'components.css', 'signature.css', 'pages.css'];
+const SHEETS = ['fonts.css', 'tokens.css', 'base.css', 'chrome.css', 'components.css', 'signature.css', 'pages.css',
+  'inner-story.css', 'inner-info.css', 'inner-shop.css', 'inner-journal.css', 'inner-legal.css'];   // one per inner page module
 const css = SHEETS.map((s) => `/* ${s} */\n` + fs.readFileSync(path.join(ROOT, 'src/styles', s), 'utf8')).join('\n');
 const min = css.replace(/\/\*(?![\s\S]*?sourceMappingURL)[\s\S]*?\*\//g, '').replace(/\n\s*\n+/g, '\n').replace(/[ \t]+/g, ' ');
 fs.mkdirSync(path.join(OUT, 'assets/css'), { recursive: true });

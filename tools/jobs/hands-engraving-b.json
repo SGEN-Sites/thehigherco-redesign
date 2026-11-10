@@ -1,0 +1,13 @@
+[
+  {
+    "name": "hands-engraving-b",
+    "endpoint": "fal-ai/nano-banana-pro",
+    "input": {
+      "prompt": "A symbolic intaglio banknote-style engraving: two hands reach toward each other from opposite edges of a wide frame, their extended index fingers almost touching at the exact centre. This is an original, modern take on the idea of two outstretched hands meeting, not a copy of any painting: the two hands are equals, held level at the same height, both open and reaching with the index finger extended and the other fingers relaxed, palms turned slightly down. The forearms are bare and strong, and each one wears the sleeve of a work shirt rolled up to just below the elbow: on the left a rolled denim cuff, on the right a rolled flannel cuff, both cut off by the edges of the frame. In the small gap between the fingertips, fine engraved rays radiate outward like the sunburst on an old bank note, fading into the paper. Rendered exactly the way the portraits on paper currency are engraved: fine parallel engraved lines that follow the form, cross-hatching in the shadows, stipple dots for soft modelling of knuckles and fingertips, crisp burin line work with tapering line ends, deep green-black ink on plain off-white paper. Wide horizontal composition with the hands in the middle band and only a little empty paper above and below. Anatomically correct hands with exactly five fingers each. No border, no frame, no oval, no background pattern, no text, no letters, no numbers, no seals, no signatures, no money, no banknote layout.",
+      "aspect_ratio": "21:9",
+      "resolution": "4K",
+      "output_format": "png",
+      "num_images": 2
+    }
+  }
+]

@@ -1,0 +1,147 @@
+/* inner-shop.css: styles for the Shop hub and the six category pages (src/pages/shop.mjs); inner-pages update, 2026-11-10. Loads after pages.css. */
+/* Everything is scoped to body.page-shop: the lifestyle page shares the menu embed and the .shopnote line. */
+
+/* ---------- hero: tighter; the products in a thin glass case; the pickup facts in one dark bar ----------
+   The light menu band slides 40px over the hero's bottom edge (signature.css seams), so the bottom padding clears it
+   (the same bottom as the shared .shophero rule in the main repo's components.css, 2026-11-10; the top is tighter). */
+.page-shop .shophero { padding: clamp(18px, 2.6vw, 36px) 0 calc(40px + clamp(24px, 2.4vw, 32px)); }
+.page-shop .shophero__in { grid-template-columns: minmax(0, 1.22fr) minmax(0, .78fr); grid-template-areas: "copy art" "facts facts"; gap: 0 clamp(24px, 4vw, 56px); align-items: end; }
+.page-shop .shophero__copy { grid-area: copy; }
+.page-shop .shophero .crumbs ol { margin-bottom: 8px; }
+.page-shop .shophero .kicker { margin-bottom: 14px; }
+.page-shop .shophero__t { margin: 0 0 .2em; font-size: clamp(2.6rem, 4.9vw, 4.6rem); font-stretch: var(--wdth-poster); letter-spacing: -.02em; }
+.page-shop .shophero__lead { margin: 0; max-width: 600px; }
+
+/* the display case: the home cases' glass (brass edge, two glints over the products' lower part, the products mirrored
+   faintly on its floor); --obj is the product box height, --rise how far the products stand above the case */
+.page-shop .shophero__art { grid-area: art; position: relative; height: auto; display: grid; justify-items: end; align-self: end; }
+.page-shop .shophero__art::before { content: ""; position: absolute; left: 6%; right: 6%; top: -12%; bottom: 30%; pointer-events: none; background: radial-gradient(50% 55% at 50% 32%, var(--light-warm-2), var(--clear) 72%); }
+.page-shop .showcase { --obj: clamp(176px, 16vw, 236px); --rise: calc(var(--obj) * .4); position: relative; isolation: isolate; width: 100%; max-width: 460px; height: calc(var(--obj) - var(--rise) + 22px); margin-top: var(--rise); border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--shine-2) 0%, var(--line-dark) 34%, var(--clear) 62%, var(--light-brass-2) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow: inset 0 1px 0 var(--glass-edge-2), inset 0 0 0 1px var(--light-brass), inset 0 -22px 30px -22px var(--light-brass), 0 34px 60px -32px var(--shade); }
+.page-shop .showcase::before { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(112deg, var(--clear-light) 12%, var(--shine-2) 18%, var(--clear-light) 26%, var(--clear-light) 58%, var(--line-dark) 62%, var(--clear-light) 69%); }
+.page-shop .showcase__obj { position: absolute; bottom: 14px; height: var(--obj); z-index: 1; pointer-events: none; animation: shop-float 6.5s var(--ease-io) infinite; }
+.page-shop .showcase__img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; filter: drop-shadow(0 16px 16px var(--shade));
+  -webkit-box-reflect: below 2px linear-gradient(var(--clear-light) 90%, var(--shine-2)); }
+/* the hub: a jar of flower, a pre-roll and a jar of concentrates, side by side */
+.page-shop .showcase--hub .showcase__obj--0 { left: 6%; width: 31%; }
+.page-shop .showcase--hub .showcase__obj--1 { left: 40%; width: 16%; height: calc(var(--obj) * .9); rotate: 7deg; animation-delay: -2.2s; }
+.page-shop .showcase--hub .showcase__obj--2 { right: 6%; width: 36%; height: calc(var(--obj) * .8); animation-delay: -4.4s; }
+/* a category page: its one product, in a narrower case */
+.page-shop .showcase--solo { max-width: 300px; }
+.page-shop .showcase--solo .showcase__obj { left: 16%; right: 16%; }
+.page-shop--vaporizers .showcase--solo, .page-shop--pre-rolls .showcase--solo { max-width: 220px; }
+@keyframes shop-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -8px; } }
+
+/* the pickup facts: one dark bar (cells split by hairlines, like the home visit bar's week), under the words */
+.page-shop .shopfacts { grid-area: facts; display: grid; grid-template-columns: repeat(4, auto); gap: 1px; margin: clamp(22px, 2.6vw, 34px) 0 0; padding: 0; border: 0; border-radius: var(--radius); overflow: hidden; list-style: none; background: var(--line-dark); box-shadow: 0 0 0 1px var(--line-dark), var(--shadow-lift); color: var(--on-dark-2); font-size: .9rem; line-height: 1.4; }
+.page-shop .shopfacts li { display: flex; align-items: center; gap: 12px; min-height: 0; padding: 12px 18px 12px 12px; background: var(--ink-2); }
+.page-shop .shopfacts__ico { display: grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: var(--radius-sm); background: var(--ink); box-shadow: inset 0 0 0 1px var(--line-dark); color: var(--mint); }
+.page-shop .shopfacts__ico .ico { width: 18px; height: 18px; }
+.page-shop .shopfacts strong { color: var(--on-dark); font-weight: 600; }
+.page-shop .shopfacts__now { display: inline-flex; align-items: center; gap: 9px; color: var(--on-dark); font-weight: 500; }
+
+/* ---------- the live menu band (the menu itself is unchanged): a shorter bottom, chips that lift ---------- */
+.page-shop .shopbody { padding-bottom: clamp(44px, 5vw, 72px); }
+.page-shop .chip--cat { transition: translate var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background-color var(--t-fast) var(--ease); }
+.page-shop .chip--cat:not(.is-on):hover { translate: 0 -2px; box-shadow: inset 0 0 0 1.5px var(--mint-ink), var(--shadow-light); }
+/* the category on show carries the brand's brass dot, like the kickers */
+.page-shop .chip--cat.is-on::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); box-shadow: 0 0 0 3px var(--light-brass-2); }
+
+/* ---------- More from the menu: the home glass cases + two photo cards ---------- */
+/* the page's last band: a little tighter at the top, a shorter bottom (it runs straight into the footer, shared fade) */
+.page-shop .crossshop { padding-block: clamp(56px, 6vw, 84px) clamp(48px, 5vw, 72px); }
+.page-shop .crossshop .sect-head { margin-bottom: clamp(4px, 1.2vw, 16px); }
+/* five cases (a category page lists the other five): one row of five; three plus two centred on tablets; two, two and
+   one centred on phones. The hub's six use the home shelf grid as it is. */
+.page-shop .shopcases--n5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+/* the two in-store links */
+.page-shop .shoplinks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: clamp(24px, 3vw, 40px) 0 0; padding: 0; list-style: none; }
+.page-shop .shoplinks > li { display: grid; }
+.page-shop .shoplink { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(200px, 16vw, 236px); overflow: hidden; border-radius: var(--radius); background: var(--ink-2); color: var(--on-dark); text-decoration: none; box-shadow: inset 0 0 0 1px var(--line-dark), 0 34px 60px -32px var(--shade); transition: translate .5s var(--ease), box-shadow .35s var(--ease); }
+/* the photo fills the right side and fades in over the dark; the part of it under the words' column is fully
+   transparent (--clear-to), so the words always sit on plain dark */
+.page-shop .shoplink__media { --clear-to: 17%; position: absolute; top: 0; right: 0; bottom: 0; width: 60%; z-index: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent var(--clear-to), #000 50%); mask-image: linear-gradient(90deg, transparent 0%, transparent var(--clear-to), #000 50%); }
+.page-shop .shoplink__img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 50%); filter: brightness(.86) saturate(.96); transition: scale 1.1s var(--ease), filter .6s var(--ease); }
+.page-shop .shoplink__body { position: relative; z-index: 1; display: grid; justify-items: start; gap: 6px; max-width: 50%; padding: clamp(20px, 2.4vw, 32px); }
+.page-shop .shoplink .kicker { margin: 0 0 2px; }
+.page-shop .shoplink__t { font: 850 clamp(1.35rem, 1.9vw, 1.75rem)/1.06 var(--f-display); font-stretch: var(--wdth-wide); letter-spacing: -.01em; color: var(--on-dark); }
+.page-shop .shoplink__line { color: var(--on-dark-2); font-size: .95rem; line-height: 1.5; }
+/* the brass button: the cases' bag button, with an arrow */
+.page-shop .shoplink__go { position: relative; overflow: hidden; display: grid; place-items: center; width: 42px; height: 42px; margin-top: 10px; border-radius: var(--radius-sm); color: var(--ink);
+  background: linear-gradient(180deg, var(--brass-hi), var(--brass) 55%, var(--brass-lo)); box-shadow: inset 0 1px 0 var(--shine), 0 8px 18px -8px var(--shade); transition: scale var(--t-fast) var(--ease); }
+.page-shop .shoplink__go::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--brass-ink); opacity: .34; -webkit-mask-image: url("../img/texture/guilloche-field.svg"); mask-image: url("../img/texture/guilloche-field.svg"); -webkit-mask-size: 120px 36px; mask-size: 120px 36px; -webkit-mask-repeat: repeat; mask-repeat: repeat; }
+.page-shop .shoplink__go .ico { position: relative; width: 19px; height: 19px; transition: translate var(--t-fast) var(--ease); }
+/* hover and focus: a small lift, a brass hairline, the photo comes up */
+.page-shop .shoplink::after { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px var(--light-brass), inset 0 -3px 0 var(--brass); opacity: 0; transition: opacity .35s var(--ease); }
+.page-shop .shoplink:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px var(--line-dark), var(--shadow-float); }
+.page-shop .shoplink:hover::after, .page-shop .shoplink:focus-visible::after { opacity: 1; }
+.page-shop .shoplink:hover .shoplink__img, .page-shop .shoplink:focus-visible .shoplink__img { scale: 1.05; filter: none; }
+.page-shop .shoplink:hover .shoplink__go, .page-shop .shoplink:focus-visible .shoplink__go { scale: 1.08; }
+.page-shop .shoplink:hover .shoplink__go .ico { translate: 3px 0; }
+.page-shop .shoplink:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+
+/* ---------- tablets ---------- */
+@media (max-width: 1180px) {
+  .page-shop .shopfacts { grid-template-columns: repeat(2, auto); }
+  /* narrower cards: the words take a little more of each (the photo's clear part still covers their column) */
+  .page-shop .shoplink__media { --clear-to: 19%; width: 54%; }
+  .page-shop .shoplink__body { max-width: 56%; }
+  .page-shop .shopcases--n5 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .page-shop .shopcases--n5 > li { grid-column: span 2; }
+  .page-shop .shopcases--n5 > li:nth-child(4) { grid-column: 2 / span 2; }
+}
+@media (max-width: 900px) {
+  .page-shop .shophero__in { grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); }
+}
+@media (max-width: 760px) {
+  .page-shop .shoplinks { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+
+/* ---------- phones: the words first, then the facts with the display case beside them ---------- */
+@media (max-width: 700px) {
+  .page-shop .shophero { padding-top: 12px; }
+  .page-shop .shophero__in { grid-template-columns: minmax(0, 1fr) minmax(0, .62fr); grid-template-areas: "copy copy" "facts art"; gap: 0 10px; }
+  .page-shop .shophero .kicker { margin-bottom: 10px; }
+  .page-shop .shophero__lead { font-size: 1.02rem; line-height: 1.55; }
+  .page-shop .shopfacts { grid-template-columns: minmax(0, 1fr); margin-top: 20px; font-size: .84rem; line-height: 1.35; }
+  .page-shop .shopfacts li { gap: 10px; padding: 9px 10px 9px 9px; }
+  .page-shop .shopfacts__ico { width: 30px; height: 30px; }
+  .page-shop .shopfacts__ico .ico { width: 16px; height: 16px; }
+  .page-shop .shophero__art { align-self: end; justify-items: center; }
+  .page-shop .showcase { --obj: clamp(104px, 31vw, 140px); --rise: calc(var(--obj) * .42); height: calc(var(--obj) - var(--rise) + 16px); }
+  .page-shop .showcase__obj { bottom: 10px; }
+  .page-shop .showcase--hub .showcase__obj--0 { left: 1%; width: 38%; }
+  .page-shop .showcase--hub .showcase__obj--1 { left: 39%; width: 19%; }
+  .page-shop .showcase--hub .showcase__obj--2 { right: 1%; width: 42%; }
+  .page-shop .showcase--solo .showcase__obj { left: 12%; right: 12%; }
+  .page-shop .shopcases--n5 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .page-shop .shopcases--n5 > li:nth-child(4) { grid-column: span 2; }
+  .page-shop .shopcases--n5 > li:nth-child(5) { grid-column: 2 / span 2; }
+  .page-shop .shoplink { min-height: 184px; }
+  .page-shop .shoplink__media { --clear-to: 8%; width: 52%; }
+  .page-shop .shoplink__body { max-width: 52%; padding: 18px 14px 18px 18px; }
+  .page-shop .shoplink__t { font-size: 1.3rem; }
+  .page-shop .shoplink__line { font-size: .9rem; }
+  /* the chips row scrolls sideways here: it opens with the category on show centred (CSS scroll-initial-target, where
+     the browser supports it; elsewhere the row opens at its start, as before), and a swipe settles a chip in the middle */
+  .page-shop .chips { scroll-snap-type: x proximity; }
+  .page-shop .chip--cat { scroll-snap-align: center; }
+  .page-shop .chip--cat.is-on { scroll-initial-target: nearest; }
+}
+
+/* small phones: the shared phone title size (components.css), a little wider; the longest name (Concentrates) stays on
+   one line down to 360px */
+@media (max-width: 520px) {
+  .page-shop .shophero__t { font-size: clamp(1.8rem, 8.6vw, 2.6rem); font-stretch: var(--wdth-wide); }
+}
+
+/* ---------- reduced motion: no float, no lift ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .page-shop .showcase__obj { animation: none; }
+  .page-shop .chip--cat:not(.is-on):hover, .page-shop .shoplink:hover { translate: none; }
+  .page-shop .shoplink, .page-shop .shoplink__img, .page-shop .shoplink::after, .page-shop .shoplink__go, .page-shop .shoplink__go .ico { transition: none; }
+}

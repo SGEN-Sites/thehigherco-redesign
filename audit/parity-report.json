@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/parity-report@1",
-  "generated": "2026-11-10T01:46:31.725Z",
+  "generated": "2026-11-10T15:08:53.307Z",
   "sourcePages": 30,
   "rebuiltFiles": 51,
   "mappedPages": 30,
@@ -30,7 +30,7 @@
   ],
   "recallFloor": 0.95,
   "contentRunFloor": 12,
-  "meanRecall": 0.3409,
+  "meanRecall": 0.3399,
   "counts": {
     "minor": 59,
     "blocker": 50,
@@ -47,7 +47,7 @@
       "missingWords": 9,
       "longestMissingRun": 3,
       "sourceWords": 271,
-      "rebuiltWords": 1034,
+      "rebuiltWords": 1185,
       "sourceH1": [
         "The Higher Co."
       ],
@@ -66,7 +66,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "18 image(s) without alt",
+          "title": "23 image(s) without alt",
           "detail": "index.html"
         }
       ]
@@ -80,7 +80,7 @@
       "missingWords": 11,
       "longestMissingRun": 2,
       "sourceWords": 398,
-      "rebuiltWords": 725,
+      "rebuiltWords": 719,
       "sourceH1": [],
       "rebuiltH1": [
         "Our Story"
@@ -97,7 +97,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "7 image(s) without alt",
+          "title": "17 image(s) without alt",
           "detail": "about/index.html"
         }
       ]
@@ -318,11 +318,11 @@
       "file": "contact/index.html",
       "pageType": "contact",
       "status": "DIFFERS",
-      "recall": 1,
-      "missingWords": 0,
-      "longestMissingRun": 0,
+      "recall": 0.971,
+      "missingWords": 2,
+      "longestMissingRun": 1,
       "sourceWords": 66,
-      "rebuiltWords": 180,
+      "rebuiltWords": 196,
       "sourceH1": [
         "Contact"
       ],
@@ -398,7 +398,7 @@
       "missingWords": 12,
       "longestMissingRun": 6,
       "sourceWords": 600,
-      "rebuiltWords": 708,
+      "rebuiltWords": 706,
       "sourceH1": [
         "Frequently Asked Questions"
       ],
@@ -1446,13 +1446,13 @@
       "missingWords": 0,
       "longestMissingRun": 0,
       "sourceWords": 0,
-      "rebuiltWords": 129,
+      "rebuiltWords": 179,
       "sourceH1": [],
       "rebuiltH1": [
         "Shop Cannabis"
       ],
       "sourceLinks": 0,
-      "rebuiltLinks": 90,
+      "rebuiltLinks": 91,
       "findings": [
         {
           "severity": "minor",
@@ -1463,7 +1463,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "15 image(s) without alt",
+          "title": "18 image(s) without alt",
           "detail": "shop/index.html"
         }
       ]
@@ -1477,7 +1477,7 @@
       "missingWords": 0,
       "longestMissingRun": 0,
       "sourceWords": 7,
-      "rebuiltWords": 153,
+      "rebuiltWords": 151,
       "sourceH1": [],
       "rebuiltH1": [
         "Join the List"
@@ -1494,7 +1494,7 @@
         {
           "severity": "minor",
           "code": "alt-missing",
-          "title": "7 image(s) without alt",
+          "title": "10 image(s) without alt",
           "detail": "subscribe/index.html"
         }
       ]

@@ -1,0 +1,68 @@
+[
+ {
+  "name": "buds-greens-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-greens#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "buds-purples-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-purples#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "buds-frosty-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-frosty#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "buds-sativas-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-sativas#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "buds-indicas-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-indicas#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ },
+ {
+  "name": "buds-exotics-cut",
+  "endpoint": "fal-ai/birefnet/v2",
+  "input": {
+   "image_url": "result:buds-exotics#0",
+   "model": "General Use (Heavy)",
+   "operating_resolution": "2048x2048",
+   "output_format": "png",
+   "refine_foreground": true
+  }
+ }
+]

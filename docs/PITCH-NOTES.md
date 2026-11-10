@@ -51,7 +51,9 @@ Each item also sits as a `[CONFIRM WITH CLIENT]` comment in the page source wher
 9. **Topicals.** Named in the About copy, absent from the online menu today (no shop page built).
 10. **People.** Founder and budtender photos and bios. Cage's first name is deliberately not printed (sources disagree).
 11. **Merch.** Line-up, garment types, sizes, colours, prices and photos for the THC monogram snapback and the Lady
-    Liberty graphic. The Liberty graphic shows smoking, so the site names it but does not show it.
+    Liberty graphic. The graphic shows smoking; the site shows an edited version with the joint and smoke removed
+    (operator, 2026-11-10). The client must print that version (or the poster comes back), review the leaf crown for
+    OCM compliance (9 NYCRR 129.2(b)(5)), and confirm the artwork licence (Shutterstock 1795674991) covers merch and edits.
 12. **Photos.** Replace the AI storefront and interior illustrations with real photos of 123 E Willow St.
 13. **Forms.** Choose a form service and an email/SMS list provider (forms currently open an email to the store).
 14. **Legal review** of the privacy notice, terms of use and compliance page.

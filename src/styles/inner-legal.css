@@ -1,0 +1,141 @@
+/* inner-legal.css: styles for the Legal hub, NY compliance, Privacy, Terms, Accessibility and 404 pages (src/pages/legal.mjs); inner-pages update, 2026-11-10. Loads after pages.css.
+   Every rule is scoped to .page-legal or .page-404 (the body classes legal.mjs sets), so nothing here reaches another
+   page; shared parts (.phero, .band, .glass, .ticks, .ocm__box, .lens, .table) keep their own styles elsewhere. */
+
+/* ---------- the compact legal hero: crumbs, kicker and title on the left, the lead and date on the right ---------- */
+/* the bottom is the main repo's current .phero--legal formula (components.css, operator 2026-11-10: the 40px the light
+   sheet slides up over the hero + real room), repeated here because this rule outranks it; the top is tighter (compact) */
+.page-legal .phero--legal { padding: clamp(36px, 4.4vw, 64px) 0 calc(40px + clamp(24px, 2.8vw, 40px)); }
+.page-legal .phero--legal .phero__in { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 20px clamp(32px, 5vw, 80px); }
+.page-legal .phero--legal .phero__copy { max-width: none; }
+.page-legal .phero--legal .crumbs ol { margin-bottom: 12px; }
+.page-legal .phero--legal .kicker { margin-bottom: 14px; }
+.page-legal .phero--legal .phero__t { margin: 0; font-size: clamp(2.3rem, 5vw, 4.5rem); }
+.page-legal .phero--legal .phero__aside .phero__lead { max-width: 46ch; padding-bottom: .3em; }
+.page-legal .phero--legal .phero__lead p:not(:last-child) { margin-bottom: .55em; }
+/* the hub: the lead stays under the title; the shop's own photo is a tilted print on the right */
+.page-legal .phero--hub .phero__in { align-items: center; }
+.page-legal .phero--hub .phero__t { margin-bottom: .32em; }
+.page-legal .lhub__frame { position: relative; width: min(100%, 460px); margin: 0 0 0 auto; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; background: var(--ink-2); box-shadow: var(--shadow-float); rotate: -2.5deg; }
+.page-legal .lhub__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 34% 50%; }
+
+/* ---------- the hub: the four legal pages as paper placards ---------- */
+.page-legal .lhub__cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.page-legal .lhub__card { display: grid; }
+.page-legal .lhub__a { position: relative; display: grid; grid-template-rows: auto auto 1fr auto; gap: 10px; padding: 22px 24px 14px; border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow-light); text-decoration: none; transition: translate var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease); }
+/* the placard's inner frame (as the home placards), and the brass hairline that lights on hover and focus */
+.page-legal .lhub__a::before { content: ""; position: absolute; inset: 7px; border: 1px solid var(--gallery-3); border-radius: var(--radius-sm); pointer-events: none; }
+.page-legal .lhub__a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px var(--light-brass), inset 0 -3px 0 var(--brass); opacity: 0; transition: opacity var(--t-fast) var(--ease); }
+.page-legal .lhub__a:hover, .page-legal .lhub__a:focus-visible { translate: 0 -6px; box-shadow: var(--shadow-lift); }
+.page-legal .lhub__a:hover::after, .page-legal .lhub__a:focus-visible::after { opacity: 1; }
+.page-legal .lhub__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.page-legal .lhub__ico { width: 52px; height: 52px; margin: 0; transition: scale .5s var(--ease-spring); }
+.page-legal .lhub__a:hover .lhub__ico { scale: 1.08; }
+.page-legal .lhub__n { font: italic 400 1.3rem/1 var(--f-serif); color: var(--brass-ink); }
+.page-legal .lhub__t { margin: 0; font-size: clamp(1.2rem, 1.5vw, 1.45rem); line-height: 1.12; }
+.page-legal .lhub__a p { margin: 0; font-size: .96rem; line-height: 1.6; }
+.page-legal .lhub__a .link-arrow { margin-top: 2px; }
+
+/* ---------- the document: numbered rows, the heading on the left (it stays in view while its text scrolls) ---------- */
+.page-legal .ldoc__in { display: grid; }
+.page-legal .ldoc__row { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 14px clamp(28px, 5vw, 80px); padding-block: clamp(22px, 2.5vw, 36px); border-top: 1px solid var(--line-light); }
+.page-legal .ldoc__row:first-child { padding-top: 0; border-top: 0; }
+.page-legal .ldoc__row:last-child { padding-bottom: 0; }
+.page-legal .ldoc__head { position: sticky; top: calc(var(--header-h) + 28px); align-self: start; }
+.page-legal .ldoc__n { display: block; margin: 0 0 10px; font: italic 400 1.3rem/1 var(--f-serif); color: var(--brass-ink); }
+.page-legal .ldoc__h { margin: 0; font-size: clamp(1.4rem, 2.1vw, 1.9rem); line-height: 1.12; }
+.page-legal .ldoc__body { max-width: 68ch; padding-top: 4px; }
+.page-legal .ldoc__body > :first-child { margin-top: 0; }
+.page-legal .ldoc__body > :last-child { margin-bottom: 0; }
+.page-legal .ldoc__body .ticks { margin-bottom: 1.1em; }
+.page-legal .ldoc__body .ticks li { color: var(--on-light-2); }
+/* the privacy notice's summary reads as its lead */
+.page-legal .ldoc__row--lead .ldoc__body > p { font-size: var(--fs-lead); line-height: 1.6; color: var(--on-light); }
+/* the required warnings: spacing only (their box, colours and words are the shared .ocm__box, unchanged) */
+.page-legal .ldoc__body .ocm__box--page { margin: .9em 0 1.3em; }
+.page-legal .ldoc__body .ocm__box--page:last-child { margin-bottom: 0; }
+/* the license, as a certificate: plain paper with an inner brass frame */
+.page-legal .lcert { position: relative; margin: 0 0 1.2em; padding: clamp(18px, 2vw, 26px) clamp(18px, 2.4vw, 32px) clamp(8px, 1vw, 12px); border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow-light); }
+.page-legal .lcert::before { content: ""; position: absolute; inset: 7px; border: 1px solid var(--light-brass); border-radius: var(--radius-sm); pointer-events: none; }
+.page-legal .lcert .table { display: table; width: 100%; margin: 0; }
+.page-legal .lcert .table caption { margin-bottom: 6px; font-size: .9rem; }
+.page-legal .lcert .table tbody th { width: 38%; font: 600 .78rem/1.5 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--on-light-3); }
+.page-legal .lcert .table th, .page-legal .lcert .table td { padding: 13px 4px; }
+.page-legal .lcert .table td { font-weight: 500; color: var(--on-light); }
+.page-legal .lcert .table tr:last-child th, .page-legal .lcert .table tr:last-child td { border-bottom: 0; }
+.page-legal .lcert .table td.lcert__num { font: 760 1.02rem/1.5 var(--f-display); font-stretch: var(--wdth-wide); letter-spacing: .02em; }
+
+/* ---------- the closing dark band: the page's last section, beside a print of the shop ---------- */
+.page-legal .lclose { overflow: clip; padding-block: clamp(48px, 5.6vw, 84px); }   /* short content: tighter than band--tight */
+.page-legal .lclose__in { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 28px clamp(32px, 5vw, 80px); align-items: center; }
+.page-legal .lclose--plain .lclose__in { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); }
+.page-legal .lclose .ldoc__n { color: var(--brass); }
+.page-legal .lclose__t { margin: 0; font-size: clamp(1.9rem, 3.4vw, 3rem); line-height: 1.04; color: var(--on-dark); }
+.page-legal .lclose__body { margin-top: 16px; max-width: 46ch; }
+.page-legal .lclose__body p { font-size: var(--fs-lead); line-height: 1.6; color: var(--on-dark-2); }
+.page-legal .lclose p { overflow-wrap: break-word; }   /* the email address may break on the narrowest phones; phone numbers never do */
+.page-legal .lclose a:not(.btn) { color: var(--mint); font-weight: 500; }
+/* phone numbers never break at their hyphens */
+.page-legal main a[href^="tel:"] { white-space: nowrap; }
+.page-legal .lclose__photo { position: relative; margin: 0; aspect-ratio: 12 / 5; border-radius: var(--radius); overflow: hidden; background: var(--ink-2); box-shadow: var(--shadow-float); }
+.page-legal .lclose__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--fx, 50%) var(--fy, 50%); }
+/* help with cannabis use: the two ways to reach help, each on its own glass card */
+.page-legal .lhelp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.page-legal .lhelp__card { display: grid; align-content: start; gap: 16px; padding: clamp(20px, 2.2vw, 30px); }
+.page-legal .lhelp__ico { display: grid; place-items: center; width: 48px; height: 48px; border-radius: var(--radius); background: var(--ink); color: var(--mint); box-shadow: inset 0 0 0 1px var(--line-dark); }
+.page-legal .lhelp__ico .ico { width: 22px; height: 22px; }
+.page-legal .lhelp__card p { margin: 0; color: var(--on-dark); }
+
+/* ---------- the 404: the message on dark glass over the Flower Bar's floating buds ---------- */
+.page-404 .nf { min-height: clamp(560px, calc(100svh - var(--header-h) - var(--utility-h)), 860px); padding: clamp(40px, 6vw, 80px) 0; display: grid; place-items: center; overflow: clip; }
+/* the same lighting as the home ball pit (site.js paints it again under the magnifier) */
+.page-404 .nf__media { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, var(--ink) 0%, var(--clear) 24%), radial-gradient(60% 50% at 32% 45%, var(--light-mint-2), var(--clear) 70%), radial-gradient(55% 45% at 72% 100%, var(--light-brass-2), var(--clear) 70%), var(--ink); }
+.page-404 .nf__pit { position: absolute; inset: 0; display: block; width: 100%; height: 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%); }
+.page-404 .nf__media .lens canvas { display: block; width: 100%; height: 100%; border-radius: 50%; }
+.page-404 .nf__in { width: 100%; pointer-events: none; }
+.page-404 .nf__in > * { pointer-events: auto; }
+/* wide enough for the three buttons side by side on desktop (3 x --cta-w + 2 gaps = 828px inside) */
+.page-404 .nf__card { width: min(100%, 952px); padding: clamp(26px, 4vw, 52px) clamp(20px, 4vw, 56px); text-align: center; }
+/* where the row holds two but not three, the three stack, centred, at their one shared width (no 2 + 1 row) */
+@container (min-width: 548px) and (max-width: 827px) { .page-404 .nf__card .actions > .btn { margin-inline: calc((100% - var(--cta-w)) / 2); } }
+.page-404 .nf__card .kicker { margin-bottom: 16px; }
+.page-404 .nf__t { margin: 0 0 .32em; font-size: clamp(2.3rem, 5.2vw, 4.6rem); line-height: .94; letter-spacing: -.02em; }
+.page-404 .nf__lead { max-width: 44ch; margin-inline: auto; font-size: var(--fs-lead); color: var(--on-dark-2); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1100px) {
+  .page-legal .lhub__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-legal .lclose--plain .lclose__in { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 900px) {
+  .page-legal .phero--legal .phero__in { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 18px; }
+  .page-legal .phero--legal .phero__aside .phero__lead { max-width: 620px; }
+  .page-legal .lhub__frame { width: 100%; aspect-ratio: 2 / 1; margin: 6px 0 0; rotate: none; }
+  .page-legal .lclose__in { grid-template-columns: minmax(0, 1fr); }
+  .page-legal .lclose__photo { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 860px) {
+  .page-legal .ldoc__row { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .page-legal .ldoc__head { position: static; }
+  .page-legal .ldoc__n { margin-bottom: 8px; }
+}
+@media (max-width: 700px) {
+  .page-legal .lhelp { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 620px) {
+  .page-legal .lhub__cards { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .page-legal .lcert { padding-inline: 16px; }
+  .page-legal .lcert .table tbody th { white-space: normal; width: 34%; letter-spacing: .08em; }
+  .page-legal .lcert .table td.lcert__num { font-size: .9rem; letter-spacing: 0; white-space: nowrap; }
+}
+/* phone titles: the shared phone rule's size and width, kept for these heroes */
+@media (max-width: 520px) {
+  .page-legal .phero--legal .phero__t, .page-404 .nf__t { font-size: clamp(1.8rem, 8.6vw, 2.6rem); font-stretch: 100%; overflow-wrap: break-word; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-legal .lhub__a, .page-legal .lhub__a::after, .page-legal .lhub__ico { transition: none; }
+  .page-legal .lhub__a:hover, .page-legal .lhub__a:focus-visible { translate: none; }
+  .page-legal .lhub__a:hover .lhub__ico { scale: none; }
+}

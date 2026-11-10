@@ -1,0 +1,202 @@
+/* inner-info.css: styles for the Visit, FAQs, Contact, Connect and Subscribe pages (src/pages/info.mjs); inner-pages update, 2026-11-10. Loads after pages.css.
+   The home page's language carried over (operator, 2026-11-10: "update all inner pages" with the home page's design
+   principles): light and dark bands, the shop's own photos, the visit bar, the picture accordion, compact bands, cards that
+   lift with a brass edge. Every inner-*.css file loads on every page, so every rule here starts with one of the five body
+   classes (.page-visit, .page-faq, .page-contact, .page-connect, .page-subscribe) and never reaches another page. */
+
+/* ---------- shared: photo tiles and form cards ---------- */
+/* a picture cut from one of the shop's own photos; it develops in (data-reveal="develop") and, on hover, leans in with a
+   brass edge like the home accordion. The transition list keeps the develop timing and adds the hover zoom. */
+:is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo { position: relative; isolation: isolate; margin: 0; min-height: 220px; overflow: hidden; border-radius: var(--radius); background: var(--ink); box-shadow: var(--shadow-light); }
+:is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo .ix-photo__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--fx, 50%) var(--fy, 50%); transition: opacity 1.1s var(--ease), filter 1.6s var(--ease), clip-path 1.2s var(--ease), scale 1s var(--ease); }
+:is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px var(--light-brass), inset 0 -3px 0 var(--brass); opacity: 0; transition: opacity .35s var(--ease); }
+:is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo:hover::after { opacity: 1; }
+:is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo:hover .ix-photo__img { scale: 1.04; }
+/* the message forms sit on a paper card (the form itself is unchanged) */
+:is(.page-contact, .page-connect) .ix-formcard { padding: clamp(22px, 3vw, 38px); border-radius: var(--radius); background: var(--paper); color: var(--on-light); box-shadow: var(--shadow-light); }
+@media (prefers-reduced-motion: reduce) {
+  :is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo .ix-photo__img, :is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo::after { transition: none; }
+  :is(.page-visit, .page-contact, .page-connect, .page-subscribe) .ix-photo:hover .ix-photo__img { scale: none; }
+}
+
+/* ---------- shared: the three framed-picture heroes (FAQ, Contact, Connect) ---------- */
+/* the words keep clear of the picture. The shared rule for a lone copy block (.phero__in > .phero__copy:only-child, full
+   row, 980px) outranks .phero--art .phero__copy, so at tablet widths the title and the lead ran under the picture (on
+   /faqs/ before this update too); here the copy is the row minus the picture (--art-w) and a gap */
+:is(.page-faq, .page-contact, .page-connect) .phero--art { --art-w: min(40vw, 460px); }
+.page-contact .phero--art { --art-w: min(34vw, 420px); }
+.page-connect .phero--art { --art-w: min(28vw, 340px); }
+:is(.page-faq, .page-contact, .page-connect) .phero--art .phero__art { width: var(--art-w); }
+@media (min-width: 901px) {
+  :is(.page-faq, .page-contact, .page-connect) .phero--art .phero__in > .phero__copy { max-width: calc(100% - var(--art-w) - 48px); }
+}
+/* the long FAQ title a size down on tablets, so "FREQUENTLY" fits beside the picture */
+@media (min-width: 901px) and (max-width: 1180px) { .page-faq .phero__t { font-size: clamp(2.6rem, 4.9vw, 5.4rem); } }
+/* phones and small tablets: the picture under the words, smaller and landscape, so the hero stays short */
+@media (max-width: 900px) {
+  :is(.page-faq, .page-contact, .page-connect) .phero--art { --art-w: min(76vw, 320px); }
+  :is(.page-faq, .page-connect) .phero--art .phero__frame > img { aspect-ratio: 4 / 3; }
+  :is(.page-faq, .page-contact, .page-connect) .phero--art .phero__art { margin-top: 28px; }
+}
+
+/* ---------- /visit/ ---------- */
+/* the hero a little shorter, so the visit bar shows sooner */
+.page-visit .vhero { min-height: max(540px, 76svh); }
+/* Open seven days: the heading with the ordering note beside it, the visit bar, then the map beside the shop floor */
+.page-visit .vis-hours__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 40px; margin-bottom: clamp(20px, 2.4vw, 30px); }
+.page-visit .vis-hours__head .sect-head { margin: 0; }
+.page-visit .vis-hours__head .sect-t { margin: 0; }
+.page-visit .vis-hours .visit__note { max-width: 42ch; margin: 0 0 6px; }
+.page-visit .vis-hours .visitbar { margin-bottom: 14px; }
+.page-visit .vis-where { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 14px; }
+.page-visit .vis-where .map, .page-visit .vis-where .map__face { min-height: 360px; }
+.page-visit .vis-where__photo { min-height: 360px; }
+@media (max-width: 700px) {
+  .page-visit .vis-where { grid-template-columns: minmax(0, 1fr); }
+  .page-visit .vis-where__photo { min-height: 0; aspect-ratio: 16 / 9; }
+}
+/* What to bring: a bento like the home one: the dark heading tile, the crew at the counter, the six cards on paper */
+.page-visit .vis-bento { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "head id crew" "pay park crew" "order bar lic"; gap: 14px; }
+.page-visit .vis-bento__head { grid-area: head; display: grid; align-content: end; min-height: 200px; padding: clamp(20px, 2.4vw, 32px); border-radius: var(--radius); background: var(--ink); box-shadow: var(--shadow-light); }
+.page-visit .vis-bento__head .kicker { color: var(--mint); }
+.page-visit .vis-bento__head .sect-t { margin: 0; font-size: clamp(1.9rem, 3.2vw, 2.9rem); color: var(--on-dark); }
+.page-visit .vis-bento__crew { grid-area: crew; min-height: 0; }
+.page-visit .vis-card--id { grid-area: id; }
+.page-visit .vis-card--pay { grid-area: pay; }
+.page-visit .vis-card--park { grid-area: park; }
+.page-visit .vis-card--order { grid-area: order; }
+.page-visit .vis-card--bar { grid-area: bar; }
+.page-visit .vis-card--lic { grid-area: lic; }
+/* the cards: tighter than before; a small lift and a brass edge on hover (the reveal's own timing kept in the list) */
+.page-visit .vis-bento .vis-card { position: relative; padding: clamp(20px, 2vw, 26px); transition: opacity .9s var(--ease) calc(var(--i, 0) * 90ms), translate .9s var(--ease) calc(var(--i, 0) * 90ms), filter .9s var(--ease) calc(var(--i, 0) * 90ms), transform .35s var(--ease), box-shadow .35s var(--ease); }
+.page-visit .vis-bento .vis-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-light), inset 0 0 0 1px var(--light-brass), inset 0 -3px 0 var(--brass); }
+.page-visit .vis-bento .vcard__ico { width: 46px; height: 46px; margin-bottom: 14px; }
+.page-visit .vis-bento .vis-card h3 { margin-bottom: .35em; }
+.page-visit .vis-bento .vis-card p { font-size: .96rem; line-height: 1.6; }
+@media (max-width: 900px) {
+  .page-visit .vis-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "head head" "id crew" "pay crew" "park order" "bar lic"; }
+  .page-visit .vis-bento__head { min-height: 0; }
+}
+@media (max-width: 620px) {
+  .page-visit .vis-bento { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "crew" "id" "pay" "park" "order" "bar" "lic"; gap: 10px; }
+  .page-visit .vis-bento__crew { aspect-ratio: 4 / 3; }
+  /* phones: the icon beside the title, so each card is a few lines shorter */
+  .page-visit .vis-bento .vis-card { display: grid; grid-template-columns: 42px minmax(0, 1fr); align-items: center; column-gap: 14px; }
+  .page-visit .vis-bento .vcard__ico { width: 42px; height: 42px; margin: 0; }
+  .page-visit .vis-bento .vis-card h3 { margin: 0; }
+  .page-visit .vis-bento .vis-card p { grid-column: 1 / -1; margin-top: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-visit .vis-bento .vis-card { transition: none; }
+  .page-visit .vis-bento .vis-card:hover { transform: none; }
+}
+/* the closing band: compact, the brass edge where it meets the light band (markup); it runs into the footer (shared) */
+.page-visit .visitcta .sect-t { font-size: clamp(1.9rem, 3.4vw, 3rem); }
+
+/* ---------- /faqs/ ---------- */
+/* the jump-to index as one dark bar (the home visit bar's ground): three columns of numbered questions, brass numerals */
+.page-faq .fq-index { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 12px 24px; align-items: start; margin: 0 0 clamp(18px, 2.2vw, 26px); padding: clamp(20px, 2.4vw, 30px); border-radius: var(--radius); background: var(--ink); color: var(--on-dark); box-shadow: var(--shadow-lift); }
+.page-faq .fq-index .kicker { margin: 3px 0 0; color: var(--mint); }
+/* columns (not grid rows), so a two-line question in one column never spaces out the other two */
+.page-faq .fq-index ol { list-style: none; margin: 0; padding: 0; counter-reset: fq; columns: 3; column-gap: 32px; font-size: .94rem; line-height: 1.4; }
+/* (the numeral hangs in the left padding: a grid per item inside the columns added 20px under some items in Chrome) */
+.page-faq .fq-index li { counter-increment: fq; position: relative; padding: 4px 0 4px 34px; break-inside: avoid; }
+.page-faq .fq-index li::before { content: counter(fq, decimal-leading-zero); content: counter(fq, decimal-leading-zero) / ""; position: absolute; left: 0; top: 6px; font: italic 400 1.1rem/1.2 var(--f-serif); color: var(--brass); }
+/* (the light band's link ink is mint for paper; on this dark bar the links take the light ink) */
+.page-faq .fq-index a { color: var(--on-dark-2) !important; text-decoration: none; transition: color var(--t-fast) var(--ease); }
+.page-faq .fq-index a:hover { color: var(--on-dark) !important; text-decoration: underline; }
+.page-faq .fq-index a:focus-visible { outline-color: var(--mint); }
+/* the questions in two columns, like the home Quick answers; hover: a small lift and a brass edge; the open one (and the
+   one a jump link lands on) wears a mint ring */
+.page-faq .fq-list .faq { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 10px 14px; }
+.page-faq .faq__item { transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.page-faq .faq__item:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1px var(--brass), var(--shadow-light); }
+.page-faq .faq__item[open], .page-faq .faq__item:target { box-shadow: inset 0 0 0 2px var(--mint-ink), var(--shadow-light); }
+@media (max-width: 1100px) {
+  .page-faq .fq-index { grid-template-columns: minmax(0, 1fr); }
+  .page-faq .fq-index ol { columns: 2; }
+}
+@media (max-width: 900px) { .page-faq .fq-list .faq { grid-template-columns: minmax(0, 1fr); } }
+/* phones: the index becomes a swipe strip of small dark cards, so the questions start right under it */
+@media (max-width: 700px) {
+  .page-faq .fq-index { gap: 10px; padding: 18px 0 14px; }
+  .page-faq .fq-index .kicker { margin: 0 18px; }
+  .page-faq .fq-index ol { columns: auto; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 76%); gap: 10px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 18px; padding: 2px 18px 8px; scrollbar-width: thin; }
+  .page-faq .fq-index li { scroll-snap-align: start; padding: 12px 14px 12px 46px; border-radius: var(--radius-sm); background: var(--ink-3); box-shadow: inset 0 0 0 1px var(--line-dark); }
+  .page-faq .fq-index li::before { left: 14px; top: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-faq .faq__item { transition: none; }
+  .page-faq .faq__item:hover { transform: none; }
+}
+
+/* ---------- /contact/ ---------- */
+/* the hero picture: the shop floor, framed like the other inner heroes (its size: --art-w above) */
+.page-contact .ct-art > img { object-position: 36% 55%; }
+/* the details: the visit bar, then the Mail card and the social links side by side */
+.page-contact .ct-details .visitbar { margin-bottom: 14px; }
+.page-contact .ct-more { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 14px; }
+.page-contact .ct-mail { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 4px 16px; align-items: center; padding: 18px 22px; }
+.page-contact .ct-mail .infocard__ico { margin: 0; }
+.page-contact .ct-mail .infocard__t { margin: 0 0 2px; }
+.page-contact .ct-mail p { margin: 0; overflow-wrap: anywhere; }
+.page-contact .ct-social { display: flex; align-items: center; padding: 18px 22px; border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow-light); }
+.page-contact .ct-social .social-line { margin: 0; }
+@media (max-width: 800px) { .page-contact .ct-more { grid-template-columns: minmax(0, 1fr); } }
+/* phones: a smaller icon tile and type, so the address fits on one line */
+@media (max-width: 560px) {
+  .page-contact .ct-mail { grid-template-columns: 42px minmax(0, 1fr); gap: 4px 14px; padding: 16px 18px; }
+  .page-contact .ct-mail .infocard__ico { width: 42px; height: 42px; }
+  .page-contact .ct-mail p { font-size: 1rem; }
+  .page-contact .ct-social { padding: 16px 18px; }
+}
+/* Send a message on a dark band: the form on its paper card, the map beside it as tall as the card (the wider column,
+   so its address and three buttons sit on one line each) */
+.page-contact .ct-form .sect-head { margin-bottom: clamp(22px, 2.8vw, 34px); }
+.page-contact .ct-form__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 14px; align-items: stretch; }
+@media (max-width: 1100px) { .page-contact .ct-form__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.page-contact .ct-form .ix-formcard { box-shadow: var(--shadow-float); }
+.page-contact .ct-form__grid > .map { display: flex; flex-direction: column; outline: 1px solid var(--line-dark); outline-offset: -1px; box-shadow: var(--shadow-float); }
+.page-contact .ct-form__grid > .map > .map__face { flex: 1 1 auto; }
+@media (max-width: 900px) { .page-contact .ct-form__grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- /connect/ ---------- */
+/* the hero picture: the crew at the counter ("a member of our team will be happy to answer"); its size: --art-w above */
+.page-connect .cn-art > img { object-position: 46% 40%; }
+
+/* ---------- /subscribe/ ---------- */
+/* the hero over the home Join band's skyline: as tall as that band, the words centred on a deep fade at the left
+   (checked by tools/scene-contrast.mjs: .vhero is one of its scenes), Lady Liberty in view on the right */
+.page-subscribe .sub-hero { min-height: clamp(520px, 44vw, 680px); align-items: center; padding: 56px 0 clamp(88px, 9vw, 132px); }
+.page-subscribe .sub-hero .vhero__pic .pic__img { object-position: 70% 50%; }
+.page-subscribe .sub-hero .vhero__scrim { background: linear-gradient(90deg, rgba(14, 14, 14, .93) 0%, rgba(14, 14, 14, .82) 36%, rgba(14, 14, 14, .34) 58%, var(--clear) 72%), linear-gradient(0deg, var(--ink) 0%, rgba(14, 14, 14, .5) 16%, var(--clear) 34%); }
+.page-subscribe .sub-hero__t { max-width: 680px; font-size: clamp(2.6rem, 5.6vw, 5.4rem); text-shadow: 0 2px 30px rgba(0, 0, 0, .45); }
+.page-subscribe .sub-hero__lead { max-width: 540px; font-size: var(--fs-lead); color: var(--on-dark); }
+.page-subscribe .sub-hero__lead p { margin: 0 0 .55em; }
+.page-subscribe .sub-hero__lead p:last-child { margin: 0; }
+/* phones: Liberty's right-hand crop as a banner across the top, fading into the ink the words sit on (as on home) */
+@media (max-width: 700px) {
+  .page-subscribe .sub-hero { display: block; min-height: 0; padding: calc(min(92vw, 380px) - 44px) 0 76px; }
+  .page-subscribe .sub-hero .vhero__media { inset: 0 0 auto 0; height: min(92vw, 380px); translate: none; }
+  .page-subscribe .sub-hero .vhero__pic .pic__img { object-position: 50% 30%; }
+  .page-subscribe .sub-hero .vhero__scrim { inset: 0 0 auto 0; height: min(92vw, 380px); background: linear-gradient(0deg, var(--ink) 0%, rgba(14, 14, 14, .6) 24%, var(--clear) 52%); }
+}
+@media (max-width: 520px) { .page-subscribe .sub-hero__t { font-size: clamp(2.2rem, 11vw, 3rem); font-stretch: var(--wdth-wide); } }
+/* What you get beside the form: the perks as the home picture accordion, stacked (each title on one line, the icon beside
+   it), as tall as the form and the steps together */
+.page-subscribe .sub__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(24px, 3.4vw, 48px); align-items: stretch; }
+.page-subscribe .sub__perks { display: flex; flex-direction: column; min-width: 0; }
+.page-subscribe .sub__perks .sect-head { margin-bottom: clamp(18px, 2.2vw, 28px); }
+.page-subscribe .sub-acc { flex: 1 1 auto; flex-direction: column; height: auto; min-height: 400px; gap: 10px; }
+.page-subscribe .sub-acc .acc__p { flex: 1 1 0; height: auto; min-height: 92px; transition: opacity .9s var(--ease) calc(var(--i, 0) * 90ms), translate .9s var(--ease) calc(var(--i, 0) * 90ms), filter .9s var(--ease) calc(var(--i, 0) * 90ms), flex-grow .6s var(--ease), box-shadow .3s var(--ease); }
+.page-subscribe .sub-acc .acc__p.is-open { flex-grow: 2.3; }
+/* the words sit low and to the left: a deep fade up from the bottom (under the text at any width) over a fade from the
+   left (under the title), so the picture shows at the top right */
+.page-subscribe .sub-acc .acc__p::before { background: linear-gradient(0deg, rgba(14, 14, 14, .93) 0%, rgba(14, 14, 14, .8) 45%, var(--clear) 82%), linear-gradient(90deg, rgba(14, 14, 14, .9) 0%, rgba(14, 14, 14, .72) 44%, rgba(14, 14, 14, .28) 78%, var(--clear) 100%); }
+.page-subscribe .sub-acc .acc__body { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 8px 14px; padding: 16px 20px; }
+.page-subscribe .sub-acc .acc__ico { width: 44px; height: 44px; }
+.page-subscribe .sub-acc .acc__ico .ico { width: 22px; height: 22px; }
+.page-subscribe .sub-acc .acc__text { grid-column: 1 / -1; }
+.page-subscribe .sub__join { display: grid; align-content: start; gap: 22px; min-width: 0; }
+@media (max-width: 900px) { .page-subscribe .sub__grid { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .page-subscribe .sub-acc .acc__p { transition: none; } }
