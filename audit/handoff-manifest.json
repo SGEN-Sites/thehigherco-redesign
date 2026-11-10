@@ -3,13 +3,13 @@
   "project": "thehigherco420-com",
   "target": "https://www.thehigherco420.com/",
   "version": "v20261110",
-  "builtAt": "2026-11-10T01:46:33.171Z",
+  "builtAt": "2026-11-10T01:50:56.824Z",
   "gateVerdict": "NOT-READY",
   "decontamination": "CLEAN",
   "forced": {
     "why": "REDESIGN lane, not a clone: C22 pixel parity with the old design is intentionally broken; C17/C19 fail only on 23 retired WordPress theme-demo pages (music-award posts, beauty-service pages, archive stubs) whose content and placeholder contacts (+312 123 4568, info@example.com) are not The Higher Company's and must not be republished; each is a REMOVE row with its reason and the URL is kept as a redirect page; C04/C05 describe the live site itself (empty pages, a static-HTML heuristic on WordPress pages). All 7 pages carrying client content: parity 96.8-100% with no major/blocker findings; fabrication 0/0; decontamination clean; sweep 0 blocker/major at 390/768/1024/1440."
   },
-  "entryCount": 535,
+  "entryCount": 536,
   "checks": [
     {
       "id": "C01",
@@ -184,7 +184,7 @@
       "label": "Handoff documentation present and filled in",
       "stage": "package",
       "status": "PASS",
-      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, PITCH-NOTES.md, README.md — no unfilled placeholders"
+      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, PITCH-NOTES.md, PUBLISH.md, README.md — no unfilled placeholders"
     },
     {
       "id": "C26",
@@ -652,6 +652,7 @@
     "docs/CHANGE-LOG.md",
     "docs/DEPLOY.md",
     "docs/PITCH-NOTES.md",
+    "docs/PUBLISH.md",
     "docs/README.md",
     "facts/client-facts.json",
     "project.json",

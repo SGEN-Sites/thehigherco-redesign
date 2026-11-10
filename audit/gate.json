@@ -1,6 +1,6 @@
 {
   "schema": "site-reforge/gate@1",
-  "generated": "2026-11-10T01:46:33.078Z",
+  "generated": "2026-11-10T01:50:56.738Z",
   "project": "thehigherco420-com",
   "target": "https://www.thehigherco420.com/",
   "verdict": "NOT-READY",
@@ -183,7 +183,7 @@
       "label": "Handoff documentation present and filled in",
       "stage": "package",
       "status": "PASS",
-      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, PITCH-NOTES.md, README.md — no unfilled placeholders"
+      "evidence": "docs/: BRAND-SYSTEM.md, CHANGE-LOG.md, DEPLOY.md, PITCH-NOTES.md, PUBLISH.md, README.md — no unfilled placeholders"
     },
     {
       "id": "C26",

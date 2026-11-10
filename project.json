@@ -4,7 +4,7 @@
   "targetUrl": "https://www.thehigherco420.com/",
   "origin": "https://www.thehigherco420.com",
   "createdAt": "2026-11-09T23:42:50.906Z",
-  "updatedAt": "2026-11-10T01:46:33.416Z",
+  "updatedAt": "2026-11-10T01:50:57.064Z",
   "config": {
     "maxPages": 300,
     "concurrency": 2,
@@ -108,7 +108,7 @@
     },
     "decontaminate": {
       "status": "done",
-      "at": "2026-11-10T01:46:32.938Z",
+      "at": "2026-11-10T01:50:56.562Z",
       "note": "CLEAN (0 traces)"
     },
     "parity": {
@@ -138,13 +138,13 @@
     },
     "gate": {
       "status": "fail",
-      "at": "2026-11-10T01:46:33.078Z",
+      "at": "2026-11-10T01:50:56.739Z",
       "note": "NOT-READY — 24/29 passing"
     },
     "package": {
       "status": "forced",
-      "at": "2026-11-10T01:46:33.416Z",
-      "note": "thehigherco420-com-handoff-v20261110.zip — 535 entries, 14091167 bytes"
+      "at": "2026-11-10T01:50:57.064Z",
+      "note": "thehigherco420-com-handoff-v20261110.zip — 536 entries, 14092714 bytes"
     },
     "presetMatch": {
       "status": "partial",
